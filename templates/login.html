@@ -1,0 +1,152 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | Login</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <a class="logo" href="/">KanoonSathi</a>
+        <nav class="menu">
+          <a href="/">Home</a>
+          <a href="/consult/">Consult AI</a>
+          <a href="/lawyers/">Find Lawyer</a>
+          <a href="/appointments/">My Appointments</a>
+          <a href="/signup/" class="auth-link">Signup</a>
+          <a href="/login/" class="active auth-link">Login</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="card auth-card">
+          <h2 class="title">Login</h2>
+          <p class="subtitle">Welcome back to KanoonSathi.</p>
+          <form id="loginForm" class="form-grid">
+            <div class="form-control full">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="name@domain.com"
+                required
+              />
+            </div>
+            <div class="form-control full">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <div class="form-control role-selection full">
+              <label class="radio-label">
+                <input type="radio" name="role" value="user" checked />
+                <span>Login as User</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="role" value="lawyer" />
+                <span>Login as Lawyer</span>
+              </label>
+            </div>
+            <button class="btn-primary full" type="submit">
+              Login securely
+            </button>
+          </form>
+          <button id="googleBtn" class="btn-outline full-width" type="button">
+            Continue with Google
+          </button>
+          <p id="msg" class="subtitle"></p>
+          <p class="subtitle">
+            New to KanoonSathi? <a href="/signup/">Create an account</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="{% static 'app.js' %}"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("open");
+      }
+
+      const msg = document.getElementById("msg");
+      document
+        .getElementById("loginForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          try {
+            const role = document.querySelector(
+              'input[name="role"]:checked',
+            ).value;
+            const data = await fetchJson("/login/", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                email: document.getElementById("email").value.trim(),
+                password: document.getElementById("password").value,
+                role,
+              }),
+            });
+            window.KanoonAuth.saveAuth(data);
+            location.href = "/dashboard/";
+          } catch (err) {
+            msg.textContent = err.message;
+            msg.style.color = "#b91c1c";
+          }
+        });
+
+      document
+        .getElementById("googleBtn")
+        .addEventListener("click", async () => {
+          // Initialize Google Sign-In
+          google.accounts.id.initialize({
+            client_id: "{{ google_client_id }}",
+            callback: handleGoogleSignIn,
+          });
+          google.accounts.id.renderButton(
+            document.getElementById("googleBtn"),
+            {
+              theme: "outline",
+              size: "large",
+              text: "continue_with",
+            },
+          );
+          google.accounts.id.prompt();
+        });
+
+      async function handleGoogleSignIn(response) {
+        try {
+          const data = await fetchJson("/api/auth/google", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ token: response.credential }),
+          });
+          window.KanoonAuth.saveAuth(data);
+          msg.textContent = "Login successful. Redirecting...";
+          msg.style.color = "#16a34a";
+          setTimeout(() => {
+            location.href = "/";
+          }, 1000);
+        } catch (err) {
+          msg.textContent = err.message;
+          msg.style.color = "#b91c1c";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,265 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | Lawyer Dashboard</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <a class="logo" href="/">KanoonSathi</a>
+        <nav class="menu">
+          <a href="/">Home</a>
+          <a href="/consult/">Consult AI</a>
+          <a href="/lawyers/">Find Lawyer</a>
+          <a href="/appointments/">My Appointments</a>
+          <a href="/lawyer-dashboard/" class="active">Dashboard</a>
+          <a href="/login/" class="auth-link">Logout</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="dashboard-hero">
+      <div class="container">
+        <div class="dashboard-hero-card">
+          <div>
+            <span class="tag">Welcome back</span>
+            <h1>Hi Lawyer, your legal workspace</h1>
+            <p>
+              Manage your appointments, track consultations, and connect with
+              clients through video calls.
+            </p>
+          </div>
+          <div class="hero-summary">
+            <div>
+              <p>Account status</p>
+              <strong>Verified Lawyer</strong>
+            </div>
+            <div>
+              <p>Next appointment</p>
+              <strong>May 15, 2026 · 2:00 PM</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="dashboard-metrics section">
+      <div class="container metrics-grid">
+        <article class="metric-card">
+          <span class="metric-label">Total consultations</span>
+          <strong>45</strong>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Pending appointments</span>
+          <strong>8</strong>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Today's consultations</span>
+          <strong>3</strong>
+        </article>
+        <article class="metric-card">
+          <span class="metric-label">Completed this month</span>
+          <strong>12</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="dashboard-main section">
+      <div class="container dashboard-layout">
+        <main class="dashboard-column">
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Upcoming appointments</h2>
+              <span class="muted">Next 7 days</span>
+            </div>
+            <div class="appointments-list">
+              <div class="appointment-item">
+                <div class="appointment-info">
+                  <h3>Client: Anisha Sharma</h3>
+                  <p>Family law consultation</p>
+                  <p class="appointment-time">May 15, 2026 · 2:00 PM</p>
+                </div>
+                <button
+                  class="btn-primary join-meeting"
+                  onclick="joinMeeting('meeting123')"
+                >
+                  Join Meeting
+                </button>
+              </div>
+              <div class="appointment-item">
+                <div class="appointment-info">
+                  <h3>Client: Rajesh Kumar</h3>
+                  <p>Property dispute</p>
+                  <p class="appointment-time">May 16, 2026 · 10:30 AM</p>
+                </div>
+                <button
+                  class="btn-primary join-meeting"
+                  onclick="joinMeeting('meeting456')"
+                >
+                  Join Meeting
+                </button>
+              </div>
+              <div class="appointment-item">
+                <div class="appointment-info">
+                  <h3>Client: Priya Patel</h3>
+                  <p>Criminal defense</p>
+                  <p class="appointment-time">May 18, 2026 · 4:00 PM</p>
+                </div>
+                <button
+                  class="btn-primary join-meeting"
+                  onclick="joinMeeting('meeting789')"
+                >
+                  Join Meeting
+                </button>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Earnings summary</h2>
+              <span class="muted">This month</span>
+            </div>
+            <div class="earnings-grid">
+              <div class="earning-item">
+                <span class="earning-label">Total earned</span>
+                <strong>NPR 45,000</strong>
+              </div>
+              <div class="earning-item">
+                <span class="earning-label">Pending payments</span>
+                <strong>NPR 12,000</strong>
+              </div>
+              <div class="earning-item">
+                <span class="earning-label">Average per consultation</span>
+                <strong>NPR 1,000</strong>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Client reviews</h2>
+              <span class="badge">4.8 ★</span>
+            </div>
+            <div class="reviews-list">
+              <div class="review-item">
+                <p>"Excellent legal advice, very professional."</p>
+                <span class="review-author">- Anisha Sharma</span>
+                <span class="review-rating">★★★★★</span>
+              </div>
+              <div class="review-item">
+                <p>"Helped resolve my property dispute quickly."</p>
+                <span class="review-author">- Rajesh Kumar</span>
+                <span class="review-rating">★★★★☆</span>
+              </div>
+            </div>
+          </article>
+        </main>
+
+        <aside class="dashboard-sidebar">
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Today's schedule</h2>
+              <span class="badge">Active</span>
+            </div>
+            <div class="schedule-list">
+              <div class="schedule-item">
+                <p class="schedule-time">10:00 AM</p>
+                <p>Consultation with Client A</p>
+              </div>
+              <div class="schedule-item">
+                <p class="schedule-time">2:00 PM</p>
+                <p>Consultation with Client B</p>
+              </div>
+              <div class="schedule-item">
+                <p class="schedule-time">4:30 PM</p>
+                <p>Consultation with Client C</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Notifications</h2>
+              <span class="badge">3 new</span>
+            </div>
+            <div class="notifications-list">
+              <div class="notification-item">
+                <p>New appointment booked for May 20, 2026</p>
+                <span class="notification-time">2 hours ago</span>
+              </div>
+              <div class="notification-item">
+                <p>Client left a review</p>
+                <span class="notification-time">1 day ago</span>
+              </div>
+              <div class="notification-item">
+                <p>Payment received for consultation</p>
+                <span class="notification-time">3 days ago</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <h2>Profile & Availability</h2>
+            </div>
+            <div class="profile-actions">
+              <a href="#" class="btn-outline">Update Profile</a>
+              <a href="#" class="btn-outline">Set Availability</a>
+              <a href="#" class="btn-outline">Manage Documents</a>
+            </div>
+          </article>
+        </aside>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>KanoonSathi Nepal</h3>
+          <p>Making legal help accessible, efficient, and user-friendly.</p>
+        </div>
+        <div>
+          <h4>Services</h4>
+          <p>Consult AI</p>
+          <p>Find Lawyer</p>
+          <p>Book Appointment</p>
+        </div>
+        <div>
+          <h4>Notice</h4>
+          <p>AI responses are basic guidance only, not final legal advice.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="{% static 'app.js' %}"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("open");
+      }
+
+      function joinMeeting(meetingId) {
+        // Simulate joining a video call
+        alert(`Joining meeting: ${meetingId}`);
+        // In a real app, this would open a video call interface or redirect to a meeting URL
+      }
+
+      // Check if user is lawyer
+      const auth = window.KanoonAuth.getUser();
+      if (!auth || auth.role !== "lawyer") {
+        alert("Lawyer access required");
+        location.href = "/login/";
+      }
+    </script>
+  </body>
+</html>

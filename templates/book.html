@@ -1,0 +1,130 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | Book Appointment</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <a class="logo" href="/">KanoonSathi</a>
+        <nav class="menu">
+          <a href="/">Home</a>
+          <a href="/consult/">Consult AI</a>
+          <a href="/lawyers/">Find Lawyer</a>
+          <a href="/appointments/">My Appointments</a>
+          <a href="/signup/" class="auth-link">Signup</a>
+          <a href="/login/" class="auth-link">Login</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="title">Book Appointment</h2>
+        <p class="subtitle">
+          Your chat summary will be shared with selected lawyer before
+          consultation.
+        </p>
+        <form id="form" class="card form-grid">
+          <input
+            class="full"
+            id="userName"
+            placeholder="Your full name"
+            required
+          />
+          <input id="email" type="email" placeholder="Email address" required />
+          <input id="phone" placeholder="Phone number (+977...)" required />
+          <select id="lawyerId" required>
+            <option value="">Select Lawyer</option>
+          </select>
+          <input type="date" id="date" required />
+          <input type="time" id="time" required />
+          <select id="mode">
+            <option>Online</option>
+            <option>In-Person</option>
+          </select>
+          <textarea
+            class="full"
+            id="issueSummary"
+            rows="3"
+            placeholder="Issue summary (simple and short)"
+          ></textarea>
+          <textarea
+            class="full"
+            id="chatSummary"
+            rows="3"
+            placeholder="Paste AI chat summary (optional)"
+          ></textarea>
+          <button class="btn-primary full" type="submit">
+            Confirm Booking
+          </button>
+        </form>
+        <p id="msg"></p>
+      </div>
+    </section>
+
+    <script src="{% static 'app.js' %}"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("open");
+      }
+
+      const lawyerSelect = document.getElementById("lawyerId");
+      const msg = document.getElementById("msg");
+
+      async function loadLawyers() {
+        const lawyers = await fetchJson("/api/lawyers");
+        lawyerSelect.innerHTML =
+          '<option value="">Select Lawyer</option>' +
+          lawyers
+            .map(
+              (l) =>
+                `<option value="${escapeHtml(l.id)}">${escapeHtml(l.name)} - ${escapeHtml(l.legalArea)} (${escapeHtml(l.district)})</option>`,
+            )
+            .join("");
+        const pre = new URLSearchParams(location.search).get("lawyerId");
+        if (pre) lawyerSelect.value = pre;
+      }
+
+      document.getElementById("form").onsubmit = async (e) => {
+        e.preventDefault();
+        try {
+          const payload = {
+            userName: document.getElementById("userName").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
+            lawyerId: lawyerSelect.value,
+            date: document.getElementById("date").value,
+            time: document.getElementById("time").value,
+            mode: document.getElementById("mode").value,
+            issueSummary: document.getElementById("issueSummary").value.trim(),
+            chatSummary: document.getElementById("chatSummary").value.trim(),
+          };
+          await fetchJson("/api/appointments", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(payload),
+          });
+          msg.textContent = "Appointment booked successfully.";
+          msg.style.color = "green";
+          e.target.reset();
+        } catch (err) {
+          msg.textContent = err.message;
+          msg.style.color = "red";
+        }
+      };
+
+      loadLawyers();
+    </script>
+  </body>
+</html>

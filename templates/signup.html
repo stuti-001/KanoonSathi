@@ -1,0 +1,453 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | Sign Up</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container inner">
+        <a class="logo" href="/">KanoonSathi</a>
+        <nav class="menu">
+          <a href="/">Home</a>
+          <a href="/consult/">Consult AI</a>
+          <a href="/lawyers/">Find Lawyer</a>
+          <a href="/appointments/">My Appointments</a>
+          <a href="/signup/" class="active auth-link">Signup</a>
+          <a href="/login/" class="auth-link">Login</a>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container">
+        <div class="card auth-card">
+          <h2 class="title">Create Account</h2>
+          <p class="subtitle">
+            Sign up to save your consultations and appointments.
+          </p>
+          <div class="form-progress">
+            <div class="progress-step active">
+              <div class="progress-dot">1</div>
+              <div class="progress-text">Account details</div>
+            </div>
+            <div class="progress-step">
+              <div class="progress-dot">2</div>
+              <div class="progress-text">Verification details</div>
+            </div>
+          </div>
+          <form id="signupForm" class="form-grid">
+            <div class="form-step active" data-step="1">
+              <div class="form-control full">
+                <label for="name">Full name</label>
+                <input id="name" placeholder="Enter your full name" required />
+              </div>
+              <div class="form-control full">
+                <label for="email">Email address</label>
+                <input
+                  id="email"
+                  class="full"
+                  type="email"
+                  placeholder="name@domain.com"
+                  required
+                />
+              </div>
+              <div class="form-control full">
+                <label for="phone">Phone number</label>
+                <input
+                  id="phone"
+                  class="full"
+                  type="tel"
+                  placeholder="98XXXXXXXX"
+                  required
+                />
+              </div>
+              <div class="form-control role-selection full">
+                <label class="radio-label">
+                  <input type="radio" name="role" value="user" checked />
+                  <span>Register as User</span>
+                </label>
+                <label class="radio-label">
+                  <input type="radio" name="role" value="lawyer" />
+                  <span>Register as Lawyer</span>
+                </label>
+              </div>
+              <button id="nextStep" class="btn-primary full" type="button">
+                Continue
+              </button>
+            </div>
+            <div class="form-step" data-step="2">
+              <div class="form-control full">
+                <label for="password">Password</label>
+                <input
+                  id="password"
+                  class="full"
+                  type="password"
+                  placeholder="Create a secure password"
+                  required
+                />
+              </div>
+              <div class="form-control full">
+                <label for="confirmPassword">Confirm password</label>
+                <input
+                  id="confirmPassword"
+                  class="full"
+                  type="password"
+                  placeholder="Repeat password"
+                  required
+                />
+              </div>
+              <div
+                id="lawyerFields"
+                class="lawyer-fields"
+                style="display: none"
+              >
+                <h3>Lawyer verification details</h3>
+                <div class="form-control">
+                  <label for="district">District</label>
+                  <input
+                    id="district"
+                    placeholder="District (e.g., Kathmandu)"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="licenseNumber">License number</label>
+                  <input
+                    id="licenseNumber"
+                    placeholder="Enter your bar license number"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="specialization">Specialization</label>
+                  <input
+                    id="specialization"
+                    placeholder="Primary specialization"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="legalArea">Legal area</label>
+                  <select id="legalArea">
+                    <option value="">Select legal area</option>
+                    <option value="administrative">Administrative Law</option>
+                    <option value="aviation">Aviation Law</option>
+                    <option value="banking">Banking and Finance Law</option>
+                    <option value="business">Business/Corporate Law</option>
+                    <option value="civil">Civil Law</option>
+                    <option value="constitutional">Constitutional Law</option>
+                    <option value="consumer">Consumer Protection Law</option>
+                    <option value="contract">Contract Law</option>
+                    <option value="criminal">Criminal Law</option>
+                    <option value="cybersecurity">Cybersecurity Law</option>
+                    <option value="data">Data Protection Law</option>
+                    <option value="education">Education Law</option>
+                    <option value="employment">Employment Law</option>
+                    <option value="entertainment">Entertainment Law</option>
+                    <option value="environmental">Environmental Law</option>
+                    <option value="estate">Estate/Probate Law</option>
+                    <option value="family">Family Law</option>
+                    <option value="human-rights">Human Rights Law</option>
+                    <option value="immigration">Immigration Law</option>
+                    <option value="intellectual-property">
+                      Intellectual Property Law
+                    </option>
+                    <option value="international">International Law</option>
+                    <option value="labor">Labor Law</option>
+                    <option value="maritime">Maritime Law</option>
+                    <option value="medical">Medical Malpractice Law</option>
+                    <option value="personal-injury">Personal Injury Law</option>
+                    <option value="property">Property Law</option>
+                    <option value="real-estate">Real Estate Law</option>
+                    <option value="sports">Sports Law</option>
+                    <option value="tax">Tax Law</option>
+                    <option value="tort">Tort Law</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label for="experienceYears">Years of experience</label>
+                  <input
+                    id="experienceYears"
+                    type="number"
+                    min="0"
+                    placeholder="e.g. 5"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="availability">Availability</label>
+                  <select id="availability">
+                    <option value="">Select availability</option>
+                    <option value="weekdays">Weekdays</option>
+                    <option value="weekends">Weekends</option>
+                    <option value="morning">Morning</option>
+                    <option value="afternoon">Afternoon</option>
+                    <option value="evening">Evening</option>
+                    <option value="flexible">Flexible</option>
+                  </select>
+                </div>
+                <div class="form-control">
+                  <label for="languages">Languages</label>
+                  <input id="languages" placeholder="English, Nepali" />
+                </div>
+                <div class="form-control">
+                  <label for="bio">Short professional bio</label>
+                  <textarea
+                    id="bio"
+                    rows="3"
+                    placeholder="Describe your experience and practice areas"
+                  ></textarea>
+                </div>
+                <div class="form-control">
+                  <label for="consultationFee">Consultation fee (NPR)</label>
+                  <input
+                    id="consultationFee"
+                    type="number"
+                    min="0"
+                    placeholder="Enter your consultation fee"
+                  />
+                </div>
+                <div class="form-control">
+                  <label for="profilePicture">Profile photo</label>
+                  <input id="profilePicture" type="file" accept="image/*" />
+                  <span class="file-hint"
+                    >Optional: upload a professional profile photo.</span
+                  >
+                </div>
+                <div class="form-control">
+                  <label for="lawyerDocuments">Supporting documents</label>
+                  <input
+                    id="lawyerDocuments"
+                    type="file"
+                    accept=".pdf,.jpg,.jpeg,.png"
+                    multiple
+                  />
+                  <span class="file-hint"
+                    >Upload license, ID, and certificates.</span
+                  >
+                </div>
+              </div>
+              <div class="step-controls full">
+                <button id="backStep" class="btn-outline" type="button">
+                  Back
+                </button>
+                <button class="btn-primary" type="submit">
+                  Create account
+                </button>
+              </div>
+              <p class="input-note">
+                Lawyers will be verified before receiving consultations or
+                appointment requests.
+              </p>
+            </div>
+          </form>
+          <button id="googleBtn" class="btn-outline full-width" type="button">
+            Continue with Google
+          </button>
+          <p id="msg" class="subtitle"></p>
+          <p class="subtitle">
+            Already have an account? <a href="/login/">Login</a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script src="{% static 'app.js' %}"></script>
+    <script>
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("open");
+      }
+
+      const msg = document.getElementById("msg");
+      const step1 = document.querySelector('.form-step[data-step="1"]');
+      const step2 = document.querySelector('.form-step[data-step="2"]');
+      const nextStep = document.getElementById("nextStep");
+      const backStep = document.getElementById("backStep");
+      const lawyerFields = document.getElementById("lawyerFields");
+      const progressSteps = document.querySelectorAll(".progress-step");
+
+      function updateProgress(step) {
+        progressSteps.forEach((item, index) => {
+          item.classList.toggle("active", index === step - 1);
+          item.classList.toggle("completed", index < step - 1);
+        });
+      }
+
+      function updateLawyerFields() {
+        const role = document.querySelector('input[name="role"]:checked').value;
+        lawyerFields.style.display = role === "lawyer" ? "block" : "none";
+      }
+
+      document.querySelectorAll('input[name="role"]').forEach((input) => {
+        input.addEventListener("change", updateLawyerFields);
+      });
+
+      updateLawyerFields();
+
+      nextStep.addEventListener("click", () => {
+        if (
+          !document.getElementById("name").value.trim() ||
+          !document.getElementById("email").value.trim() ||
+          !document.getElementById("phone").value.trim()
+        ) {
+          msg.textContent = "Please complete all fields before continuing.";
+          msg.style.color = "#b91c1c";
+          return;
+        }
+        step1.classList.remove("active");
+        step2.classList.add("active");
+        updateProgress(2);
+        updateLawyerFields();
+        msg.textContent = "";
+      });
+
+      backStep.addEventListener("click", () => {
+        step2.classList.remove("active");
+        step1.classList.add("active");
+        updateProgress(1);
+        msg.textContent = "";
+      });
+
+      document
+        .getElementById("signupForm")
+        .addEventListener("submit", async (e) => {
+          e.preventDefault();
+          const password = document.getElementById("password").value;
+          const confirmPassword =
+            document.getElementById("confirmPassword").value;
+          if (password !== confirmPassword) {
+            msg.textContent = "Passwords do not match.";
+            msg.style.color = "#b91c1c";
+            return;
+          }
+          if (password.length < 6) {
+            msg.textContent = "Password must be at least 6 characters.";
+            msg.style.color = "#b91c1c";
+            return;
+          }
+          const role = document.querySelector(
+            'input[name="role"]:checked',
+          ).value;
+          const licenseNumber = document
+            .getElementById("licenseNumber")
+            .value.trim();
+          const district = document.getElementById("district").value.trim();
+          const specialization = document
+            .getElementById("specialization")
+            .value.trim();
+          const legalArea = document.getElementById("legalArea").value;
+          const experienceYears = document
+            .getElementById("experienceYears")
+            .value.trim();
+          const availability = document.getElementById("availability").value;
+          const languages = document.getElementById("languages").value.trim();
+          const bio = document.getElementById("bio").value.trim();
+          if (role === "lawyer") {
+            if (
+              !licenseNumber ||
+              !district ||
+              !specialization ||
+              !legalArea ||
+              !experienceYears ||
+              !availability ||
+              !languages ||
+              !bio
+            ) {
+              msg.textContent =
+                "Lawyer registrations require license number, district, specialization, availability, and a short bio.";
+              msg.style.color = "#b91c1c";
+              return;
+            }
+          }
+          try {
+            const profilePicture =
+              document.getElementById("profilePicture").files[0];
+            const lawyerDocuments = Array.from(
+              document.getElementById("lawyerDocuments").files,
+            ).map((file) => file.name);
+            const consultationFeeInput =
+              document.getElementById("consultationFee");
+            const consultationFee = consultationFeeInput
+              ? consultationFeeInput.value.trim()
+              : "";
+            const data = await fetchJson("/signup/", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({
+                name: document.getElementById("name").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                phone: document.getElementById("phone").value.trim(),
+                password,
+                role,
+                licenseNumber,
+                district,
+                specialization,
+                legalArea,
+                experienceYears,
+                availability,
+                languages,
+                bio,
+                consultationFee,
+                profilePictureName: profilePicture ? profilePicture.name : "",
+                supportingDocuments: lawyerDocuments,
+              }),
+            });
+            window.KanoonAuth.saveAuth(data);
+            msg.textContent = "Registration successful. Redirecting to home...";
+            msg.style.color = "#16a34a";
+            setTimeout(() => {
+              location.href = "/";
+            }, 1200);
+          } catch (err) {
+            msg.textContent = err.message;
+            msg.style.color = "#b91c1c";
+          }
+        });
+
+      document
+        .getElementById("googleBtn")
+        .addEventListener("click", async () => {
+          // Initialize Google Sign-In
+          google.accounts.id.initialize({
+            client_id: "{{ google_client_id }}",
+            callback: handleGoogleSignUp,
+          });
+          google.accounts.id.renderButton(
+            document.getElementById("googleBtn"),
+            {
+              theme: "outline",
+              size: "large",
+              text: "continue_with",
+            },
+          );
+          google.accounts.id.prompt();
+        });
+
+      async function handleGoogleSignUp(response) {
+        try {
+          const data = await fetchJson("/api/auth/google", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ token: response.credential }),
+          });
+          window.KanoonAuth.saveAuth(data);
+          msg.textContent = "Registration successful. Redirecting to home...";
+          msg.style.color = "#16a34a";
+          setTimeout(() => {
+            location.href = "/";
+          }, 1000);
+        } catch (err) {
+          msg.textContent = err.message;
+          msg.style.color = "#b91c1c";
+        }
+      }
+    </script>
+  </body>
+</html>
