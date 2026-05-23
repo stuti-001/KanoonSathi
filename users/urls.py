@@ -14,6 +14,8 @@ urlpatterns = [
     path('meeting/', views.meeting, name='meeting'),
     path('logout/', views.logout_view, name='logout'),
 
-    path("api/consult", views.consult_ai, name="consult_ai"),
-    path("api/auth/google", views.google_oauth, name="google_oauth"),
+    path('api/appointments', views.api_appointments, name='api_appointments'),
+    path('api/lawyers', views.api_lawyers, name='api_lawyers'),
+    path('api/consult', views.consult_ai, name='consult_ai'),
+    path('api/auth/google', views.google_oauth, name='google_oauth'),
 ]

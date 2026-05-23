@@ -81,9 +81,18 @@
 
       const lawyerSelect = document.getElementById("lawyerId");
       const msg = document.getElementById("msg");
+      const submitButton = document.querySelector("button[type='submit']");
 
       async function loadLawyers() {
         const lawyers = await fetchJson("/api/lawyers");
+        if (!lawyers.length) {
+          lawyerSelect.innerHTML = '<option value="">No lawyers available</option>';
+          submitButton.disabled = true;
+          msg.textContent = 'There are no lawyers registered yet. Please add lawyers or check back later.';
+          msg.style.color = 'orange';
+          return;
+        }
+
         lawyerSelect.innerHTML =
           '<option value="">Select Lawyer</option>' +
           lawyers

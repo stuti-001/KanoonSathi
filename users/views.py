@@ -11,6 +11,8 @@ from .appointment_views import (
     appointments,
     book_appointment,
     meeting,
+    api_appointments,
+    api_lawyers,
 )
 from .findlawyers_views import lawyers
 from .ai_views import consult_page, consult_ai
