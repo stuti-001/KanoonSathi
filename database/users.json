@@ -22,5 +22,21 @@
     "email": "local2@example.com",
     "role": "user",
     "phone": "9800000001"
+  },
+  {
+    "id": 4,
+    "created_at": "2026-05-25T02:07:22.089218",
+    "name": "laxmi thapa",
+    "email": "laxmi40@gmail.com",
+    "role": "user",
+    "phone": "9807654321"
+  },
+  {
+    "id": 5,
+    "created_at": "2026-05-25T02:16:02.793997",
+    "name": "prince kc",
+    "email": "princekc645@gmail.com",
+    "role": "lawyer",
+    "phone": "987654321"
   }
 ]
