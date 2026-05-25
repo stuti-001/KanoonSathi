@@ -403,7 +403,7 @@
             msg.textContent = "Registration successful. Redirecting to home...";
             msg.style.color = "#16a34a";
             setTimeout(() => {
-              location.href = "/";
+              location.href = data.redirect_url || "/";
             }, 1200);
           } catch (err) {
             msg.textContent = err.message;

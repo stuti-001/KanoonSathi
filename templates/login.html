@@ -103,7 +103,7 @@
               }),
             });
             window.KanoonAuth.saveAuth(data);
-            location.href = "/dashboard/";
+            location.href = data.redirect_url || "/dashboard/";
           } catch (err) {
             msg.textContent = err.message;
             msg.style.color = "#b91c1c";

@@ -71,28 +71,35 @@ def signup(request):
 @csrf_exempt
 def login_view(request):
     if request.method == 'POST':
-        data = json.loads(request.body)
+        try:
+            data = json.loads(request.body)
+        except json.JSONDecodeError:
+            return JsonResponse({'error': 'Invalid JSON body'}, status=400)
+
         email = data.get('email')
         password = data.get('password')
 
-        user = authenticate(request, username=email, password=password)
+        try:
+            user = authenticate(request, username=email, password=password)
 
-        if user is not None:
-            login(request, user)
+            if user is not None:
+                login(request, user)
 
-            # if user was created as a lawyer earlier, send redirect instruction
-            is_lawyer = bool(user.is_staff)
-            redirect_url = reverse(
-                'lawyer_dashboard') if is_lawyer else reverse('dashboard')
+                # if user was created as a lawyer earlier, send redirect instruction
+                is_lawyer = bool(user.is_staff)
+                redirect_url = reverse(
+                    'lawyer_dashboard') if is_lawyer else reverse('dashboard')
 
-            return JsonResponse({
-                'message': 'Login successful',
-                'email': email,
-                'is_lawyer': is_lawyer,
-                'redirect_url': redirect_url,
-            })
-        else:
-            return JsonResponse({'error': 'Invalid email or password'}, status=401)
+                return JsonResponse({
+                    'message': 'Login successful',
+                    'email': email,
+                    'is_lawyer': is_lawyer,
+                    'redirect_url': redirect_url,
+                })
+            else:
+                return JsonResponse({'error': 'Invalid email or password'}, status=401)
+        except Exception as e:
+            return JsonResponse({'error': str(e)}, status=500)
 
     # GET request - just show the page
     return render(request, 'login.html', {
