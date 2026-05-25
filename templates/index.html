@@ -138,6 +138,8 @@
       </div>
     </footer>
 
+    <script src="{% static 'app.js' %}"></script>
+
     <script>
       function toggleMenu() {
         document.querySelector(".menu").classList.toggle("open");
@@ -146,7 +148,7 @@
       // Update navigation based on authentication status
       function updateNavigation() {
         const nav = document.getElementById("mainNav");
-        const auth = window.KanoonAuth.getUser();
+        const auth = window.KanoonAuth?.getUser?.();
 
         if (auth) {
           // User is logged in
@@ -176,7 +178,5 @@
       // Update navigation on page load
       document.addEventListener("DOMContentLoaded", updateNavigation);
     </script>
-
-    <script src="{% static 'app.js' %}"></script>
   </body>
 </html>
