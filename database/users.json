@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "created_at": "2026-05-23T17:23:12.429716",
+    "name": "Local User",
+    "email": "localuser@example.com",
+    "role": "user",
+    "phone": "9800000000"
+  },
+  {
+    "id": 2,
+    "created_at": "2026-05-23T17:24:46.068224",
+    "name": "hari magar",
+    "email": "harikumar34@gmail.com",
+    "role": "user",
+    "phone": "9876543421"
+  },
+  {
+    "id": 3,
+    "created_at": "2026-05-23T17:28:47.068827",
+    "name": "Local User2",
+    "email": "local2@example.com",
+    "role": "user",
+    "phone": "9800000001"
+  },
+  {
+    "id": 4,
+    "created_at": "2026-05-25T02:07:22.089218",
+    "name": "laxmi thapa",
+    "email": "laxmi40@gmail.com",
+    "role": "user",
+    "phone": "9807654321"
+  },
+  {
+    "id": 5,
+    "created_at": "2026-05-25T02:16:02.793997",
+    "name": "prince kc",
+    "email": "princekc645@gmail.com",
+    "role": "lawyer",
+    "phone": "987654321"
+  }
+]

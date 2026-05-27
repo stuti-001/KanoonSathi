@@ -1,29 +1,38 @@
-async function fetchJson(url, options = {}) {
-    options.headers = {
-        Accept: 'application/json',
-        ...(options.headers || {}),
-    };
+function escapeHtml(value) {
+    return String(value || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
 
+async function fetchJson(url, options) {
     const response = await fetch(url, options);
-    const contentType = response.headers.get('content-type') || '';
     const text = await response.text();
+    let data = {};
 
-    let data;
-    if (contentType.includes('application/json')) {
-        try {
+    try {
+        if (text) {
             data = JSON.parse(text);
-        } catch (err) {
-            throw new Error(`Invalid JSON response (${response.status})`);
         }
+    } catch (error) {
+        // Provide a more specific message based on HTTP status when server returns non-JSON (HTML/error page)
+        if (!response.ok) {
+            if (response.status >= 500) {
+                throw new Error('Server error. Please try again later.');
+            } else if (response.status === 401) {
+                throw new Error('Invalid email or password.');
+            } else if (response.status === 400) {
+                throw new Error('Invalid input. Please check your details and try again.');
+            }
+        }
+
+        throw new Error('Unable to parse server response. Please try again.');
     }
 
     if (!response.ok) {
-        const message = data?.error || text || `Request failed with status ${response.status}`;
-        throw new Error(message);
-    }
-
-    if (data === undefined) {
-        throw new Error('Expected JSON response but received non-JSON content');
+        throw new Error(data.error || data.message || 'Login failed. Please check your credentials and try again.');
     }
 
     return data;
