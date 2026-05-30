@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | Book Appointment</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container inner">
+            <a class="logo" href="index.html">KanoonSathi</a>
+            <nav class="menu" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html">My Appointments</a>
+                <a href="#" id="logoutLink" style="display:none;">Logout</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="title">Book Appointment</h2>
+            <p class="subtitle">Your chat summary will be shared with selected lawyer before consultation.</p>
+
+            <div id="lawyerPreview" class="card" style="display:none;margin-bottom:1.5rem;"></div>
+
+            <form id="form" class="card booking-grid">
+                <input class="full" id="userName" placeholder="Your full name" required />
+                <input class="full" id="email" type="email" placeholder="Email address" required />
+                <input class="full" id="phone" placeholder="Phone number (98XXXXXXXX)" required />
+                <select class="full" id="lawyerId" required>
+                    <option value="">Select a lawyer</option>
+                </select>
+                <input type="date" id="date" required />
+                <input type="time" id="time" required />
+                <select id="mode">
+                    <option value="Online">Online</option>
+                    <option value="In-Person">In-Person</option>
+                </select>
+                <textarea class="full" id="issueSummary" rows="3" placeholder="Describe your legal issue briefly"></textarea>
+                <textarea class="full" id="chatSummary" rows="3" placeholder="Paste AI chat summary (optional)"></textarea>
+                <button class="btn-primary full" type="submit">Confirm Booking</button>
+            </form>
+            <p id="msg"></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>KanoonSathi Nepal</h3>
+                <p>Making legal help accessible, efficient, and user-friendly.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p>Consult AI</p>
+                <p>Find Lawyer</p>
+                <p>Book Appointment</p>
+            </div>
+            <div>
+                <h4>Notice</h4>
+                <p>AI responses are basic guidance only, not final legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
+        }
+
+        (function () {
+            try {
+                const auth = localStorage.getItem('kanoon_auth');
+                const logoutLink = document.getElementById('logoutLink');
+                if (logoutLink) {
+                    logoutLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        localStorage.removeItem('kanoon_auth');
+                        location.href = 'index.html';
+                    });
+                }
+                if (auth) {
+                    if (logoutLink) logoutLink.style.display = 'inline';
+                    const nav = document.getElementById('mainNav');
+                    const user = JSON.parse(auth);
+                    const dashboardLink = document.createElement('a');
+                    dashboardLink.href = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
+                    dashboardLink.textContent = 'Dashboard';
+                    nav.insertBefore(dashboardLink, nav.lastElementChild);
+                }
+            } catch (e) { }
+        })();
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const d = document.createElement('div');
+            d.textContent = text;
+            return d.innerHTML;
+        }
+
+        const lawyers = [
+            { id: 'l1', name: 'Adv. Ramesh Gautam', legalArea: 'Criminal Law', district: 'Kathmandu', feeNpr: 1500 },
+            { id: 'l2', name: 'Adv. Sunita Sharma', legalArea: 'Criminal Law', district: 'Lalitpur', feeNpr: 1200 },
+            { id: 'l3', name: 'Adv. Prakash Adhikari', legalArea: 'Criminal Law', district: 'Pokhara', feeNpr: 1000 },
+            { id: 'l4', name: 'Adv. Anita Joshi', legalArea: 'Business/Corporate Law', district: 'Kathmandu', feeNpr: 2500 },
+            { id: 'l5', name: 'Adv. Binod Khadka', legalArea: 'Business/Corporate Law', district: 'Lalitpur', feeNpr: 1800 },
+            { id: 'l6', name: 'Adv. Meena Poudel', legalArea: 'Family Law', district: 'Kathmandu', feeNpr: 1300 },
+            { id: 'l7', name: 'Adv. Rajesh Thapa', legalArea: 'Family Law', district: 'Biratnagar', feeNpr: 900 },
+            { id: 'l8', name: 'Adv. Sita Rai', legalArea: 'Civil Law', district: 'Pokhara', feeNpr: 1100 },
+            { id: 'l9', name: 'Adv. Deepak Shrestha', legalArea: 'Civil Law', district: 'Lalitpur', feeNpr: 800 },
+            { id: 'l10', name: 'Adv. Kamala Devi', legalArea: 'Property Law', district: 'Kathmandu', feeNpr: 2000 },
+            { id: 'l11', name: 'Adv. Gopal Bhattarai', legalArea: 'Property Law', district: 'Chitwan', feeNpr: 1200 },
+            { id: 'l12', name: 'Adv. Radha Acharya', legalArea: 'Labor Law', district: 'Kathmandu', feeNpr: 1000 },
+            { id: 'l13', name: 'Adv. Hari Pandey', legalArea: 'Constitutional Law', district: 'Kathmandu', feeNpr: 3000 },
+            { id: 'l14', name: 'Adv. Maya Gurung', legalArea: 'Tax Law', district: 'Pokhara', feeNpr: 1500 },
+            { id: 'l15', name: 'Adv. Sagar Basnet', legalArea: 'Banking and Finance Law', district: 'Kathmandu', feeNpr: 2200 },
+            { id: 'l16', name: 'Adv. Laxmi Neupane', legalArea: 'Human Rights Law', district: 'Lalitpur', feeNpr: 800 },
+            { id: 'l17', name: 'Adv. Kishor Bhandari', legalArea: 'Immigration Law', district: 'Kathmandu', feeNpr: 1600 },
+            { id: 'l18', name: 'Adv. Asmita Koirala', legalArea: 'Medical Malpractice Law', district: 'Kathmandu', feeNpr: 1800 },
+            { id: 'l19', name: 'Adv. Nabin Shrestha', legalArea: 'Cyber Law', district: 'Lalitpur', feeNpr: 1400 },
+            { id: 'l20', name: 'Adv. Shanti Maharjan', legalArea: 'Environmental Law', district: 'Pokhara', feeNpr: 1100 },
+            { id: 'l21', name: 'Adv. Dinesh Aryal', legalArea: 'Criminal Law', district: 'Butwal', feeNpr: 900 },
+            { id: 'l22', name: 'Adv. Pooja Singh', legalArea: 'Family Law', district: 'Jhapa', feeNpr: 700 },
+            { id: 'l23', name: 'Adv. Rajan Oli', legalArea: 'Business/Corporate Law', district: 'Kathmandu', feeNpr: 2800 },
+            { id: 'l24', name: 'Adv. Bina Chhetri', legalArea: 'Civil Law', district: 'Kaski', feeNpr: 850 },
+        ];
+
+        const lawyerSelect = document.getElementById("lawyerId");
+        const msg = document.getElementById("msg");
+        const preview = document.getElementById("lawyerPreview");
+
+        function loadLawyers() {
+            lawyerSelect.innerHTML = '<option value="">Select a lawyer</option>' +
+                lawyers.map(l =>
+                    `<option value="${l.id}">${escapeHtml(l.name)} — ${escapeHtml(l.legalArea)} (${escapeHtml(l.district)}) — NPR ${l.feeNpr}</option>`
+                ).join("");
+
+            const pre = new URLSearchParams(location.search).get("lawyerId");
+            if (pre) {
+                lawyerSelect.value = pre;
+                showPreview(pre);
+            }
+        }
+
+        function showPreview(id) {
+            const l = lawyers.find(x => x.id === id);
+            if (!l) { preview.style.display = 'none'; return; }
+            preview.style.display = 'block';
+            preview.innerHTML = `
+                <div style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap;">
+                    <div style="width:56px;height:56px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.5rem;font-weight:700;flex-shrink:0;">${l.name.charAt(0)}</div>
+                    <div style="flex:1;">
+                        <strong style="font-size:1.1rem;">${escapeHtml(l.name)}</strong>
+                        <p style="margin:0.15rem 0;color:var(--muted);font-size:0.9rem;">${escapeHtml(l.legalArea)} — ${escapeHtml(l.district)}</p>
+                        <p style="margin:0;color:var(--primary);font-weight:700;font-size:0.95rem;">Consultation: NPR ${l.feeNpr}</p>
+                    </div>
+                </div>
+            `;
+        }
+
+        lawyerSelect.addEventListener('change', () => {
+            if (lawyerSelect.value) showPreview(lawyerSelect.value);
+            else preview.style.display = 'none';
+        });
+
+        document.getElementById("form").onsubmit = (e) => {
+            e.preventDefault();
+            const lawyer = lawyers.find(l => l.id === lawyerSelect.value);
+            if (!lawyer) {
+                msg.textContent = 'Please select a lawyer.';
+                msg.style.color = '#b91c1c';
+                return;
+            }
+
+            const appointment = {
+                id: 'apt_' + Date.now(),
+                lawyerName: lawyer.name,
+                legalArea: lawyer.legalArea,
+                district: lawyer.district,
+                fee: lawyer.feeNpr,
+                userName: document.getElementById("userName").value.trim(),
+                email: document.getElementById("email").value.trim(),
+                phone: document.getElementById("phone").value.trim(),
+                date: document.getElementById("date").value,
+                time: document.getElementById("time").value,
+                mode: document.getElementById("mode").value,
+                issueSummary: document.getElementById("issueSummary").value.trim(),
+                chatSummary: document.getElementById("chatSummary").value.trim(),
+                status: 'Confirmed',
+                createdAt: new Date().toISOString()
+            };
+
+            let appointments = [];
+            try {
+                const stored = localStorage.getItem('kanoon_appointments');
+                if (stored) appointments = JSON.parse(stored);
+            } catch (e) { }
+            appointments.push(appointment);
+            localStorage.setItem('kanoon_appointments', JSON.stringify(appointments));
+
+            msg.textContent = 'Appointment booked successfully! Redirecting to My Appointments...';
+            msg.style.color = '#16a34a';
+            document.getElementById("form").reset();
+            preview.style.display = 'none';
+
+            setTimeout(() => {
+                location.href = 'appointments.html';
+            }, 1200);
+        };
+
+        loadLawyers();
+    </script>
+</body>
+
+</html>

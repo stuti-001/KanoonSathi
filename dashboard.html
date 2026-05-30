@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | User Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container inner">
+            <a class="logo" href="index.html">KanoonSathi</a>
+            <nav class="menu" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="consult.html?from=dashboard">Consult AI</a>
+                <a href="lawyers.html?from=dashboard">Find Lawyer</a>
+                <a href="appointments.html?from=dashboard">My Appointments</a>
+                <a href="dashboard.html" class="active">Dashboard</a>
+                <a href="#" id="logoutLink">Logout</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="dashboard-hero">
+        <div class="container">
+            <div class="dashboard-hero-card">
+                <div>
+                    <span class="tag">Welcome back</span>
+                    <h1 id="greeting">Hi, User</h1>
+                    <p>Track appointments, review your case summary, and connect with trusted lawyers from one dashboard.</p>
+                </div>
+                <div class="hero-summary">
+                    <div>
+                        <p>Account status</p>
+                        <strong>Active Member</strong>
+                    </div>
+                    <div>
+                        <p>Next appointment</p>
+                        <strong>May 12, 2026 · 10:30 AM</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="dashboard-metrics section">
+        <div class="container metrics-grid">
+            <article class="metric-card">
+                <span class="metric-label">Upcoming appointments</span>
+                <strong>3</strong>
+            </article>
+            <article class="metric-card">
+                <span class="metric-label">Active cases</span>
+                <strong>5</strong>
+            </article>
+            <article class="metric-card">
+                <span class="metric-label">Unread messages</span>
+                <strong>7</strong>
+            </article>
+            <article class="metric-card">
+                <span class="metric-label">Saved lawyers</span>
+                <strong>12</strong>
+            </article>
+        </div>
+    </section>
+
+    <section class="dashboard-main section">
+        <div class="container dashboard-layout">
+            <main class="dashboard-column">
+                <article class="panel panel-actions">
+                    <div class="panel-header">
+                        <h2>Quick actions</h2>
+                        <span class="badge">Fast</span>
+                    </div>
+                    <div class="actions-grid">
+                        <a class="action-card" href="appointments.html?from=dashboard">Book Appointment</a>
+                        <a class="action-card" href="consult.html?from=dashboard">Start Consultation</a>
+                        <a class="action-card" href="lawyers.html?from=dashboard">Find Lawyer</a>
+                        <a class="action-card" href="consult.html?from=dashboard">Contact Support</a>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-header">
+                        <h2>Recent activity</h2>
+                        <span class="muted">Updated today</span>
+                    </div>
+                    <ul class="activity-list">
+                        <li>
+                            <strong>Consulted AI</strong>
+                            <span>Case summary created for property dispute</span>
+                        </li>
+                        <li>
+                            <strong>Appointment confirmed</strong>
+                            <span>Meeting with lawyer Ramesh Gautam</span>
+                        </li>
+                        <li>
+                            <strong>New message</strong>
+                            <span>Lawyer replied to your custody inquiry</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-header">
+                        <h2>Legal reminders</h2>
+                    </div>
+                    <div class="reminder-list">
+                        <div class="reminder-item">
+                            <p>Submit documents for land registration</p>
+                            <span>Due May 15</span>
+                        </div>
+                        <div class="reminder-item">
+                            <p>Review draft notice for tenant dispute</p>
+                            <span>Due May 18</span>
+                        </div>
+                    </div>
+                </article>
+            </main>
+
+            <aside class="dashboard-sidebar">
+                <article class="panel panel-appointments">
+                    <div class="panel-header">
+                        <h2>Next appointment</h2>
+                        <span class="badge">Confirmed</span>
+                    </div>
+                    <div class="appointment-card">
+                        <p class="appointment-time">May 12 · 10:30 AM</p>
+                        <h3>Ramesh Gautam</h3>
+                        <p>Family law consultation at KTM Legal Hub</p>
+                        <a href="appointments.html" class="btn-outline">View details</a>
+                    </div>
+                </article>
+
+                <article class="panel">
+                    <div class="panel-header">
+                        <h2>Case summary</h2>
+                    </div>
+                    <p class="case-summary">You have ongoing cases in family law and property law. Your AI summary is ready for your next lawyer review.</p>
+                </article>
+
+                <article class="panel panel-support">
+                    <div class="panel-header">
+                        <h2>Need help?</h2>
+                    </div>
+                    <p>If you have questions or need urgent legal support, our team is available 24/7.</p>
+                    <a href="consult.html?from=dashboard" class="btn-primary">Ask AI assistant</a>
+                </article>
+            </aside>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>KanoonSathi Nepal</h3>
+                <p>Making legal help accessible, efficient, and user-friendly.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p>Consult AI</p>
+                <p>Find Lawyer</p>
+                <p>Book Appointment</p>
+            </div>
+            <div>
+                <h4>Notice</h4>
+                <p>AI responses are basic guidance only, not final legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() { document.querySelector('.menu').classList.toggle('open'); }
+
+        (function () {
+            try {
+                const raw = localStorage.getItem('kanoon_auth');
+                if (raw) {
+                    const auth = JSON.parse(raw);
+                    const name = auth.name || auth.email || 'User';
+                    const g = document.getElementById('greeting');
+                    if (g) g.textContent = `Hi, ${name.split(' ')[0]}`;
+
+                    const logout = document.getElementById('logoutLink');
+                    if (logout) {
+                        logout.addEventListener('click', (e) => {
+                            e.preventDefault();
+                            localStorage.removeItem('kanoon_auth');
+                            location.href = 'index.html';
+                        });
+                    }
+
+                    if (auth.role === 'lawyer') {
+                        const container = document.querySelector('.dashboard-hero .container div');
+                        if (container && !container.querySelector('.lawyer-link')) {
+                            const link = document.createElement('a');
+                            link.href = 'lawyer-dashboard.html';
+                            link.className = 'btn-outline lawyer-link';
+                            link.style.marginLeft = '8px';
+                            link.textContent = 'Open Lawyer Dashboard';
+                            container.appendChild(link);
+                        }
+                    }
+                }
+            } catch (e) { /* no-op */ }
+        })();
+    </script>
+</body>
+
+</html>

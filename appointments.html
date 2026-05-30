@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | My Appointments</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container inner">
+            <a class="logo" href="index.html">KanoonSathi</a>
+            <nav class="menu" id="mainNav">
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html" class="active">My Appointments</a>
+                <a href="#" id="logoutLink">Logout</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;">
+                <div>
+                    <h2 class="title" style="margin-bottom:0.2rem;">My Appointments</h2>
+                    <p class="subtitle" style="margin-bottom:0;">View and manage your consultation bookings.</p>
+                </div>
+                <a href="lawyers.html" class="btn-primary">Book New Appointment</a>
+            </div>
+
+            <div id="appointmentList" style="margin-top:2rem;"></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>KanoonSathi Nepal</h3>
+                <p>Making legal help accessible, efficient, and user-friendly.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p>Consult AI</p>
+                <p>Find Lawyer</p>
+                <p>Book Appointment</p>
+            </div>
+            <div>
+                <h4>Notice</h4>
+                <p>AI responses are basic guidance only, not final legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
+        }
+
+        (function () {
+            try {
+                const from = new URLSearchParams(location.search).get('from') || '';
+                const raw = localStorage.getItem('kanoon_auth');
+                if (!raw && !from) { location.href = 'login.html'; return; }
+                const logoutLink = document.getElementById('logoutLink');
+                if (logoutLink) {
+                    logoutLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        localStorage.removeItem('kanoon_auth');
+                        location.href = 'index.html';
+                    });
+                }
+                let dashboardHref = '';
+                if (from === 'lawyer-dashboard') dashboardHref = 'lawyer-dashboard.html';
+                else if (from === 'dashboard') dashboardHref = 'dashboard.html';
+                else if (raw) {
+                    try {
+                        const user = JSON.parse(raw);
+                        dashboardHref = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
+                    } catch (e) { }
+                }
+                const nav = document.getElementById('mainNav');
+                if (nav) {
+                    if (dashboardHref) {
+                        const link = document.createElement('a');
+                        link.href = dashboardHref;
+                        link.textContent = 'Dashboard';
+                        nav.insertBefore(link, nav.lastElementChild);
+                    }
+                    if (from) {
+                        const suffix = '?from=' + from;
+                        Array.from(nav.children).forEach(function (a) {
+                            if (a.tagName === 'A' && a.id !== 'logoutLink' && a.href && a.href.startsWith(location.origin + '/')) {
+                                var path = a.getAttribute('href');
+                                if (path && path.indexOf('?') === -1 && path.indexOf('.html') !== -1) {
+                                    a.href = path + suffix;
+                                }
+                            }
+                        });
+                    }
+                }
+            } catch (e) { }
+        })();
+
+        function escapeHtml(text) {
+            if (!text) return '';
+            const d = document.createElement('div');
+            d.textContent = text;
+            return d.innerHTML;
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '—';
+            const d = new Date(dateStr + 'T12:00:00');
+            return d.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        }
+
+        function formatTime(timeStr) {
+            if (!timeStr) return '—';
+            const [h, m] = timeStr.split(':');
+            const hour = parseInt(h);
+            const ampm = hour >= 12 ? 'PM' : 'AM';
+            const hour12 = hour % 12 || 12;
+            return `${hour12}:${m} ${ampm}`;
+        }
+
+        function getStatusBadge(status) {
+            const colors = {
+                'Confirmed': '#10b981',
+                'Pending': '#f59e0b',
+                'Completed': '#6366f1',
+                'Cancelled': '#ef4444'
+            };
+            const bg = colors[status] || '#6b7280';
+            return `<span style="display:inline-block;padding:0.3rem 0.8rem;border-radius:999px;background:${bg}15;color:${bg};font-weight:700;font-size:0.8rem;">${escapeHtml(status)}</span>`;
+        }
+
+        function loadAppointments() {
+            const list = document.getElementById("appointmentList");
+
+            let appointments = [];
+            try {
+                const stored = localStorage.getItem('kanoon_appointments');
+                if (stored) appointments = JSON.parse(stored);
+            } catch (e) { }
+
+            if (appointments.length === 0) {
+                list.innerHTML = `
+                    <div class="card" style="text-align:center;padding:3rem 2rem;">
+                        <div style="font-size:3rem;margin-bottom:1rem;">📅</div>
+                        <h3 style="margin:0 0 0.5rem;">No appointments yet</h3>
+                        <p style="color:var(--muted);margin:0 0 1.5rem;">Book a consultation with a lawyer to get started.</p>
+                        <a href="lawyers.html" class="btn-primary">Browse Lawyers</a>
+                    </div>
+                `;
+                return;
+            }
+
+            const grouped = {};
+            appointments.forEach(a => {
+                const key = a.date || 'upcoming';
+                if (!grouped[key]) grouped[key] = [];
+                grouped[key].push(a);
+            });
+
+            const sortedKeys = Object.keys(grouped).sort((a, b) => {
+                if (a === 'upcoming') return 1;
+                if (b === 'upcoming') return -1;
+                return new Date(a) - new Date(b);
+            });
+
+            list.innerHTML = sortedKeys.map(dateKey => {
+                const items = grouped[dateKey];
+                const label = dateKey === 'upcoming' ? 'Upcoming' : formatDate(dateKey);
+                return `
+                    <div style="margin-bottom:2rem;">
+                        <h3 style="margin:0 0 1rem;font-size:1.1rem;color:var(--primary);">${escapeHtml(label)}</h3>
+                        <div style="display:grid;gap:1rem;">
+                            ${items.map(a => `
+                                <article class="card" style="padding:1.25rem;">
+                                    <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:1rem;flex-wrap:wrap;">
+                                        <div style="flex:1;min-width:200px;">
+                                            <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
+                                                <div style="width:44px;height:44px;border-radius:50%;background:var(--primary);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.1rem;flex-shrink:0;">${a.lawyerName ? a.lawyerName.charAt(0) : '?'}</div>
+                                                <div>
+                                                    <h4 style="margin:0;font-size:1rem;">${escapeHtml(a.lawyerName || 'Lawyer')}</h4>
+                                                    <p style="margin:0.1rem 0 0;color:var(--muted);font-size:0.85rem;">${escapeHtml(a.legalArea || '')}</p>
+                                                </div>
+                                            </div>
+                                            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0.5rem;font-size:0.92rem;">
+                                                <div><span style="color:var(--muted);">Date:</span> <strong>${formatDate(a.date)}</strong></div>
+                                                <div><span style="color:var(--muted);">Time:</span> <strong>${formatTime(a.time)}</strong></div>
+                                                <div><span style="color:var(--muted);">Mode:</span> <strong>${escapeHtml(a.mode || 'Online')}</strong></div>
+                                                <div><span style="color:var(--muted);">Fee:</span> <strong style="color:var(--primary);">NPR ${a.fee || '—'}</strong></div>
+                                            </div>
+                                            ${a.issueSummary ? `<p style="margin:0.6rem 0 0;color:var(--text);font-size:0.9rem;border-left:3px solid var(--border);padding-left:0.75rem;">${escapeHtml(a.issueSummary)}</p>` : ''}
+                                        </div>
+                                        <div style="text-align:right;flex-shrink:0;">
+                                            ${getStatusBadge(a.status || 'Confirmed')}
+                                            ${a.status === 'Confirmed' ? `<br><a href="meeting.html?id=${escapeHtml(a.id)}&name=${escapeHtml(a.userName)}" class="btn-primary" style="margin-top:0.6rem;font-size:0.82rem;padding:0.45rem 0.9rem;">Join Meeting</a>` : ''}
+                                        </div>
+                                    </div>
+                                </article>
+                            `).join("")}
+                        </div>
+                    </div>
+                `;
+            }).join("");
+        }
+
+        loadAppointments();
+    </script>
+</body>
+
+</html>
