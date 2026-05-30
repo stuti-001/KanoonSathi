@@ -38,5 +38,21 @@
     "email": "princekc645@gmail.com",
     "role": "lawyer",
     "phone": "987654321"
+  },
+  {
+    "id": 6,
+    "created_at": "2026-05-27T02:50:06.085035",
+    "name": "Stuti Poudel",
+    "email": "stuti.poudel@kavyaschool.edu.np",
+    "role": "user",
+    "phone": "9765960402"
+  },
+  {
+    "id": 7,
+    "created_at": "2026-05-28T02:45:38.733179",
+    "name": "Stuti Poudel",
+    "email": "stutipoudel100@gmail.com",
+    "role": "user",
+    "phone": "9765960402"
   }
 ]
