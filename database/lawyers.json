@@ -17,5 +17,26 @@
     "profile_picture": "",
     "supporting_documents": [],
     "status": "pending"
+  },
+  {
+    "id": 2,
+    "created_at": "2026-05-30T14:41:39.002329",
+    "name": "Stuti Poudel",
+    "email": "stuti_poudel_a25@sunway.edu.np",
+    "phone": "9765960402",
+    "district": "Kathmandu",
+    "license_number": "1234",
+    "specialization": "Criminal lawyer",
+    "legal_area": "civil",
+    "experience_years": "4",
+    "availability": "weekends",
+    "languages": "English",
+    "bio": "I want to continue helping people",
+    "fee_npr": "499",
+    "profile_picture": "Suway ko logo.png",
+    "supporting_documents": [
+      "Nagarikta (front).jpg"
+    ],
+    "status": "pending"
   }
 ]

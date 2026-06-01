@@ -54,5 +54,13 @@
     "email": "stutipoudel100@gmail.com",
     "role": "user",
     "phone": "9765960402"
+  },
+  {
+    "id": 8,
+    "created_at": "2026-05-30T14:41:38.978272",
+    "name": "Stuti Poudel",
+    "email": "stuti_poudel_a25@sunway.edu.np",
+    "role": "lawyer",
+    "phone": "9765960402"
   }
 ]
