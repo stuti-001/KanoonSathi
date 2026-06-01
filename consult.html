@@ -129,11 +129,11 @@
 <body>
     <header class="topbar">
         <div class="container inner">
-            <a class="logo" href="/">KanoonSathi</a>
+            <a class="logo" href="index.html">KanoonSathi</a>
             <nav class="menu" id="mainNav">
-                <a href="/consult/" class="active">Consult AI</a>
-                <a href="/lawyers/">Find Lawyer</a>
-                <a href="/appointments/">My Appointments</a>
+                <a href="consult.html" class="active">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html">My Appointments</a>
                 <a href="#" id="logoutLink">Logout</a>
             </nav>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -147,23 +147,23 @@
             try {
                 const from = new URLSearchParams(location.search).get('from') || '';
                 const raw = localStorage.getItem('kanoon_auth');
-                if (!raw && !from) { location.href = '/login/'; return; }
+                if (!raw && !from) { location.href = 'login.html'; return; }
                 const logout = document.getElementById('logoutLink');
                 if (logout) {
                     logout.addEventListener('click', (e) => {
                         e.preventDefault();
                         localStorage.removeItem('kanoon_auth');
-                        location.href = '/index/';
+                        location.href = 'index.html';
                     });
                     logout.style.display = 'inline';
                 }
                 let dashboardHref = '';
-                if (from === 'lawyer-dashboard') dashboardHref = '/lawyer-dashboard/';
-                else if (from === 'dashboard') dashboardHref = '/dashboard/';
+                if (from === 'lawyer-dashboard') dashboardHref = 'lawyer-dashboard.html';
+                else if (from === 'dashboard') dashboardHref = 'dashboard.html';
                 else if (raw) {
                     try {
                         const user = JSON.parse(raw);
-                        dashboardHref = user.role === 'lawyer' ? '/lawyer-dashboard/' : '/dashboard/';
+                        dashboardHref = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
                     } catch (e) { }
                 }
                 const nav = document.getElementById('mainNav');
@@ -179,7 +179,8 @@
                         Array.from(nav.children).forEach(function (a) {
                             if (a.tagName === 'A' && a.id !== 'logoutLink' && a.href && a.href.startsWith(location.origin + '/')) {
                                 var path = a.getAttribute('href');
-                            if (path && path.indexOf('?') === -1 && path.startsWith('/')) {                                    a.href = path + suffix;
+                                if (path && path.indexOf('?') === -1 && path.indexOf('.html') !== -1) {
+                                    a.href = path + suffix;
                                 }
                             }
                         });

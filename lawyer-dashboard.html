@@ -1,5 +1,3 @@
-{% load static %}
-
 <!doctype html>
 <html lang="en">
 
@@ -7,19 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanoonSathi | Lawyer Dashboard</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="topbar">
         <div class="container inner">
-            <a class="logo" href="/">KanoonSathi</a>
+            <a class="logo" href="index.html">KanoonSathi</a>
             <nav class="menu">
-                <a href="/">Home</a>
-                <a href="consult/?from=lawyer-dashboard">Consult AI</a>
-                <a href="lawyers/?from=lawyer-dashboard">Find Lawyer</a>
-                <a href="appointments/?from=lawyer-dashboard">My Appointments</a>
-                <a href="lawyer-dashboard/?from=lawyer-dashboard" class="active">Dashboard</a>
+                <a href="index.html">Home</a>
+                <a href="consult.html?from=lawyer-dashboard">Consult AI</a>
+                <a href="lawyers.html?from=lawyer-dashboard">Find Lawyer</a>
+                <a href="appointments.html?from=lawyer-dashboard">My Appointments</a>
+                <a href="lawyer-dashboard.html" class="active">Dashboard</a>
                 <a href="#" id="logoutLink">Logout</a>
             </nav>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -230,7 +228,7 @@
         }
 
         function joinMeeting(meetingId) {
-            window.location.href = `/meeting/?id=${meetingId}&name=Lawyer`;
+            window.location.href = `meeting.html?id=${meetingId}&name=Lawyer`;
         }
 
         // Check if user is lawyer using localStorage
@@ -248,7 +246,7 @@
                         logoutLink.addEventListener('click', (e) => {
                             e.preventDefault();
                             localStorage.removeItem('kanoon_auth');
-                            location.href = '/';
+                            location.href = 'index.html';
                         });
                     }
                 }

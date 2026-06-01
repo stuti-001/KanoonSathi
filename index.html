@@ -1,5 +1,3 @@
-{% load static %}
-
 <!doctype html>
 <html lang="en">
 
@@ -7,20 +5,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanoonSathi | Home</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="topbar">
         <div class="container inner">
-            <a class="logo" href="/">KanoonSathi</a>
+            <a class="logo" href="index.html">KanoonSathi</a>
             <nav class="menu" id="mainNav">
-                <a href="/" class="active">Home</a>
-                <a href="consult/">Consult AI</a>
-                <a href="lawyers/">Find Lawyer</a>
-                <a href="appointments/">My Appointments</a>
-                <a href="signup/" class="auth-link">Signup</a>
-                <a href="login/" class="auth-link">Login</a>
+                <a href="index.html" class="active">Home</a>
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html">My Appointments</a>
+                <a href="signup.html" class="auth-link">Signup</a>
+                <a href="login.html" class="auth-link">Login</a>
                 <a href="#" id="logoutLink" style="display:none;">Logout</a>
             </nav>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -35,8 +33,8 @@
             <h1>Legal Help for Every <span>Nepali Citizen</span></h1>
             <p>KanoonSathi is an AI-powered legal consultation platform for Nepal. Describe your issue in simple English, get basic legal guidance, and connect with trusted lawyers quickly.</p>
             <div class="cta">
-                <a class="btn-outline" href="login/">Start Free Consultation</a>
-                <a class="btn-primary" href="login/">Browse Lawyers</a>
+                <a class="btn-outline" href="login.html">Start Free Consultation</a>
+                <a class="btn-primary" href="login.html">Browse Lawyers</a>
             </div>
         </div>
     </section>
@@ -110,7 +108,7 @@
                     logoutLink.addEventListener('click', (e) => {
                         e.preventDefault();
                         localStorage.removeItem('kanoon_auth');
-                        location.href = '/';
+                        location.href = 'index.html';
                     });
                 }
                 if (auth) {
@@ -120,7 +118,7 @@
                     authLinks.forEach(link => link.style.display = 'none');
                     const user = JSON.parse(auth);
                     const dashboardLink = document.createElement('a');
-                    dashboardLink.href = user.role === 'lawyer' ? 'lawyer-dashboard/' : 'dashboard/';
+                    dashboardLink.href = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
                     dashboardLink.textContent = 'Dashboard';
                     nav.insertBefore(dashboardLink, nav.lastElementChild);
                 }

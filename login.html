@@ -1,4 +1,3 @@
-{% load static %}
 <!doctype html>
 <html lang="en">
 
@@ -6,18 +5,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanoonSathi | Login</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="topbar">
         <div class="container inner">
-            <a class="logo" href="/">KanoonSathi</a>
+            <a class="logo" href="index.html">KanoonSathi</a>
             <nav class="menu" id="mainNav">
-                <a href="/">Home</a>
-                <a href="/consult/">Consult AI</a>
-                <a href="/lawyers/">Find Lawyer</a>
-                <a href="/appointments/">My Appointments</a>
+                <a href="index.html">Home</a>
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html">My Appointments</a>
                 <a href="#" id="logoutLink" style="display:none;">Logout</a>
             </nav>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -63,7 +62,7 @@
                     Continue with Google
                 </button>
                 <p id="msg" class="subtitle"></p>
-                <p class="subtitle" style="margin-top:1.2rem;">New to KanoonSathi? <a href="/signup/">Create an account</a></p>
+                <p class="subtitle" style="margin-top:1.2rem;">New to KanoonSathi? <a href="signup.html">Create an account</a></p>
             </div>
         </div>
     </section>
@@ -81,7 +80,7 @@
                     logoutLink.addEventListener('click', (e) => {
                         e.preventDefault();
                         localStorage.removeItem('kanoon_auth');
-                        location.href = '/';
+                        location.href = 'index.html';
                     });
                 }
                 if (auth && logoutLink) logoutLink.style.display = 'inline';
@@ -101,7 +100,7 @@
             const role = document.querySelector('input[name="role"]:checked').value;
             const auth = { name: email.split('@')[0], email, role, loggedInAt: new Date().toISOString() };
             localStorage.setItem('kanoon_auth', JSON.stringify(auth));
-            location.href = "/";
+            location.href = "index.html";
         });
 
         document.getElementById("googleBtn").addEventListener("click", () => {
@@ -110,7 +109,7 @@
             const name = window.prompt("Enter your display name (optional):") || email.split('@')[0];
             const auth = { name, email, role: 'user', loggedInAt: new Date().toISOString() };
             localStorage.setItem('kanoon_auth', JSON.stringify(auth));
-            location.href = "/";
+            location.href = "index.html";
         });
     </script>
 </body>

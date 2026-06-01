@@ -1,4 +1,3 @@
-{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,17 +5,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanoonSathi | My Appointments</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
     <header class="topbar">
         <div class="container inner">
-            <a class="logo" href="/">KanoonSathi</a>
+            <a class="logo" href="index.html">KanoonSathi</a>
             <nav class="menu" id="mainNav">
-                <a href="/consult/">Consult AI</a>
-                <a href="/lawyers/">Find Lawyer</a>
-                <a href="/appointments/" class="active">My Appointments</a>
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html" class="active">My Appointments</a>
                 <a href="#" id="logoutLink">Logout</a>
             </nav>
             <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
@@ -32,7 +31,7 @@
                     <h2 class="title" style="margin-bottom:0.2rem;">My Appointments</h2>
                     <p class="subtitle" style="margin-bottom:0;">View and manage your consultation bookings.</p>
                 </div>
-                <a href="/lawyers/" class="btn-primary">Book New Appointment</a>
+                <a href="lawyers.html" class="btn-primary">Book New Appointment</a>
             </div>
 
             <div id="appointmentList" style="margin-top:2rem;"></div>
@@ -67,22 +66,22 @@
             try {
                 const from = new URLSearchParams(location.search).get('from') || '';
                 const raw = localStorage.getItem('kanoon_auth');
-                if (!raw && !from) { location.href = '/login/'; return; }
+                if (!raw && !from) { location.href = 'login.html'; return; }
                 const logoutLink = document.getElementById('logoutLink');
                 if (logoutLink) {
                     logoutLink.addEventListener('click', (e) => {
                         e.preventDefault();
                         localStorage.removeItem('kanoon_auth');
-                        location.href = '/index/';
+                        location.href = 'index.html';
                     });
                 }
                 let dashboardHref = '';
-                if (from === 'lawyer-dashboard') dashboardHref = '/lawyer-dashboard/';
-                else if (from === 'dashboard') dashboardHref = '/dashboard/';
+                if (from === 'lawyer-dashboard') dashboardHref = 'lawyer-dashboard.html';
+                else if (from === 'dashboard') dashboardHref = 'dashboard.html';
                 else if (raw) {
                     try {
                         const user = JSON.parse(raw);
-                        dashboardHref = user.role === 'lawyer' ? '/lawyer-dashboard/' : '/dashboard/';
+                        dashboardHref = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
                     } catch (e) { }
                 }
                 const nav = document.getElementById('mainNav');
@@ -98,7 +97,8 @@
                         Array.from(nav.children).forEach(function (a) {
                             if (a.tagName === 'A' && a.id !== 'logoutLink' && a.href && a.href.startsWith(location.origin + '/')) {
                                 var path = a.getAttribute('href');
-if (path && path.indexOf('?') === -1 && path.startsWith('/')) {                                    a.href = path + suffix;
+                                if (path && path.indexOf('?') === -1 && path.indexOf('.html') !== -1) {
+                                    a.href = path + suffix;
                                 }
                             }
                         });
@@ -155,7 +155,7 @@ if (path && path.indexOf('?') === -1 && path.startsWith('/')) {                 
                         <div style="font-size:3rem;margin-bottom:1rem;">📅</div>
                         <h3 style="margin:0 0 0.5rem;">No appointments yet</h3>
                         <p style="color:var(--muted);margin:0 0 1.5rem;">Book a consultation with a lawyer to get started.</p>
-                        <a href="/lawyers/" class="btn-primary">Browse Lawyers</a>
+                        <a href="lawyers.html" class="btn-primary">Browse Lawyers</a>
                     </div>
                 `;
                 return;
@@ -202,7 +202,7 @@ if (path && path.indexOf('?') === -1 && path.startsWith('/')) {                 
                                         </div>
                                         <div style="text-align:right;flex-shrink:0;">
                                             ${getStatusBadge(a.status || 'Confirmed')}
-                                            ${a.status === 'Confirmed' ? `<br><a href="/meeting/?id=${escapeHtml(a.id)}&name=${escapeHtml(a.userName)}" class="btn-primary" style="margin-top:0.6rem;font-size:0.82rem;padding:0.45rem 0.9rem;">Join Meeting</a>` : ''}
+                                            ${a.status === 'Confirmed' ? `<br><a href="meeting.html?id=${escapeHtml(a.id)}&name=${escapeHtml(a.userName)}" class="btn-primary" style="margin-top:0.6rem;font-size:0.82rem;padding:0.45rem 0.9rem;">Join Meeting</a>` : ''}
                                         </div>
                                     </div>
                                 </article>
