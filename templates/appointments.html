@@ -167,14 +167,47 @@
         return `<span style="display:inline-block;padding:0.3rem 0.8rem;border-radius:999px;background:${bg}15;color:${bg};font-weight:700;font-size:0.8rem;">${escapeHtml(status)}</span>`;
       }
 
-      function loadAppointments() {
+      async function loadAppointments() {
         const list = document.getElementById("appointmentList");
+        let email = "";
+        try {
+          const auth = JSON.parse(
+            localStorage.getItem("kanoon_auth") || "null",
+          );
+          if (auth && auth.email) {
+            email = auth.email.trim().toLowerCase();
+          }
+        } catch (e) {}
+
+        if (!email) {
+          list.innerHTML = `
+                    <div class="card" style="text-align:center;padding:3rem 2rem;">
+                        <div style="font-size:3rem;margin-bottom:1rem;">📅</div>
+                        <h3 style="margin:0 0 0.5rem;">Sign in to view your appointments</h3>
+                        <p style="color:var(--muted);margin:0 0 1.5rem;">Use the email you registered with to load your bookings.</p>
+                        <a href="/login/" class="btn-primary">Login</a>
+                    </div>
+                `;
+          return;
+        }
 
         let appointments = [];
         try {
-          const stored = localStorage.getItem("kanoon_appointments");
-          if (stored) appointments = JSON.parse(stored);
-        } catch (e) {}
+          const response = await fetch(
+            `/api/appointments?email=${encodeURIComponent(email)}`,
+            {
+              credentials: "same-origin",
+            },
+          );
+          if (!response.ok) {
+            const error = await response.json().catch(() => ({}));
+            throw new Error(error.error || "Unable to load appointments.");
+          }
+          appointments = await response.json();
+        } catch (e) {
+          list.innerHTML = `<div class="card" style="text-align:center;padding:3rem 2rem;"><p style="color:#b91c1c;">${escapeHtml(e.message || "Unable to load appointments.")}</p></div>`;
+          return;
+        }
 
         if (appointments.length === 0) {
           list.innerHTML = `

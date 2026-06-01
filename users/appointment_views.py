@@ -21,9 +21,15 @@ def meeting(request):
 @csrf_exempt
 def api_appointments(request):
     if request.method == 'GET':
-        if not request.user.is_authenticated:
-            return JsonResponse({'error': 'Unauthorized'}, status=401)
-        email = request.user.username
+        email = None
+        if request.user.is_authenticated:
+            email = request.user.username
+        else:
+            email = request.GET.get('email', '').strip().lower()
+
+        if not email:
+            return JsonResponse({'error': 'Email is required to fetch appointments.'}, status=401)
+
         appointments = get_appointments_by_email(email)
         return JsonResponse(appointments, safe=False)
 
@@ -33,14 +39,16 @@ def api_appointments(request):
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON.'}, status=400)
 
-        required_fields = ['userName', 'email', 'phone', 'lawyerId', 'date', 'time']
+        required_fields = ['userName', 'email',
+                           'phone', 'lawyerId', 'date', 'time']
         missing = [f for f in required_fields if not data.get(f)]
         if missing:
             return JsonResponse({'error': f'Missing fields: {", ".join(missing)}'}, status=400)
 
         lawyer_id = data.get('lawyerId')
         lawyers = get_all_lawyers()
-        lawyer = next((l for l in lawyers if str(l.get('id')) == str(lawyer_id)), None)
+        lawyer = next((l for l in lawyers if str(
+            l.get('id')) == str(lawyer_id)), None)
         if not lawyer:
             return JsonResponse({'error': 'Selected lawyer not found.'}, status=400)
 
