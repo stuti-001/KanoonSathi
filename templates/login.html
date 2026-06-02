@@ -1,118 +1,241 @@
 {% load static %}
 <!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanoonSathi | Login</title>
     <link rel="stylesheet" href="{% static 'style.css' %}" />
-</head>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  </head>
 
-<body>
+  <body>
     <header class="topbar">
-        <div class="container inner">
-            <a class="logo" href="/">KanoonSathi</a>
-            <nav class="menu" id="mainNav">
-                <a href="/">Home</a>
-                <a href="/consult/">Consult AI</a>
-                <a href="/lawyers/">Find Lawyer</a>
-                <a href="/appointments/">My Appointments</a>
-                <a href="#" id="logoutLink" style="display:none;">Logout</a>
-            </nav>
-            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
+      <div class="container inner">
+        <a class="logo" href="/">KanoonSathi</a>
+        <nav class="menu" id="mainNav">
+          <a href="/">Home</a>
+          <a href="/consult/">Consult AI</a>
+          <a href="/lawyers/">Find Lawyer</a>
+          <a href="/appointments/">My Appointments</a>
+          <a href="#" id="logoutLink" style="display: none">Logout</a>
+        </nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </header>
 
     <section class="section">
-        <div class="container">
-            <div class="card auth-card">
-                <h2 class="title">Login</h2>
-                <p class="subtitle">Welcome back to KanoonSathi.</p>
-                <form id="loginForm" class="form-grid">
-                    <div class="form-control full">
-                        <label for="email">Email address</label>
-                        <input id="email" type="email" placeholder="name@domain.com" required />
-                    </div>
-                    <div class="form-control full">
-                        <label for="password">Password</label>
-                        <input id="password" type="password" placeholder="Enter password" required />
-                    </div>
-                    <div class="form-control role-selection full">
-                        <label class="radio-label">
-                            <input type="radio" name="role" value="user" checked />
-                            <span>Login as User</span>
-                        </label>
-                        <label class="radio-label">
-                            <input type="radio" name="role" value="lawyer" />
-                            <span>Login as Lawyer</span>
-                        </label>
-                    </div>
-                    <button class="btn-primary full" type="submit">Login</button>
-                </form>
-                <div class="auth-divider"><span>or</span></div>
-                <button id="googleBtn" class="btn-google full" type="button">
-                    <svg width="18" height="18" viewBox="0 0 48 48" fill="none" style="vertical-align:middle;margin-right:8px;">
-                        <path d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z" fill="#FFC107"/>
-                        <path d="M6.306 14.691l6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z" fill="#FF3D00"/>
-                        <path d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z" fill="#4CAF50"/>
-                        <path d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z" fill="#1976D2"/>
-                    </svg>
-                    Continue with Google
-                </button>
-                <p id="msg" class="subtitle"></p>
-                <p class="subtitle" style="margin-top:1.2rem;">New to KanoonSathi? <a href="/signup/">Create an account</a></p>
+      <div class="container">
+        <div class="card auth-card">
+          <h2 class="title">Login</h2>
+          <p class="subtitle">Welcome back to KanoonSathi.</p>
+          <form id="loginForm" class="form-grid">
+            <div class="form-control full">
+              <label for="email">Email address</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="name@domain.com"
+                required
+              />
             </div>
+            <div class="form-control full">
+              <label for="password">Password</label>
+              <input
+                id="password"
+                type="password"
+                placeholder="Enter password"
+                required
+              />
+            </div>
+            <div class="form-control role-selection full">
+              <label class="radio-label">
+                <input type="radio" name="role" value="user" checked />
+                <span>Login as User</span>
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="role" value="lawyer" />
+                <span>Login as Lawyer</span>
+              </label>
+            </div>
+            <button class="btn-primary full" type="submit">Login</button>
+          </form>
+          <div class="auth-divider"><span>or</span></div>
+          <div id="googleBtn" class="btn-google full"></div>
+          <p id="msg" class="subtitle"></p>
+          <p class="subtitle" style="margin-top: 1.2rem">
+            New to KanoonSathi? <a href="/signup/">Create an account</a>
+          </p>
         </div>
+      </div>
     </section>
 
     <script>
-        function toggleMenu() {
-            document.querySelector('.menu').classList.toggle('open');
+      function toggleMenu() {
+        document.querySelector(".menu").classList.toggle("open");
+      }
+
+      (function () {
+        try {
+          const auth = localStorage.getItem("kanoon_auth");
+          const logoutLink = document.getElementById("logoutLink");
+          if (logoutLink) {
+            logoutLink.addEventListener("click", (e) => {
+              e.preventDefault();
+              localStorage.removeItem("kanoon_auth");
+              location.href = "/";
+            });
+          }
+          if (auth && logoutLink) logoutLink.style.display = "inline";
+        } catch (e) {}
+      })();
+
+      const msg = document.getElementById("msg");
+      document.getElementById("loginForm").addEventListener("submit", (e) => {
+        e.preventDefault();
+        const email = document.getElementById("email").value.trim();
+        const password = document.getElementById("password").value;
+        const role = document.querySelector('input[name="role"]:checked').value;
+        if (!email || !password) {
+          msg.textContent = "Please fill in all fields.";
+          msg.style.color = "#b91c1c";
+          return;
         }
 
-        (function () {
-            try {
-                const auth = localStorage.getItem('kanoon_auth');
-                const logoutLink = document.getElementById('logoutLink');
-                if (logoutLink) {
-                    logoutLink.addEventListener('click', (e) => {
-                        e.preventDefault();
-                        localStorage.removeItem('kanoon_auth');
-                        location.href = '/';
-                    });
-                }
-                if (auth && logoutLink) logoutLink.style.display = 'inline';
-            } catch (e) { }
-        })();
+        msg.textContent = "Logging in...";
+        msg.style.color = "#3b82f6";
 
-        const msg = document.getElementById("msg");
-        document.getElementById("loginForm").addEventListener("submit", (e) => {
-            e.preventDefault();
-            const email = document.getElementById("email").value.trim();
-            const password = document.getElementById("password").value;
-            if (!email || !password) {
-                msg.textContent = 'Please fill in all fields.';
-                msg.style.color = '#b91c1c';
-                return;
+        fetch("/login/", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            password,
+            role,
+          }),
+        })
+          .then(async (res) => {
+            const data = await res.json();
+            if (!res.ok) {
+              msg.textContent = data.error || "Login failed.";
+              msg.style.color = "#b91c1c";
+              return;
             }
-            const role = document.querySelector('input[name="role"]:checked').value;
-            const auth = { name: email.split('@')[0], email, role, loggedInAt: new Date().toISOString() };
-            localStorage.setItem('kanoon_auth', JSON.stringify(auth));
-            location.href = "/";
-        });
+            const redirectUrl =
+              data.redirect_url ||
+              (role === "lawyer" ? "/lawyer-dashboard/" : "/dashboard/");
+            const auth = {
+              name: data.name || email.split("@")[0],
+              email,
+              role: data.role || role,
+              token: data.token || null,
+              source: "password",
+              loggedInAt: new Date().toISOString(),
+            };
+            localStorage.setItem("kanoon_auth", JSON.stringify(auth));
+            msg.textContent = "Login successful. Redirecting...";
+            msg.style.color = "#16a34a";
+            setTimeout(() => {
+              location.href = redirectUrl;
+            }, 800);
+          })
+          .catch((err) => {
+            msg.textContent = "Login failed: " + err.message;
+            msg.style.color = "#b91c1c";
+          });
+      });
 
-        document.getElementById("googleBtn").addEventListener("click", () => {
-            const email = window.prompt("Enter your Google email:");
-            if (!email) return;
-            const name = window.prompt("Enter your display name (optional):") || email.split('@')[0];
-            const auth = { name, email, role: 'user', loggedInAt: new Date().toISOString() };
-            localStorage.setItem('kanoon_auth', JSON.stringify(auth));
-            location.href = "/";
-        });
+      function handleGoogleAuthResponse(response) {
+        console.log("Google callback received", response);
+        msg.textContent = "Logging in with Google...";
+        msg.style.color = "#3b82f6";
+
+        if (!response || !response.credential) {
+          console.error("Google callback missing credential", response);
+          msg.textContent = "Google Sign-In failed. No credential received.";
+          msg.style.color = "#b91c1c";
+          return;
+        }
+
+        const role =
+          document.querySelector('input[name="role"]:checked')?.value || "user";
+
+        fetch("/api/auth/google", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            token: response.credential,
+            role: role,
+          }),
+        })
+          .then((res) => res.json())
+          .then((data) => {
+            if (data.error) {
+              msg.textContent = data.error;
+              msg.style.color = "#b91c1c";
+              return;
+            }
+            const actualRole = data.role || role;
+            const auth = {
+              name: data.name || data.email.split("@")[0],
+              email: data.email,
+              role: actualRole,
+              token: response.credential,
+              source: "google",
+              loggedInAt: new Date().toISOString(),
+            };
+            localStorage.setItem("kanoon_auth", JSON.stringify(auth));
+            msg.textContent = "Login successful. Redirecting...";
+            msg.style.color = "#16a34a";
+            setTimeout(() => {
+              location.href =
+                data.redirect_url ||
+                (actualRole === "lawyer"
+                  ? "/lawyer-dashboard/"
+                  : "/dashboard/");
+            }, 1000);
+          })
+          .catch((err) => {
+            msg.textContent = "Login failed: " + err.message;
+            msg.style.color = "#b91c1c";
+            console.error("Google OAuth error:", err);
+          });
+      }
+
+      function onGoogleSignInError() {
+        msg.textContent = "Google Sign-In failed. Please try again.";
+        msg.style.color = "#b91c1c";
+      }
+
+      function initializeGoogleAuth() {
+        if (window.google && google.accounts && google.accounts.id) {
+          google.accounts.id.initialize({
+            client_id: "{{ google_client_id }}",
+            callback: handleGoogleAuthResponse,
+            ux_mode: "popup",
+            cancel_on_tap_outside: false,
+          });
+
+          const googleBtn = document.getElementById("googleBtn");
+          if (googleBtn) {
+            google.accounts.id.renderButton(googleBtn, {
+              theme: "outline",
+              size: "large",
+              text: "continue_with",
+            });
+          }
+        } else {
+          setTimeout(initializeGoogleAuth, 150);
+        }
+      }
+
+      window.addEventListener("load", initializeGoogleAuth);
     </script>
-</body>
-
+  </body>
 </html>

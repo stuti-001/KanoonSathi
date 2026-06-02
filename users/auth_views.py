@@ -136,7 +136,8 @@ def signup(request):
                 if auth_response:
                     if hasattr(auth_response, 'user') and auth_response.user:
                         u = auth_response.user
-                        supabase_user_id = getattr(u, 'id', None) or (isinstance(u, dict) and u.get('id'))
+                        supabase_user_id = getattr(u, 'id', None) or (
+                            isinstance(u, dict) and u.get('id'))
                     elif isinstance(auth_response, dict):
                         data = auth_response.get('data') or {}
                         u = data.get('user') or auth_response.get('user')
@@ -145,10 +146,12 @@ def signup(request):
             except Exception:
                 supabase_user_id = None
 
-            local_user = _create_or_update_local_user(email, name, password, role)
+            local_user = _create_or_update_local_user(
+                email, name, password, role)
             login(request, local_user)
 
-            add_user({'name': name, 'email': email, 'role': role, 'phone': phone})
+            add_user({'name': name, 'email': email,
+                     'role': role, 'phone': phone})
 
             if role == 'lawyer':
                 add_lawyer({
@@ -176,12 +179,14 @@ def signup(request):
                 'token': token,
             })
 
-            redirect_url = reverse('lawyer_dashboard') if role == 'lawyer' else reverse('dashboard')
+            redirect_url = reverse(
+                'lawyer_dashboard') if role == 'lawyer' else reverse('dashboard')
 
             # log supabase response for debugging
             try:
                 with open('/tmp/supabase_response.log', 'a') as f:
-                    f.write(f"SIGNUP: supabase_present={bool(supabase)} user_id={supabase_user_id}\n")
+                    f.write(
+                        f"SIGNUP: supabase_present={bool(supabase)} user_id={supabase_user_id}\n")
             except Exception:
                 pass
 
@@ -269,7 +274,8 @@ def login_view(request):
 
             return JsonResponse({'error': friendly_message}, status=401)
 
-        session = getattr(auth_response, 'session', None) if auth_response is not None else None
+        session = getattr(auth_response, 'session',
+                          None) if auth_response is not None else None
         token = None
         if session is not None:
             token = getattr(session, 'access_token', None)
@@ -282,7 +288,8 @@ def login_view(request):
             if auth_response:
                 if hasattr(auth_response, 'user') and auth_response.user:
                     u = auth_response.user
-                    supabase_user_id = getattr(u, 'id', None) or (isinstance(u, dict) and u.get('id'))
+                    supabase_user_id = getattr(u, 'id', None) or (
+                        isinstance(u, dict) and u.get('id'))
                 elif isinstance(auth_response, dict):
                     data = auth_response.get('data') or {}
                     u = data.get('user') or auth_response.get('user')
@@ -293,7 +300,8 @@ def login_view(request):
 
         user = User.objects.filter(username=email).first()
         if user is None:
-            user = _create_or_update_local_user(email, email.split('@')[0], password, requested_role)
+            user = _create_or_update_local_user(
+                email, email.split('@')[0], password, requested_role)
 
         role = 'lawyer' if user.is_staff else 'user'
         if requested_role and role != requested_role:
@@ -307,10 +315,12 @@ def login_view(request):
             'token': token,
         })
 
-        redirect_url = reverse('lawyer_dashboard') if role == 'lawyer' else reverse('dashboard')
+        redirect_url = reverse(
+            'lawyer_dashboard') if role == 'lawyer' else reverse('dashboard')
         try:
             with open('/tmp/supabase_response.log', 'a') as f:
-                f.write(f"LOGIN: supabase_present={bool(supabase)} user_id={supabase_user_id}\n")
+                f.write(
+                    f"LOGIN: supabase_present={bool(supabase)} user_id={supabase_user_id}\n")
         except Exception:
             pass
 
@@ -351,6 +361,7 @@ def google_oauth(request):
     try:
         data = json.loads(request.body)
         token = data.get('token')
+        requested_role = data.get('role', 'user')
 
         if not token:
             return JsonResponse({'error': 'No token provided'}, status=400)
@@ -370,28 +381,39 @@ def google_oauth(request):
         if not email:
             return JsonResponse({'error': 'Email not provided'}, status=400)
 
-        user, created = User.objects.get_or_create(
-            username=email,
-            defaults={
-                'email': email,
-                'first_name': name.split()[0] if name else 'User',
-                'last_name': name.split()[1] if len(name.split()) > 1 else '',
-            },
-        )
+        user = User.objects.filter(username=email).first()
+        created = False
+        if user is None:
+            user, created = User.objects.get_or_create(
+                username=email,
+                defaults={
+                    'email': email,
+                    'first_name': name.split()[0] if name else 'User',
+                    'last_name': name.split()[1] if len(name.split()) > 1 else '',
+                    'is_staff': requested_role == 'lawyer',
+                },
+            )
+        role = 'lawyer' if user.is_staff else 'user'
+        if requested_role and requested_role != role:
+            return JsonResponse({'error': f'This account is registered as "{role}". Please login with the correct role.'}, status=403)
 
         login(request, user)
         set_current_user({
             'name': user.first_name,
             'email': email,
-            'role': 'lawyer' if user.is_staff else 'user',
+            'role': role,
             'token': token,
         })
 
+        redirect_url = reverse(
+            'lawyer_dashboard') if role == 'lawyer' else reverse('dashboard')
         return JsonResponse({
             'message': 'Login successful',
             'email': email,
             'name': name,
             'picture': picture,
+            'role': role,
+            'redirect_url': redirect_url,
             'is_new_user': created,
         })
 
