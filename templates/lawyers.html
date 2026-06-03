@@ -1,253 +1,318 @@
-{% load static %}
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>KanoonSathi | Find Lawyer</title>
-    <link rel="stylesheet" href="{% static 'style.css' %}" />
-  </head>
+    <link rel="stylesheet" href="../static/style.css" />
+</head>
 
-  <body>
+<body>
     <header class="topbar">
-      <div class="container inner">
-        <a class="logo" href="/">KanoonSathi</a>
-        <nav class="menu">
-          <a href="/">Home</a>
-          <a href="/consult/">Consult AI</a>
-          <a href="/lawyers/" class="active">Find Lawyer</a>
-          <a href="/appointments/">My Appointments</a>
-          <a href="/signup/" class="auth-link">Signup</a>
-          <a href="/login/" class="auth-link">Login</a>
-        </nav>
-        <div class="hamburger" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="container inner">
+            <a class="logo" href="index.html">KanoonSathi</a>
+            <nav class="menu" id="mainNav">
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html" class="active">Find Lawyer</a>
+                <a href="appointments.html">My Appointments</a>
+                <a href="#" id="logoutLink">Logout</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
         </div>
-      </div>
     </header>
 
     <section class="section">
-      <div class="container">
-        <h2 class="title">Find the Right Lawyer</h2>
-        <p class="subtitle">Browse verified lawyers across Nepal.</p>
+        <div class="container">
+            <h2 class="title">Find the Right Lawyer</h2>
+            <p class="subtitle">Browse verified lawyers across Nepal. Search by name, legal area, or district.</p>
 
-        <!-- Filter Section -->
-        <div class="card filter-card">
-          <h3>Search & Filter Lawyers</h3>
-          <div class="filter-grid">
-            <div class="filter-group">
-              <label for="q">Search</label>
-              <input
-                id="q"
-                type="text"
-                placeholder="Name, district, or legal area..."
-              />
+            <div class="card filter-card">
+                <h3>Search & Filter Lawyers</h3>
+                <div class="filter-grid">
+                    <div class="filter-group">
+                        <label for="q">Search</label>
+                        <input id="q" type="text" placeholder="Name, district, or legal area..." />
+                    </div>
+                    <div class="filter-group">
+                        <label for="area">Legal Area</label>
+                        <select id="area">
+                            <option value="All">All Areas</option>
+                            <option value="Criminal Law">Criminal Law</option>
+                            <option value="Business/Corporate Law">Business/Corporate Law</option>
+                            <option value="Family Law">Family Law</option>
+                            <option value="Civil Law">Civil Law</option>
+                            <option value="Property Law">Property Law</option>
+                            <option value="Labor Law">Labor Law</option>
+                            <option value="Constitutional Law">Constitutional Law</option>
+                            <option value="Tax Law">Tax Law</option>
+                            <option value="Banking and Finance Law">Banking and Finance Law</option>
+                            <option value="Human Rights Law">Human Rights Law</option>
+                            <option value="Immigration Law">Immigration Law</option>
+                            <option value="Medical Malpractice Law">Medical Malpractice Law</option>
+                            <option value="Cyber Law">Cyber Law</option>
+                            <option value="Environmental Law">Environmental Law</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="district">District</label>
+                        <select id="district">
+                            <option value="All">All Districts</option>
+                            <option>Kathmandu</option>
+                            <option>Lalitpur</option>
+                            <option>Pokhara</option>
+                            <option>Biratnagar</option>
+                            <option>Butwal</option>
+                            <option>Jhapa</option>
+                            <option>Chitwan</option>
+                            <option>Kaski</option>
+                            <option>Morang</option>
+                            <option>Rupandehi</option>
+                            <option>Bhaktapur</option>
+                            <option>Dhangadhi</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>&nbsp;</label>
+                        <button id="searchBtn" class="btn-primary">Search Lawyers</button>
+                    </div>
+                </div>
             </div>
-            <div class="filter-group">
-              <label for="area">Legal Area</label>
-              <select id="area">
-                <option value="All">All Areas</option>
-                <option value="Administrative Law">Administrative Law</option>
-                <option value="Aviation Law">Aviation Law</option>
-                <option value="Banking and Finance Law">
-                  Banking and Finance Law
-                </option>
-                <option value="Business/Corporate Law">
-                  Business/Corporate Law
-                </option>
-                <option value="Civil Law">Civil Law</option>
-                <option value="Constitutional Law">Constitutional Law</option>
-                <option value="Consumer Protection Law">
-                  Consumer Protection Law
-                </option>
-                <option value="Contract Law">Contract Law</option>
-                <option value="Criminal Law">Criminal Law</option>
-                <option value="Cybersecurity Law">Cybersecurity Law</option>
-                <option value="Data Protection Law">Data Protection Law</option>
-                <option value="Education Law">Education Law</option>
-                <option value="Employment Law">Employment Law</option>
-                <option value="Entertainment Law">Entertainment Law</option>
-                <option value="Environmental Law">Environmental Law</option>
-                <option value="Estate/Probate Law">Estate/Probate Law</option>
-                <option value="Family Law">Family Law</option>
-                <option value="Human Rights Law">Human Rights Law</option>
-                <option value="Immigration Law">Immigration Law</option>
-                <option value="Intellectual Property Law">
-                  Intellectual Property Law
-                </option>
-                <option value="International Law">International Law</option>
-                <option value="Labor Law">Labor Law</option>
-                <option value="Maritime Law">Maritime Law</option>
-                <option value="Medical Malpractice Law">
-                  Medical Malpractice Law
-                </option>
-                <option value="Personal Injury Law">Personal Injury Law</option>
-                <option value="Property Law">Property Law</option>
-                <option value="Real Estate Law">Real Estate Law</option>
-                <option value="Sports Law">Sports Law</option>
-                <option value="Tax Law">Tax Law</option>
-                <option value="Tort Law">Tort Law</option>
-              </select>
-            </div>
-            <div class="filter-group">
-              <label for="district">District</label>
-              <select id="district">
-                <option value="All">All Districts</option>
-                <option>Kathmandu</option>
-                <option>Lalitpur</option>
-                <option>Pokhara</option>
-                <option>Biratnagar</option>
-                <option>Butwal</option>
-                <option>Jhapa</option>
-                <option>Chitwan</option>
-                <option>Kaski</option>
-                <option>Morang</option>
-                <option>Rupandehi</option>
-              </select>
-            </div>
-            <div class="filter-group">
-              <label>&nbsp;</label>
-              <button id="searchBtn" class="btn-primary">Search Lawyers</button>
-            </div>
-          </div>
+
+            <div id="list" class="lawyers-results"></div>
         </div>
-
-        <!-- Results Section -->
-        <div id="list" class="lawyers-results"></div>
-      </div>
     </section>
 
-    <script src="{% static 'app.js' %}"></script>
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>KanoonSathi Nepal</h3>
+                <p>Making legal help accessible, efficient, and user-friendly.</p>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <p>Consult AI</p>
+                <p>Find Lawyer</p>
+                <p>Book Appointment</p>
+            </div>
+            <div>
+                <h4>Notice</h4>
+                <p>AI responses are basic guidance only, not final legal advice.</p>
+            </div>
+        </div>
+    </footer>
+
     <script>
-      const list = document.getElementById("list");
-      const area = document.getElementById("area");
-      const district = document.getElementById("district");
-      const q = document.getElementById("q");
-      const searchBtn = document.getElementById("searchBtn");
-
-      function toggleMenu() {
-        document.querySelector(".menu").classList.toggle("open");
-      }
-
-      const sampleLawyers = [];
-
-      async function initAreas() {
-        // Areas are now hardcoded in HTML for immediate visibility
-      }
-
-      function render(items) {
-        if (items.length === 0) {
-          list.innerHTML =
-            '<div class="no-results"><p>No lawyers found matching your criteria. Try adjusting your search filters.</p></div>';
-          return;
+        function toggleMenu() {
+            document.querySelector('.menu').classList.toggle('open');
         }
 
-        const categories = [...new Set(items.map((l) => l.legalArea))].sort();
-        list.innerHTML = categories
-          .map((cat) => {
-            const catLawyers = items.filter((l) => l.legalArea === cat);
-            return `
+        function escapeHtml(text) {
+            if (!text) return '';
+            const d = document.createElement('div');
+            d.textContent = text;
+            return d.innerHTML;
+        }
+
+        const lawyers = [
+            { id: 'l1', name: 'Adv. Ramesh Gautam', legalArea: 'Criminal Law', specialization: 'Criminal Defense', district: 'Kathmandu', rating: 4.8, experienceYears: 15, casesSolved: 320, feeNpr: 1500, languages: 'Nepali, English, Hindi', availability: 'Weekdays 9AM-5PM', bio: 'Senior criminal defense lawyer with extensive experience in Nepal\'s district and supreme courts. Specializes in bail, trial defense, and appeals.', photoUrl: '' },
+            { id: 'l2', name: 'Adv. Sunita Sharma', legalArea: 'Criminal Law', specialization: 'White Collar Crime', district: 'Lalitpur', rating: 4.6, experienceYears: 10, casesSolved: 180, feeNpr: 1200, languages: 'Nepali, English', availability: 'Mon-Sat 10AM-6PM', bio: 'Experienced in fraud, embezzlement, and cybercrime cases. Known for meticulous case preparation and client communication.', photoUrl: '' },
+            { id: 'l3', name: 'Adv. Prakash Adhikari', legalArea: 'Criminal Law', specialization: 'Juvenile Justice', district: 'Pokhara', rating: 4.7, experienceYears: 12, casesSolved: 210, feeNpr: 1000, languages: 'Nepali, English', availability: 'Weekdays 8AM-4PM', bio: 'Passionate about juvenile justice and rehabilitation. Handles criminal cases with a focus on fair representation for young offenders.', photoUrl: '' },
+            { id: 'l4', name: 'Adv. Anita Joshi', legalArea: 'Business/Corporate Law', specialization: 'Corporate Litigation', district: 'Kathmandu', rating: 4.9, experienceYears: 18, casesSolved: 410, feeNpr: 2500, languages: 'Nepali, English, Hindi', availability: 'Weekdays 9AM-7PM', bio: 'Leading corporate lawyer advising Fortune 500 clients and local enterprises. Expert in mergers, acquisitions, and commercial disputes.', photoUrl: '' },
+            { id: 'l5', name: 'Adv. Binod Khadka', legalArea: 'Business/Corporate Law', specialization: 'Startup & IP Law', district: 'Lalitpur', rating: 4.5, experienceYears: 8, casesSolved: 140, feeNpr: 1800, languages: 'Nepali, English', availability: 'Mon-Sat 10AM-5PM', bio: 'Specializes in intellectual property registration, startup incorporation, and contract drafting for emerging businesses in Nepal.', photoUrl: '' },
+            { id: 'l6', name: 'Adv. Meena Poudel', legalArea: 'Family Law', specialization: 'Divorce & Custody', district: 'Kathmandu', rating: 4.7, experienceYears: 14, casesSolved: 290, feeNpr: 1300, languages: 'Nepali, English, Maithili', availability: 'Weekdays 9AM-5PM', bio: 'Compassionate family lawyer handling divorce, child custody, alimony, and domestic violence cases with sensitivity and professionalism.', photoUrl: '' },
+            { id: 'l7', name: 'Adv. Rajesh Thapa', legalArea: 'Family Law', specialization: 'Inheritance & Property', district: 'Biratnagar', rating: 4.4, experienceYears: 9, casesSolved: 160, feeNpr: 900, languages: 'Nepali, English', availability: 'Weekdays 10AM-6PM', bio: 'Handles inheritance disputes, property partition, will drafting, and succession matters across Nepal\'s family courts.', photoUrl: '' },
+            { id: 'l8', name: 'Adv. Sita Rai', legalArea: 'Civil Law', specialization: 'Contract Disputes', district: 'Pokhara', rating: 4.6, experienceYears: 11, casesSolved: 200, feeNpr: 1100, languages: 'Nepali, English', availability: 'Mon-Sat 9AM-5PM', bio: 'Expert in civil litigation, contract enforcement, and tort claims. Known for thorough case analysis and favorable settlements.', photoUrl: '' },
+            { id: 'l9', name: 'Adv. Deepak Shrestha', legalArea: 'Civil Law', specialization: 'Consumer Protection', district: 'Lalitpur', rating: 4.3, experienceYears: 7, casesSolved: 120, feeNpr: 800, languages: 'Nepali, English, Newari', availability: 'Weekdays 10AM-4PM', bio: 'Dedicated to consumer rights advocacy. Handles defective product claims, service disputes, and unfair trade practice cases.', photoUrl: '' },
+            { id: 'l10', name: 'Adv. Kamala Devi', legalArea: 'Property Law', specialization: 'Land Registration', district: 'Kathmandu', rating: 4.8, experienceYears: 20, casesSolved: 450, feeNpr: 2000, languages: 'Nepali, English', availability: 'Weekdays 9AM-5PM', bio: 'Most sought-after property lawyer in Kathmandu valley. Expert in land registration, title disputes, and guthi land matters.', photoUrl: '' },
+            { id: 'l11', name: 'Adv. Gopal Bhattarai', legalArea: 'Property Law', specialization: 'Real Estate', district: 'Chitwan', rating: 4.5, experienceYears: 13, casesSolved: 230, feeNpr: 1200, languages: 'Nepali, English', availability: 'Mon-Sat 9AM-6PM', bio: 'Handles real estate transactions, property due diligence, lease agreements, and land dispute resolution across central Nepal.', photoUrl: '' },
+            { id: 'l12', name: 'Adv. Radha Acharya', legalArea: 'Labor Law', specialization: 'Worker Rights', district: 'Kathmandu', rating: 4.6, experienceYears: 16, casesSolved: 310, feeNpr: 1000, languages: 'Nepali, English, Hindi', availability: 'Weekdays 9AM-5PM', bio: 'Champion of workers\' rights and labor disputes. Handles wrongful termination, wage claims, and workplace harassment cases.', photoUrl: '' },
+            { id: 'l13', name: 'Adv. Hari Pandey', legalArea: 'Constitutional Law', specialization: 'Fundamental Rights', district: 'Kathmandu', rating: 4.9, experienceYears: 22, casesSolved: 190, feeNpr: 3000, languages: 'Nepali, English', availability: 'By appointment only', bio: 'Former Supreme Court advocate specializing in constitutional writs, fundamental rights petitions, and public interest litigation.', photoUrl: '' },
+            { id: 'l14', name: 'Adv. Maya Gurung', legalArea: 'Tax Law', specialization: 'Income Tax', district: 'Pokhara', rating: 4.4, experienceYears: 10, casesSolved: 170, feeNpr: 1500, languages: 'Nepali, English', availability: 'Weekdays 10AM-5PM', bio: 'Tax attorney assisting individuals and businesses with income tax filing, tax disputes, and representation before the tax tribunal.', photoUrl: '' },
+            { id: 'l15', name: 'Adv. Sagar Basnet', legalArea: 'Banking and Finance Law', specialization: 'Banking Regulation', district: 'Kathmandu', rating: 4.7, experienceYears: 14, casesSolved: 260, feeNpr: 2200, languages: 'Nepali, English', availability: 'Weekdays 9AM-6PM', bio: 'Advises banks and financial institutions on regulatory compliance, loan recovery, and financial dispute resolution in Nepal.', photoUrl: '' },
+            { id: 'l16', name: 'Adv. Laxmi Neupane', legalArea: 'Human Rights Law', specialization: 'Gender Justice', district: 'Lalitpur', rating: 4.8, experienceYears: 13, casesSolved: 150, feeNpr: 800, languages: 'Nepali, English', availability: 'Mon-Sat 10AM-4PM', bio: 'Human rights advocate focusing on gender equality, violence against women, and access to justice for marginalized communities.', photoUrl: '' },
+            { id: 'l17', name: 'Adv. Kishor Bhandari', legalArea: 'Immigration Law', specialization: 'Work Visas', district: 'Kathmandu', rating: 4.5, experienceYears: 9, casesSolved: 280, feeNpr: 1600, languages: 'Nepali, English, Japanese', availability: 'Weekdays 9AM-5PM', bio: 'Immigration specialist handling work visas, student permits, and residency applications for multiple destination countries.', photoUrl: '' },
+            { id: 'l18', name: 'Adv. Asmita Koirala', legalArea: 'Medical Malpractice Law', specialization: 'Medical Negligence', district: 'Kathmandu', rating: 4.6, experienceYears: 11, casesSolved: 95, feeNpr: 1800, languages: 'Nepali, English', availability: 'Weekdays 10AM-5PM', bio: 'Dedicated to medical malpractice and negligence cases. Works with medical experts to build strong claims for affected patients.', photoUrl: '' },
+            { id: 'l19', name: 'Adv. Nabin Shrestha', legalArea: 'Cyber Law', specialization: 'Data Privacy', district: 'Lalitpur', rating: 4.3, experienceYears: 6, casesSolved: 85, feeNpr: 1400, languages: 'Nepali, English', availability: 'Weekdays 11AM-7PM', bio: 'Cyber law expert handling data breach cases, online fraud, digital forensics, and privacy compliance for tech companies.', photoUrl: '' },
+            { id: 'l20', name: 'Adv. Shanti Maharjan', legalArea: 'Environmental Law', specialization: 'Conservation', district: 'Pokhara', rating: 4.7, experienceYears: 17, casesSolved: 130, feeNpr: 1100, languages: 'Nepali, English', availability: 'Mon-Sat 9AM-5PM', bio: 'Environmental lawyer advocating for conservation, pollution control, and sustainable development. Handles PILs on environmental issues.', photoUrl: '' },
+            { id: 'l21', name: 'Adv. Dinesh Aryal', legalArea: 'Criminal Law', specialization: 'Narcotics & NDPS', district: 'Butwal', rating: 4.4, experienceYears: 10, casesSolved: 175, feeNpr: 900, languages: 'Nepali, English, Hindi', availability: 'Weekdays 9AM-5PM', bio: 'Experienced in narcotics defense and NDPS act cases. Provides robust legal representation in drug-related offenses.', photoUrl: '' },
+            { id: 'l22', name: 'Adv. Pooja Singh', legalArea: 'Family Law', specialization: 'Domestic Violence', district: 'Jhapa', rating: 4.5, experienceYears: 8, casesSolved: 145, feeNpr: 700, languages: 'Nepali, English, Maithili', availability: 'Weekdays 10AM-4PM', bio: 'Provides legal aid and representation for domestic violence survivors. Works closely with women\'s rights organizations.', photoUrl: '' },
+            { id: 'l23', name: 'Adv. Rajan Oli', legalArea: 'Business/Corporate Law', specialization: 'Foreign Investment', district: 'Kathmandu', rating: 4.8, experienceYears: 16, casesSolved: 340, feeNpr: 2800, languages: 'Nepali, English, Chinese', availability: 'Weekdays 9AM-6PM', bio: 'Specializes in foreign direct investment, joint ventures, and international business law. Advises multinational companies in Nepal.', photoUrl: '' },
+            { id: 'l24', name: 'Adv. Bina Chhetri', legalArea: 'Civil Law', specialization: 'Tort & Accident Claims', district: 'Kaski', rating: 4.2, experienceYears: 7, casesSolved: 110, feeNpr: 850, languages: 'Nepali, English', availability: 'Mon-Sat 10AM-5PM', bio: 'Handles personal injury and accident compensation claims. Known for achieving fair settlements for accident victims.', photoUrl: '' },
+        ];
+
+        const list = document.getElementById("list");
+        const area = document.getElementById("area");
+        const district = document.getElementById("district");
+        const q = document.getElementById("q");
+        const searchBtn = document.getElementById("searchBtn");
+
+        function getAvatarUrl(name) {
+            return 'data:image/svg+xml,' + encodeURIComponent(
+                '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300" viewBox="0 0 300 300">' +
+                '<rect fill="#a9102a" width="300" height="300"/>' +
+                '<text x="150" y="160" text-anchor="middle" fill="white" font-size="90" font-family="Arial" font-weight="bold">' + name.charAt(0) + '</text>' +
+                '<text x="150" y="220" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="28" font-family="Arial">' + encodeURIComponent('⚖️') + '</text>' +
+                '</svg>'
+            );
+        }
+
+        function render(items) {
+            if (items.length === 0) {
+                list.innerHTML = '<div class="no-results"><p>No lawyers found matching your criteria. Try adjusting your search filters.</p></div>';
+                return;
+            }
+
+            const categories = [...new Set(items.map(l => l.legalArea))].sort();
+            list.innerHTML = categories.map(cat => {
+                const catLawyers = items.filter(l => l.legalArea === cat);
+                return `
                     <div class="category-section">
                         <div class="category-header">
                             <h2 class="category-title">${escapeHtml(cat)}</h2>
-                            <span class="lawyer-count">${catLawyers.length} Lawyer${catLawyers.length > 1 ? "s" : ""}</span>
+                            <span class="lawyer-count">${catLawyers.length} Lawyer${catLawyers.length > 1 ? 's' : ''}</span>
                         </div>
                         <div class="lawyers-grid">
-                            ${catLawyers
-                              .map(
-                                (l) => `
+                            ${catLawyers.map(l => `
                                 <article class="lawyer-card">
                                     <div class="lawyer-card-header">
-                                        <img class="lawyer-avatar" src="${escapeHtml(l.photoUrl || "/default-avatar.svg")}" alt="${escapeHtml(l.name)}" />
+                                        <img class="lawyer-avatar" src="${l.photoUrl || getAvatarUrl(l.name)}" alt="${escapeHtml(l.name)}" />
                                         <div class="lawyer-badge">${escapeHtml(cat)}</div>
                                     </div>
-                                    
                                     <div class="lawyer-card-body">
                                         <h3 class="lawyer-name">${escapeHtml(l.name)}</h3>
-                                        
                                         <div class="lawyer-rating">
-                                            <span class="stars">${"⭐".repeat(Math.floor(l.rating || 4.5))}</span>
-                                            <span class="rating-text">${(l.rating || 4.5).toFixed(1)}/5</span>
+                                            <span class="stars">${l.rating ? '★'.repeat(Math.floor(l.rating)) + (l.rating % 1 >= 0.5 ? '½' : '') : '—'}</span>
+                                            <span class="rating-text">${l.rating ? l.rating.toFixed(1) : 'New'}</span>
                                         </div>
-                                        
                                         <div class="lawyer-stats">
                                             <div class="stat-item">
                                                 <span class="stat-label">Cases Solved</span>
-                                                <span class="stat-value">${l.casesSolved || 0}</span>
+                                                <span class="stat-value">${l.casesSolved || '—'}</span>
                                             </div>
                                             <div class="stat-item">
                                                 <span class="stat-label">Experience</span>
-                                                <span class="stat-value">${l.experienceYears} yrs</span>
+                                                <span class="stat-value">${l.experienceYears || '—'} ${l.experienceYears ? 'yrs' : ''}</span>
                                             </div>
                                         </div>
-                                        
                                         <div class="lawyer-meta">
-                                            <span class="meta-item">
-                                                <i class="icon">📍</i>
-                                                <span>${escapeHtml(l.district)}</span>
-                                            </span>
-                                            <span class="meta-item">
-                                                <i class="icon">🎓</i>
-                                                <span>${escapeHtml(l.specialization || l.legalArea)}</span>
-                                            </span>
+                                            <span class="meta-item"><i class="icon">📍</i><span>${escapeHtml(l.district)}</span></span>
+                                            <span class="meta-item"><i class="icon">🎓</i><span>${escapeHtml(l.specialization)}</span></span>
                                         </div>
-                                        
-                                        <p class="lawyer-bio">${escapeHtml(l.bio || "")}</p>
-                                        
-                                        <div class="lawyer-languages">
-                                            <strong>Languages:</strong> ${l.languages || "English, Nepali"}
-                                        </div>
-                                        <div class="lawyer-availability">
-                                            <strong>Availability:</strong> ${escapeHtml(l.availability || "Flexible")}
-                                        </div>
+                                        <p class="lawyer-bio">${escapeHtml(l.bio)}</p>
+                                        <div class="lawyer-languages"><strong>Languages:</strong> ${l.languages || '—'}</div>
+                                        <div class="lawyer-availability"><strong>Available:</strong> ${escapeHtml(l.availability || '—')}</div>
                                     </div>
-                                    
                                     <div class="lawyer-card-footer">
                                         <div class="fee-box">
                                             <div class="fee-label">Consultation</div>
-                                            <div class="fee-amount">NPR ${l.feeNpr}</div>
+                                            <div class="fee-amount">${l.feeNpr ? 'NPR ' + l.feeNpr : 'Contact'}</div>
                                         </div>
-                                        <a class="btn-primary btn-book" href="/book/?lawyerId=${encodeURIComponent(l.id)}">Book Now</a>
+                                        <a class="btn-primary btn-book" href="book.html?lawyerId=${encodeURIComponent(l.id)}">Book Now</a>
                                     </div>
                                 </article>
-                            `,
-                              )
-                              .join("")}
+                            `).join("")}
                         </div>
                     </div>
                 `;
-          })
-          .join("");
-      }
-
-      async function load() {
-        // Show loading state
-        list.innerHTML =
-          '<div class="loading"><p>Searching for lawyers...</p></div>';
-
-        try {
-          const params = new URLSearchParams({
-            area: area.value,
-            district: district.value,
-            q: q.value,
-          });
-          const data = await fetchJson(`/api/lawyers?${params.toString()}`);
-          render(data);
-        } catch (error) {
-          list.innerHTML =
-            '<div class="error"><p>Unable to load lawyers. Please try again later.</p></div>';
-          console.error("Error loading lawyers:", error);
+            }).join("");
         }
-      }
 
-      searchBtn.onclick = load;
+        function load() {
+            const areaVal = area.value;
+            const districtVal = district.value;
+            const query = q.value.trim().toLowerCase();
 
-      (async () => {
-        await initAreas();
+            let allLawyers = [...lawyers];
+            try {
+                const stored = JSON.parse(localStorage.getItem('kanoon_lawyers') || '[]');
+                stored.forEach(reg => {
+                    if (!allLawyers.find(l => l.id === reg.id)) {
+                        allLawyers.push(reg);
+                    }
+                });
+            } catch(e) {}
+
+            let filtered = allLawyers;
+
+            if (areaVal !== 'All') {
+                filtered = filtered.filter(l => l.legalArea === areaVal);
+            }
+            if (districtVal !== 'All') {
+                filtered = filtered.filter(l => l.district === districtVal);
+            }
+            if (query) {
+                filtered = filtered.filter(l =>
+                    l.name.toLowerCase().includes(query) ||
+                    l.district.toLowerCase().includes(query) ||
+                    l.legalArea.toLowerCase().includes(query) ||
+                    l.specialization.toLowerCase().includes(query)
+                );
+            }
+
+            render(filtered);
+        }
+
+        searchBtn.onclick = load;
+
+        ['q', 'area', 'district'].forEach(id => {
+            document.getElementById(id).addEventListener('change', load);
+        });
+
+        document.getElementById('q').addEventListener('keydown', (e) => {
+            if (e.key === 'Enter') load();
+        });
+
+        (function () {
+            try {
+                const from = new URLSearchParams(location.search).get('from') || '';
+                const raw = localStorage.getItem('kanoon_auth');
+                if (!raw && !from) { location.href = 'login.html'; return; }
+                const logoutLink = document.getElementById('logoutLink');
+                if (logoutLink) {
+                    logoutLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        localStorage.removeItem('kanoon_auth');
+                        location.href = 'index.html';
+                    });
+                }
+                let dashboardHref = '';
+                if (from === 'lawyer-dashboard') dashboardHref = 'lawyer-dashboard.html';
+                else if (from === 'dashboard') dashboardHref = 'dashboard.html';
+                else if (raw) {
+                    try {
+                        const user = JSON.parse(raw);
+                        dashboardHref = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
+                    } catch (e) { }
+                }
+                const nav = document.getElementById('mainNav');
+                if (nav) {
+                    if (dashboardHref) {
+                        const link = document.createElement('a');
+                        link.href = dashboardHref;
+                        link.textContent = 'Dashboard';
+                        nav.insertBefore(link, nav.lastElementChild);
+                    }
+                    if (from) {
+                        const suffix = '?from=' + from;
+                        Array.from(nav.children).forEach(function (a) {
+                            if (a.tagName === 'A' && a.id !== 'logoutLink' && a.href && a.href.startsWith(location.origin + '/')) {
+                                var path = a.getAttribute('href');
+                                if (path && path.indexOf('?') === -1 && path.indexOf('/') === 0) {
+                                    a.href = path + suffix;
+                                }
+                            }
+                        });
+                    }
+                }
+            } catch (e) { }
+        })();
+
         load();
-      })();
     </script>
-  </body>
+</body>
+
 </html>
+

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KanoonSathi | Update Profile</title>
+    <link rel="stylesheet" href="../static/style.css" />
+    <style>
+        .phone-input-group {
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            background: #fff;
+            overflow: hidden;
+        }
+        .phone-input-group .phone-prefix {
+            padding: 0 0 0 0.85rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--text);
+            background: #f5f5f5;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            min-height: 44px;
+            border-right: 1px solid var(--border);
+        }
+        .phone-input-group input {
+            border: none !important;
+            border-radius: 0 !important;
+            flex: 1;
+            outline: none;
+            padding: 0 0.85rem;
+            font-size: 0.95rem;
+            min-height: 44px;
+            background: transparent;
+        }
+        .field-error {
+            font-size: 0.8rem;
+            color: #dc2626;
+            margin-top: 0.2rem;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header class="topbar">
+        <div class="container inner">
+            <a class="logo" href="index.html">KanoonSathi</a>
+            <nav class="menu" id="mainNav">
+                <a href="index.html">Home</a>
+                <a href="consult.html">Consult AI</a>
+                <a href="lawyers.html">Find Lawyer</a>
+                <a href="appointments.html">My Appointments</a>
+                <a href="#" id="logoutLink" style="display:none;">Logout</a>
+            </nav>
+            <button class="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="card auth-card">
+                <h2 class="title">Update Profile</h2>
+                <p class="subtitle" id="roleLabel">Manage your personal details.</p>
+                <form id="profileForm" class="form-grid">
+                    <div class="form-control full" style="align-items:center;">
+                        <label>Profile Photo</label>
+                        <div class="photo-upload">
+                            <div class="photo-avatar" id="photoAvatar">
+                                <img id="photoPreview" src="" alt="" />
+                                <span id="photoInitials" class="photo-initials"></span>
+                                <div class="photo-overlay">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/>
+                                        <circle cx="12" cy="13" r="4"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <input id="profilePhoto" type="file" accept="image/*" />
+                            <span class="photo-hint">Click the icon to change photo</span>
+                        </div>
+                    </div>
+                    <div class="form-control full">
+                        <label for="name">Full Name</label>
+                        <input id="name" type="text" required />
+                    </div>
+                    <div class="form-control full">
+                        <label for="email">Email address</label>
+                        <input id="email" type="email" required />
+                        <span class="field-error" id="emailError"></span>
+                    </div>
+                    <div class="form-control full">
+                        <label for="phone">Phone</label>
+                        <div class="phone-input-group">
+                            <span class="phone-prefix">+977</span>
+                            <input id="phone" type="text" maxlength="10" />
+                        </div>
+                        <span class="field-error" id="phoneError"></span>
+                    </div>
+                    <div class="form-control full">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" placeholder="City, District" />
+                    </div>
+                    <div class="form-control full lawyer-field" style="display:none;">
+                        <label for="district">District (Lawyer)</label>
+                        <input id="district" type="text" />
+                    </div>
+                    <div class="form-control full lawyer-field" style="display:none;">
+                        <label for="specialization">Specialization</label>
+                        <input id="specialization" type="text" />
+                    </div>
+                    <div class="form-control full lawyer-field" style="display:none;">
+                        <label for="languages">Languages</label>
+                        <input id="languages" type="text" />
+                    </div>
+                    <button class="btn-primary full" type="submit">Save Changes</button>
+                </form>
+                <p id="msg" class="subtitle"></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() { document.querySelector('.menu').classList.toggle('open'); }
+
+        (function () {
+            try {
+                const from = new URLSearchParams(location.search).get('from') || '';
+                let raw = localStorage.getItem('kanoon_auth');
+                let user = raw ? JSON.parse(raw) : { name: '', email: '', role: 'user' };
+                if (from === 'lawyer-dashboard') user.role = 'lawyer';
+                const nav = document.getElementById('mainNav');
+                const logoutLink = document.getElementById('logoutLink');
+                if (logoutLink) {
+                    logoutLink.style.display = 'inline';
+                    logoutLink.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        localStorage.removeItem('kanoon_auth');
+                        location.href = 'index.html';
+                    });
+                }
+                let dashboardHref = '';
+                if (from === 'lawyer-dashboard') dashboardHref = 'lawyer-dashboard.html';
+                else if (from === 'dashboard') dashboardHref = 'dashboard.html';
+                else dashboardHref = user.role === 'lawyer' ? 'lawyer-dashboard.html' : 'dashboard.html';
+                if (nav && dashboardHref) {
+                    const link = document.createElement('a');
+                    link.href = dashboardHref;
+                    link.textContent = 'Dashboard';
+                    nav.insertBefore(link, nav.lastElementChild);
+                }
+                if (from) {
+                    const suffix = '?from=' + from;
+                    Array.from(nav.children).forEach(function (a) {
+                        if (a.tagName === 'A' && a.id !== 'logoutLink' && a.href && a.href.startsWith(location.origin + '/')) {
+                            var path = a.getAttribute('href');
+                            if (path && path.indexOf('?') === -1 && path.indexOf('/') === 0) {
+                                a.href = path + suffix;
+                            }
+                        }
+                    });
+                }
+
+                document.getElementById('name').value = user.name || '';
+                document.getElementById('email').value = user.email || '';
+                document.getElementById('phone').value = (user.phone || '').replace(/^\+977/, '');
+                document.getElementById('address').value = user.address || '';
+                const preview = document.getElementById('photoPreview');
+                const initials = document.getElementById('photoInitials');
+                const avatar = document.getElementById('photoAvatar');
+                if (user.photo) {
+                    preview.src = user.photo;
+                    preview.style.display = 'block';
+                    initials.style.display = 'none';
+                } else {
+                    initials.textContent = (user.name || user.email || '?').charAt(0).toUpperCase();
+                }
+                avatar.addEventListener('click', function () {
+                    document.getElementById('profilePhoto').click();
+                });
+                document.getElementById('profilePhoto').addEventListener('change', function () {
+                    const f = this.files[0];
+                    if (!f) return;
+                    const r = new FileReader();
+                    r.onload = function (e) {
+                        preview.src = e.target.result;
+                        preview.style.display = 'block';
+                        initials.style.display = 'none';
+                    };
+                    r.readAsDataURL(f);
+                });
+                if (user.role === 'lawyer') {
+                    document.getElementById('roleLabel').textContent = 'Manage your lawyer profile details.';
+                    document.querySelectorAll('.lawyer-field').forEach(el => el.style.display = '');
+                    if (user.phone) document.getElementById('phone').value = user.phone.replace(/^\+977/, '');
+                    if (user.district) document.getElementById('district').value = user.district;
+                    if (user.specialization) document.getElementById('specialization').value = user.specialization;
+                    if (user.languages) document.getElementById('languages').value = user.languages;
+                }
+
+                function saveProfile(data) {
+                    if (user.role === 'lawyer') {
+                        data.district = document.getElementById('district').value.trim();
+                        data.specialization = document.getElementById('specialization').value.trim();
+                        data.languages = document.getElementById('languages').value.trim();
+                    }
+                    localStorage.setItem('kanoon_auth', JSON.stringify(data));
+                    const msg = document.getElementById('msg');
+                    msg.textContent = 'Profile updated successfully!';
+                    msg.style.color = '#16a34a';
+                    setTimeout(() => { location.href = dashboardHref; }, 1200);
+                }
+
+                document.getElementById('profileForm').addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    document.querySelectorAll('.field-error').forEach(el => el.style.display = 'none');
+                    document.getElementById('msg').textContent = '';
+
+                    const name = document.getElementById('name').value.trim();
+                    const email = document.getElementById('email').value.trim();
+                    if (!name || !email) {
+                        document.getElementById('msg').textContent = 'Name and email are required.';
+                        document.getElementById('msg').style.color = '#b91c1c';
+                        return;
+                    }
+                    if (!email.includes('@') || !email.includes('.com')) {
+                        document.getElementById('emailError').textContent = 'Email must contain @ and .com.';
+                        document.getElementById('emailError').style.display = 'block';
+                        return;
+                    }
+                    const phoneRaw = document.getElementById('phone').value.trim();
+                    if (phoneRaw && !/^\d{10}$/.test(phoneRaw)) {
+                        document.getElementById('phoneError').textContent = 'Phone must be exactly 10 digits.';
+                        document.getElementById('phoneError').style.display = 'block';
+                        return;
+                    }
+                    const updated = { ...user, name, email };
+                    updated.phone = phoneRaw ? '+977' + phoneRaw : '';
+                    updated.address = document.getElementById('address').value.trim();
+                    const photoFile = document.getElementById('profilePhoto').files[0];
+                    if (photoFile) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            updated.photo = e.target.result;
+                            saveProfile(updated);
+                        };
+                        reader.readAsDataURL(photoFile);
+                        return;
+                    }
+                    saveProfile(updated);
+                });
+            } catch (e) { }
+        })();
+    </script>
+</body>
+</html>
+
