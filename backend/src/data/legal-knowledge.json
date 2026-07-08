@@ -1,0 +1,905 @@
+[
+  {
+    "id": "criminal-1",
+    "caseType": "Criminal",
+    "title": "Filing an FIR in Nepal",
+    "content": "In Nepal, any person can file a First Information Report (FIR) at the nearest police station regarding a criminal offense. The police must register the FIR within 24 hours of receiving the complaint. You can file a written or verbal complaint. After registration, the police will investigate and file a charge sheet in court if sufficient evidence exists. You should keep a copy of the FIR for your records. If the police refuse to register your FIR, you can approach the Superintendent of Police or file a complaint directly to the court under Section 155 of the Criminal Procedure Code 2074.",
+    "keywords": ["FIR", "police complaint", "file case", "report crime", "criminal complaint", "police report", "इन्टुवा", "उजुरी", "प्रहरी", "जाहेरी"]
+  },
+  {
+    "id": "criminal-2",
+    "caseType": "Criminal",
+    "title": "Arrest and Bail Rights",
+    "content": "Under the Constitution of Nepal and the Muluki Criminal Code 2017, any person arrested has the right to know the reason for arrest, right to consult a lawyer, and right against torture. The police must produce the arrested person before a judicial authority within 24 hours. Bail is a right for most bailable offenses. For non-bailable offenses, you can apply for bail from the court. The court considers the severity of the crime, evidence, and flight risk when granting bail. Repeated refusal of bail can be challenged in the High Court.",
+    "keywords": ["arrest", "bail", "police custody", "detention", "right to lawyer", "bail application", "गिरफ्तारी", "जमानत", "हिरासत", "थुनुवा"]
+  },
+  {
+    "id": "criminal-3",
+    "caseType": "Criminal",
+    "title": "Domestic Violence Protection",
+    "content": "Domestic Violence in Nepal is addressed under the Domestic Violence (Offense and Punishment) Act 2066. Victims can file complaints at the Women's Cell of any police station, or call the helpline 1145. Protection orders can be obtained from the court to prevent further violence. Medical certificates are crucial evidence. The law covers physical, mental, sexual, and economic abuse. The perpetrator may face imprisonment from 6 months to 2 years and fines. Free legal aid is available through the Nepal Legal Aid and Consultancy Center.",
+    "keywords": ["domestic violence", "domestic abuse", "women cell", "protection order", "helpline 1145", "घरेलु हिंसा", "महिला सेल", "संरक्षण आदेश", "पिटाई"]
+  },
+  {
+    "id": "criminal-4",
+    "caseType": "Criminal",
+    "title": "Theft and Robbery Legal Process",
+    "content": "Theft (चोरी) and robbery (लुटपाट) are criminal offenses under the Muluki Criminal Code 2017. Theft involves taking someone's property without consent. Robbery involves taking property through force or threat. Immediate steps include filing an FIR at the nearest police station, preserving any CCTV footage, and listing stolen items with estimated values. The police investigate and file charges. Penalties vary from 1-7 years imprisonment depending on the severity and value of property stolen.",
+    "keywords": ["theft", "robbery", "burglary", "stolen", "property stolen", "चोरी", "लुट", "लुटपाट", "सामान चोरी"]
+  },
+  {
+    "id": "criminal-5",
+    "caseType": "Criminal",
+    "title": "Cyber Crime and Online Fraud",
+    "content": "Cyber crimes in Nepal are governed by the Electronic Transaction Act 2063. This covers hacking, identity theft, online fraud, cyber bullying, and unauthorized data access. Victims should immediately report to the Nepal Police Cyber Bureau at 01-4779900 or visit their office at Narayanhiti, Kathmandu. Save all evidence including screenshots, transaction records, emails, and chat logs. The law provides for imprisonment up to 5 years and fines up to NPR 200,000 for hacking offenses. Banking fraud should also be reported to Nepal Rastra Bank and your bank immediately.",
+    "keywords": ["cyber crime", "online fraud", "hacking", "identity theft", "cyber bullying", "phishing", "साइबर अपराध", "अनलाइन ठगी", "ह्याकिङ"]
+  },
+  {
+    "id": "property-1",
+    "caseType": "Property",
+    "title": "Land Registration Process",
+    "content": "Land registration in Nepal is done at the Land Revenue Office (Malpot Office) under the Land Revenue Act 2034. The process requires a deed of sale, citizenship certificate of both parties, land ownership certificate (Lalpurja), cadastral map, and photos. The registration fee is approximately 5% of the land value (4% for women to encourage female ownership). Both parties must be present. The entire process typically takes 1-7 days after submission. Registration provides legal ownership rights and is essential for any property transaction.",
+    "keywords": ["land registration", "property registration", "malpot", "lalpurja", "land revenue", "जग्गा दर्ता", "मालपोत", "लालपुर्जा", "जग्गा रजिष्टर"]
+  },
+  {
+    "id": "property-2",
+    "caseType": "Property",
+    "title": "Property Dispute Resolution",
+    "content": "Property disputes in Nepal can be resolved through several channels. First, attempt mediation at the local level through community elders or ward office. For registered land disputes, file a case at the District Court. The Land Revenue Office can resolve boundary disputes through survey. The Land Tribunal handles certain land-related cases faster. Common disputes include boundary encroachment, ownership claims, inheritance division, and fraudulent transactions. Always verify property documents at the Land Revenue Office before purchasing. Court cases can take 1-3 years for resolution.",
+    "keywords": ["property dispute", "land dispute", "boundary dispute", "ownership issue", "encroachment", "सम्पत्ति विवाद", "जग्गा विवाद", "सिमाना विवाद", "जग्गा झगडा"]
+  },
+  {
+    "id": "property-3",
+    "caseType": "Property",
+    "title": "Tenant and Landlord Rights",
+    "content": "The relationship between tenants and landlords in Nepal is governed by the existing civil laws and contractual agreements. A written rental agreement is strongly recommended. Landlords must provide 6 months notice for eviction unless there is a breach of contract. Tenants must pay rent on time and maintain the property. Security deposits (typically 1-3 months rent) must be returned when the tenant vacates, minus legitimate deductions. Rent increases are negotiated between parties. Courts handle eviction cases if tenants refuse to vacate after proper notice.",
+    "keywords": ["rent", "rental", "tenant", "landlord", "eviction", "lease", "भाडा", "भाडा सम्झौता", "कोठा भाडा", "जग्गा भाडा"]
+  },
+  {
+    "id": "property-4",
+    "caseType": "Property",
+    "title": "Inheritance and Property Division",
+    "content": "In Nepal, property inheritance is governed by the Muluki Ain (Civil Code) 2017. Sons and unmarried daughters have equal rights to ancestral property. Married daughters have rights to parental property if they are divorced, widowed, or separated. A person can create a will to distribute self-acquired property. Without a will, property is divided equally among legal heirs. The District Court handles inheritance disputes. Property acquired before marriage remains separate property. Married women have equal rights to property acquired during marriage.",
+    "keywords": ["inheritance", "property division", "will", "ancestral property", "heirs", "सम्पत्ति बाँडफाँड", "उत्तराधिकार", "वसीयत", "पुर्खौली सम्पत्ति"]
+  },
+  {
+    "id": "civil-1",
+    "caseType": "Civil",
+    "title": "Filing a Civil Lawsuit",
+    "content": "Civil lawsuits in Nepal are filed at the District Court under the Civil Procedure Code 2074. The plaintiff files a petition stating the facts, legal grounds, and relief sought. Court fees are calculated based on the claim value (approximately 1-2% for monetary claims). The defendant must respond within 15-30 days of receiving notice. The court may order mediation before trial. Evidence is submitted including documents, witnesses, and expert opinions. The process from filing to judgment typically takes 6 months to 2 years. Appeals go to the High Court and then the Supreme Court.",
+    "keywords": ["civil case", "lawsuit", "court case", "petition", "legal action", "सिभिल मुद्दा", "अदालत", "मुद्दा दर्ता", "निवेदन"]
+  },
+  {
+    "id": "civil-2",
+    "caseType": "Civil",
+    "title": "Contract Law and Breach of Contract",
+    "content": "Contract law in Nepal is governed by the Contract Act 2063. A valid contract requires offer, acceptance, consideration, and legal purpose. Contracts can be written or oral, but written contracts are strongly recommended for enforceability. If a contract is breached, the aggrieved party can send a legal notice demanding performance or compensation. If unresolved, a civil suit can be filed for damages. The limitation period for breach of contract is generally 2 years from the breach. Remedies include specific performance, damages, or contract termination.",
+    "keywords": ["contract", "agreement", "breach of contract", "legal notice", "contract dispute", "सम्झौता", "करार", "सम्झौता उल्लंघन", "कानुनी नोटिस"]
+  },
+  {
+    "id": "civil-3",
+    "caseType": "Civil",
+    "title": "Debt Recovery and Loan Disputes",
+    "content": "For debt recovery in Nepal, the standard process begins with a formal demand letter to the debtor. If payment is not made within the specified time (usually 7-30 days), a civil suit can be filed at the District Court. Interest on loans is governed by the Nepal Rastra Bank directives. For loans with collateral, the creditor can seek attachment and auction of the collateral through court. The limitation period for debt recovery is 2 years from the date the debt becomes due. For microfinance and bank loans, there are special recovery procedures under the Banking Offenses Act.",
+    "keywords": ["debt", "loan", "money recovery", "loan recovery", "debt recovery", "ऋण", "लोन", "रकम उठाउने", "कर्जा असुली"]
+  },
+  {
+    "id": "civil-4",
+    "caseType": "Civil",
+    "title": "Mediation and Alternative Dispute Resolution",
+    "content": "Mediation is an alternative dispute resolution method encouraged by Nepali courts. The Mediation Act 2068 provides the legal framework. Mediation is voluntary, confidential, and less expensive than court litigation. Many courts require mediation before trial for civil cases. The mediator facilitates negotiations between parties. If settlement is reached, it is filed in court as a binding agreement. Mediation is particularly effective for family disputes, property division, contract disputes, and neighbor conflicts. The process typically takes 1-3 months compared to 1-2 years for court cases.",
+    "keywords": ["mediation", "arbitration", "ADR", "settlement", "dispute resolution", "मध्यस्थता", "सुलह", "मेलमिलाप", "विवाद समाधान"]
+  },
+  {
+    "id": "business-1",
+    "caseType": "Business",
+    "title": "Company Registration in Nepal",
+    "content": "Companies in Nepal are registered with the Office of the Company Registrar (OCR) under the Companies Act 2063. Types include Private Limited, Public Limited, and One Person Company. The process requires name approval, submission of MOA/AOA, details of directors and shareholders, and registered address. Private Limited companies need minimum 1 director and 1 shareholder (can be same person). Registration costs approximately NPR 20,000-50,000 including government fees. After registration, obtain PAN from the Tax Department, register for VAT if turnover exceeds NPR 50 lakh annually, and register with Social Security Fund.",
+    "keywords": ["company registration", "business registration", "private limited", "pvt ltd", "OCR", "कम्पनी दर्ता", "व्यवसाय दर्ता", "प्रा.ली.", "उद्योग दर्ता"]
+  },
+  {
+    "id": "business-2",
+    "caseType": "Business",
+    "title": "Tax Compliance for Businesses",
+    "content": "Businesses in Nepal must comply with the Income Tax Act 2058 and VAT Act 2052. Income tax is filed annually within 3 months of the fiscal year end (mid-July). VAT returns are filed quarterly (for businesses with turnover NPR 50 lakh-2 crore) or monthly (above 2 crore). TDS must be deducted and deposited monthly. Late filing attracts penalties of 5-20% of tax liability. Businesses must maintain proper books of accounts for 6 years. Tax audits are required for companies with turnover exceeding NPR 2 crore. PAN registration is mandatory for all businesses before starting operations.",
+    "keywords": ["tax", "VAT", "PAN", "income tax", "tax filing", "IRD", "TDS", "कर", "आयकर", "भ्याट", "प्यान"]
+  },
+  {
+    "id": "business-3",
+    "caseType": "Business",
+    "title": "Partnership and Shareholder Disputes",
+    "content": "Partnership and shareholder disputes in Nepal are governed by the Companies Act 2063 and the Partnership Act. Common disputes include profit sharing disagreements, removal of directors, share transfer issues, and mismanagement. The first step is reviewing the partnership agreement or company bylaws. Mediation is recommended before litigation. Shareholders can file oppression and mismanagement petitions at the Company Registrar. Partnership disputes can be filed at the District Court. Deadlock provisions in the agreement can force dissolution or buyout. Legal costs vary based on complexity but typically range from NPR 100,000-500,000.",
+    "keywords": ["shareholder", "partnership", "business dispute", "partner dispute", "board dispute", "सेयरधनी", "साझेदार विवाद", "व्यवसाय विवाद", "सञ्चालक"]
+  },
+  {
+    "id": "business-4",
+    "caseType": "Business",
+    "title": "Business Licensing and Permits",
+    "content": "Different businesses in Nepal require different licenses and permits. The Industrial Enterprises Act 2020 governs industrial licenses. Basic requirements include business registration certificate, PAN, and local municipality license. Specific businesses need additional permits: restaurants need food license from Department of Food Technology, construction companies need contractor license, pharmaceutical businesses need drug license, and financial services need Nepal Rastra Bank approval. Environmental Impact Assessment (EIA) is required for large industries. Operating without proper licenses can result in fines and closure. Most licenses must be renewed annually.",
+    "keywords": ["business license", "permit", "license", "industrial license", "municipality license", "व्यवसाय अनुमति", "लाइसेन्स", "उद्योग अनुमति"]
+  },
+  {
+    "id": "family-1",
+    "caseType": "Family",
+    "title": "Marriage Registration and Requirements",
+    "content": "Marriage in Nepal must be registered at the Municipal or Ward Office under the Marriage Registration Act 2028. Both parties must be at least 20 years old for marriage. Required documents include citizenship certificates, passport photos, and two witnesses. For inter-caste marriages, additional verification may be required but such marriages are legally valid. Registration provides legal recognition and is necessary for spousal benefits, visa applications, and inheritance rights. Foreign nationals must provide additional documentation including a certificate of no impediment. Same-sex marriages are not currently legally recognized in Nepal despite some court directions.",
+    "keywords": ["marriage", "wedding", "marriage registration", "marriage certificate", "विवाह", "विवाह दर्ता", "विवाह प्रमाणपत्र", "बिहे"]
+  },
+  {
+    "id": "family-2",
+    "caseType": "Family",
+    "title": "Divorce Process in Nepal",
+    "content": "Divorce in Nepal can be obtained through mutual consent or contested proceedings. For mutual consent divorce, both parties file a joint petition at the District Court. The court grants divorce after a 3-month reconciliation period if reconciliation fails. For contested divorce, grounds include adultery, cruelty, desertion for 3+ years, mental illness, and mutual incompatibility. The divorce petition includes details of property division, child custody arrangements, and maintenance claims. The process takes 3-6 months for mutual consent and 6-18 months for contested divorce. Legal representation is strongly recommended.",
+    "keywords": ["divorce", "separation", "mutual consent", "contested divorce", "सम्बन्ध विच्छेद", "डिभोर्स", "अलगाव", "सहमतिमा सम्बन्ध विच्छेद"]
+  },
+  {
+    "id": "family-3",
+    "caseType": "Family",
+    "title": "Child Custody and Maintenance",
+    "content": "Child custody in Nepal is determined based on the best interests of the child. For children under 5 years, custody is typically granted to the mother. For children above 5, the court considers the child's preference (especially for 10+ years), financial stability, and moral fitness of parents. Joint custody arrangements are becoming more common. Child maintenance is calculated based on the non-custodial parent's income and needs of the child. Typically 20-30% of income is ordered for one child, more for multiple children. Custody and maintenance orders can be modified if circumstances change significantly.",
+    "keywords": ["child custody", "custody", "maintenance", "child support", "alimony", "बाल अभिरक्षा", "बाल भरणपोषण", "गुजारा भत्ता", "सन्तान"]
+  },
+  {
+    "id": "family-4",
+    "caseType": "Family",
+    "title": "Dowry and Anti-Dowry Laws",
+    "content": "Dowry is illegal in Nepal under the Social Practices Reform (Dowry) Act 2033. Giving, taking, or demanding dowry is a criminal offense punishable by imprisonment of up to 3 months and/or a fine. Despite the law, dowry practices continue in many communities. Victims of dowry harassment can file complaints at the Women's Cell of Nepal Police or the National Women Commission. The court can order protection and restitution. Family members who commit dowry-related violence face enhanced penalties. Education and awareness programs by NGOs have helped reduce dowry practices in urban areas.",
+    "keywords": ["dowry", "dahej", "dowry harassment", "anti-dowry", "दाइजो", "दहेज", "दाइजो मुद्दा", "दाइजो प्रथा"]
+  },
+  {
+    "id": "family-5",
+    "caseType": "Family",
+    "title": "Wills and Inheritance in Nepal",
+    "content": "Under Nepali law, any person 18 years or older with sound mind can create a will (testament). The will should be in writing, signed by the testator, and witnessed by two persons. Registration at the District Court is recommended but not mandatory. Self-acquired property can be willed to anyone including non-family members. Ancestral property follows specific inheritance rules under the Muluki Ain. If someone dies without a will (intestate), the property is distributed among legal heirs according to law. Spouses, children, and parents are primary heirs. A will can be contested in court on grounds of fraud, undue influence, or unsound mind.",
+    "keywords": ["will", "testament", "inheritance", "estate planning", "last will", "वसीयत", "उत्तराधिकार", "सम्पत्ति उत्तराधिकार", "इच्छापत्र"]
+  },
+  {
+    "id": "labor-1",
+    "caseType": "Labor",
+    "title": "Employment Contract and Rights",
+    "content": "The Labor Act 2017 governs employment relationships in Nepal. Employment contracts should specify salary, working hours, leave entitlements, and termination conditions. The minimum wage is NPR 17,300 per month (as of 2024) for general workers. Standard working hours are 8 hours per day and 48 hours per week. Overtime must be paid at 1.5 times the regular rate. Employees are entitled to 14 days annual leave, 12 days sick leave, and public holidays. Festival bonus of 8.33% of annual salary is mandatory. Employers must register employees with the Social Security Fund within 30 days of hiring.",
+    "keywords": ["employment", "job", "labor rights", "employment contract", "salary", "वैतनिक", "रोजगार", "काम", "श्रम ऐन", "जागिर"]
+  },
+  {
+    "id": "labor-2",
+    "caseType": "Labor",
+    "title": "Termination and Unfair Dismissal",
+    "content": "Termination of employment in Nepal requires 30 days written notice or payment in lieu of notice. The employer must have valid grounds for termination including misconduct, poor performance, or redundancy. Unfair dismissal can be challenged at the Labor Court or High Court. Remedies include reinstatement or compensation (up to 3 months salary per year of service). Employees with 3+ years continuous service are entitled to gratuity (one month salary per year). Retrenchment compensation is available in case of business closure. Fixed-term contracts end automatically without additional compensation.",
+    "keywords": ["termination", "fired", "dismissal", "unfair dismissal", "layoff", "retrenchment", "जागिरबाट हटाउने", "बर्खास्त", "कामबाट निकाल्ने"]
+  },
+  {
+    "id": "labor-3",
+    "caseType": "Labor",
+    "title": "Social Security Fund and Provident Fund",
+    "content": "The Social Security Fund (SSF) in Nepal provides social protection to formal sector employees. Both employer and employee contribute 10% each of basic salary (total 20%) to the fund. Contributions cover medical, health, and maternity benefits, accident and disability insurance, dependent family benefits, and old age protection. Provident Fund (PF) is separate and typically handled by individual companies. On employment termination, employees can withdraw their PF and SSF contributions with applicable interest. The SSF is managed by the Social Security Fund Office under the Ministry of Labor.",
+    "keywords": ["social security", "provident fund", "PF", "SSF", "gratuity", "सामाजिक सुरक्षा", "भविष्य कोष", "ग्राच्युटी"]
+  },
+  {
+    "id": "labor-4",
+    "caseType": "Labor",
+    "title": "Workplace Harassment and Discrimination",
+    "content": "Workplace harassment, including sexual harassment, is prohibited under the Labor Act 2017. Employers must maintain a safe working environment and have anti-harassment policies. Victims can file complaints with the employer's internal committee or directly at the Labor Office. Sexual harassment carries penalties including termination for the perpetrator. Discrimination based on gender, caste, religion, or disability is illegal. Women are entitled to 14 weeks paid maternity leave (before and after childbirth). Paternity leave of 15 days is available. The Labor Court handles harassment claims and can award compensation.",
+    "keywords": ["harassment", "sexual harassment", "workplace harassment", "discrimination", "maternity leave", "यौन दुव्र्यवहार", "कार्यालय दुव्र्यवहार", "विभेद"]
+  },
+  {
+    "id": "immigration-1",
+    "caseType": "Immigration",
+    "title": "Nepal Citizenship Process",
+    "content": "Nepal citizenship is governed by the Nepal Citizenship Act 2063. Citizenship is acquired by birth (born to Nepali parents), descent (born abroad to Nepali parents), or naturalization (15+ years residence). The application is submitted at the District Administration Office (DAO) with required documents including birth certificate, parent's citizenship, and residence proof. The process takes 30-90 days. Non-Resident Nepali (NRN) citizenship is available for former Nepali citizens who have adopted foreign citizenship, providing special economic and visa benefits. Dual citizenship is not fully implemented for ordinary citizens.",
+    "keywords": ["citizenship", "nagarikta", "nationality", "naturalization", "NRN", "नागरिकता", "गैरआवासीय नेपाली", "राष्ट्रियता"]
+  },
+  {
+    "id": "immigration-2",
+    "caseType": "Immigration",
+    "title": "Passport Application in Nepal",
+    "content": "Nepali passports are issued by the Department of Passports under the Ministry of Foreign Affairs. Applications are submitted online through the passport portal and then visit the designated passport office for biometric collection. Required documents include citizenship certificate, previous passport (if renewal), and application fee. Regular passport processing takes 15-30 days. Expedited processing (1-7 days) is available for urgent cases with additional fees. Passport offices are located in Kathmandu, Birgunj, Nepalgunj, Pokhara, and other major cities. Machine Readable Passports (MRP) are the current standard with 5 or 10-year validity.",
+    "keywords": ["passport", "travel document", "passport application", "MRP", "पासपोर्ट", "राहदानी", "यात्रा अनुमति"]
+  },
+  {
+    "id": "immigration-3",
+    "caseType": "Immigration",
+    "title": "Visa Types and Extension",
+    "content": "Nepal offers various visa types: tourist visa (30/90/150 days), business visa, student visa, work visa, and dependent visa. Tourist visas can be obtained on arrival at Kathmandu airport or land borders. Tourist visa costs: USD 30 for 15 days, USD 50 for 30 days, USD 125 for 90 days. Visa extensions are available from the Department of Immigration, Kalikasthan, Kathmandu. For long-term stays, work and student visas require sponsorship from a Nepali entity. Overstaying fines are USD 5 per day for first 30 days, USD 2 per day thereafter. Employment without a work visa is illegal.",
+    "keywords": ["visa", "tourist visa", "work permit", "student visa", "visa extension", "भिसा", "पर्यटक भिसा", "कार्य अनुमति", "भिसा विस्तार"]
+  },
+  {
+    "id": "immigration-4",
+    "caseType": "Immigration",
+    "title": "Foreign Employment Law",
+    "content": "The Foreign Employment Act 2076 governs Nepali citizens working abroad. Licensed recruitment agencies must process foreign employment. Workers must obtain work permits from the Department of Foreign Employment before leaving Nepal. The minimum age for foreign employment is 18 years. Free visa and free ticket policy applies for some destination countries. Workers have rights to the terms specified in their employment contract. Insurance coverage of NPR 1,000,000 (life) and NPR 700,000 (accident) is mandatory. Welfare funds provide support in emergencies. Destination countries include UAE, Saudi Arabia, Qatar, Malaysia, Kuwait, and South Korea.",
+    "keywords": ["foreign employment", "work abroad", "recruitment agency", "work permit", "labour permit", "वैदेशिक रोजगार", "विदेश काम", "श्रम स्वीकृति"]
+  },
+  {
+    "id": "consumer-1",
+    "caseType": "Consumer",
+    "title": "Consumer Rights and Protection",
+    "content": "The Consumer Protection Act 2075 provides comprehensive consumer rights in Nepal. Consumers have the right to safe products, accurate information, fair pricing, and redress. Defective products can be returned or exchanged within 7 days of purchase. Complaints can be filed at the Consumer Protection Department, district consumer forums, or directly at the Department of Commerce, Supplies and Consumer Protection. The law prohibits overcharging, misleading advertisements, and selling expired goods. Penalties for violations include fines up to NPR 500,000 and imprisonment. The consumer helpline number is 01-4220123.",
+    "keywords": ["consumer rights", "consumer protection", "product return", "refund", "defective product", "उपभोक्ता अधिकार", "उपभोक्ता संरक्षण", "सामान फिर्ता"]
+  },
+  {
+    "id": "consumer-2",
+    "caseType": "Consumer",
+    "title": "Online Shopping and E-Commerce Rights",
+    "content": "Online shopping in Nepal is regulated under the Electronic Transaction Act 2063 and Consumer Protection Act. Consumers have the right to cancel online orders within 48 hours of purchase. Products must be delivered within the promised timeframe. If goods are damaged or not as described, consumers can demand replacement or refund. Payment security is the responsibility of the e-commerce platform. Fraudulent online stores should be reported to the Cyber Bureau. Keep screenshots of orders, payment confirmations, and communication with sellers. Cross-border online purchases may be subject to customs duties.",
+    "keywords": ["online shopping", "ecommerce", "online order", "e-commerce", "online fraud", "अनलाइन किनमेल", "अनलाइन अर्डर", "इ-कमर्स"]
+  },
+  {
+    "id": "consumer-3",
+    "caseType": "Consumer",
+    "title": "Defective Products and Warranty Claims",
+    "content": "In Nepal, consumer goods come with implied warranties under the Consumer Protection Act. Manufacturers and sellers must provide after-sales service. Warranty periods vary by product: electronics typically 1 year, vehicles 3 years or 100,000 km. For warranty claims, keep the original purchase receipt, warranty card, and product packaging. The seller must repair or replace defective products within a reasonable time. If the same defect appears multiple times, the consumer can demand a full refund. Importers are also responsible for warranty on imported goods. File complaints at the Department of Commerce if the seller refuses.",
+    "keywords": ["warranty", "guarantee", "product defect", "after-sales service", "repair", "वारेन्टी", "ग्यारेन्टी", "उत्पादन दोष", "मर्मत"]
+  },
+  {
+    "id": "constitutional-1",
+    "caseType": "Constitutional",
+    "title": "Fundamental Rights under Constitution",
+    "content": "The Constitution of Nepal 2015 guarantees 31 fundamental rights including right to equality (Article 18), right to freedom (Article 17), right to justice (Article 20), right to property (Article 25), right to information (Article 27), and right to constitutional remedies (Article 46). These rights are enforceable in the Supreme Court through writ petitions. The right to life includes clean environment, food, and shelter. Discrimination on grounds of origin, religion, race, caste, sex, or physical condition is prohibited. Special provisions exist for women, children, Dalits, indigenous groups, and persons with disabilities.",
+    "keywords": ["fundamental rights", "constitution", "human rights", "equality", "freedom", "मौलिक हक", "संविधान", "मानव अधिकार", "समानता"]
+  },
+  {
+    "id": "constitutional-2",
+    "caseType": "Constitutional",
+    "title": "Right to Information (RTI)",
+    "content": "The Right to Information Act 2064 (RTI) gives Nepali citizens the right to access information held by public bodies. File an application with the concerned public office. The office must respond within 15 days. If information is denied or delayed, appeal to the Information Commission within 60 days. Information can be denied only on grounds of national security, court confidentiality, or personal privacy. The RTI covers all government ministries, departments, local bodies, and public corporations. The National Information Commission oversees RTI compliance and can impose fines on officers who refuse information without valid reason.",
+    "keywords": ["RTI", "right to information", "information commission", "public information", "सूचनाको हक", "सार्वजनिक सूचना", "RTI आवेदन"]
+  },
+  {
+    "id": "constitutional-3",
+    "caseType": "Constitutional",
+    "title": "Writ Jurisdiction and Supreme Court",
+    "content": "The Supreme Court of Nepal has extraordinary jurisdiction under Article 133 of the Constitution to issue writs including habeas corpus, mandamus, certiorari, prohibition, and quo warranto. Habeas corpus is for unlawful detention. Mandamus orders a public body to perform its duty. Certiorari quashes illegal decisions. Prohibition prevents tribunals from exceeding jurisdiction. Quo warranto challenges unlawful holding of public office. Writ petitions must be filed within 35 days of the cause of action. Constitutional bench of the Supreme Court hears cases involving constitutional interpretation. Free legal aid is available for indigent petitioners through the Supreme Court Legal Aid Committee.",
+    "keywords": ["supreme court", "writ", "habeas corpus", "mandamus", "certiorari", "सर्वोच्च अदालत", "रिट", "बन्दी प्रत्यक्षीकरण", "परमादेश"]
+  },
+  {
+    "id": "traffic-1",
+    "caseType": "Traffic",
+    "title": "Driving License in Nepal",
+    "content": "Driving licenses in Nepal are issued by the Department of Transport Management (DOTM). Minimum age is 18 for motorcycles (15-30 cc) and 21 for cars and heavy vehicles. The process includes written exam, driving test, and trail test (for public vehicles). Required documents include citizenship certificate, medical certificate, and photos. Training from a licensed driving center is recommended but not mandatory. The license is valid for 5 years and must be renewed. Fees range from NPR 1,200-3,600 depending on vehicle category. International Driving Permit (IDP) can be obtained for overseas driving.",
+    "keywords": ["driving license", "driving permit", "driving test", "license", "सवारी अनुमति", "ड्राइभिङ लाइसेन्स", "सवारी परीक्षा"]
+  },
+  {
+    "id": "traffic-2",
+    "caseType": "Traffic",
+    "title": "Vehicle Registration and Insurance",
+    "content": "All vehicles in Nepal must be registered with the Department of Transport Management within 30 days of purchase. Required documents include purchase invoice, customs receipt (for imports), citizenship, and VAT receipt. Number plates must be displayed. Vehicle tax is paid annually. Third-party insurance is mandatory by law and covers damage to others. Comprehensive insurance covers own vehicle damage. Insurance claims must be filed within 30 days of an accident. Uninsured vehicles face fines and possible seizure. Registration renewal requires passing a fitness test for vehicles older than 5 years.",
+    "keywords": ["vehicle registration", "car registration", "insurance", "vehicle insurance", "third party", "सवारी दर्ता", "बीमा", "गाडी बीमा", "हुकुमत"]
+  },
+  {
+    "id": "traffic-3",
+    "caseType": "Traffic",
+    "title": "Road Accidents and Compensation",
+    "content": "In case of a road accident in Nepal, immediately report to the nearest traffic police or call 103. Ensure medical treatment for injured persons. File an FIR at the police station. The traffic police investigate and determine fault. Insurance companies process claims based on the police report and medical documents. Compensation for injury includes medical expenses, loss of income, and pain and suffering. In case of death, dependents can claim compensation up to NPR 1,000,000 from insurance. Legal action can be taken against the at-fault driver under the Transport Management Act. Hit-and-run cases are investigated by dedicated traffic police units.",
+    "keywords": ["accident", "road accident", "car accident", "traffic accident", "compensation", "दुर्घटना", "सडक दुर्घटना", "क्षतिपूर्ति", "बीमा दाबी"]
+  },
+  {
+    "id": "tax-1",
+    "caseType": "Tax",
+    "title": "Income Tax Filing and Slabs",
+    "content": "Income tax in Nepal is governed by the Income Tax Act 2058. The tax year runs from mid-July to mid-July. Tax returns must be filed by October 15 (3 months after fiscal year end). Current tax slabs for individuals: Up to NPR 5,00,000 - 1%, NPR 5,00,001 to 7,00,000 - 10%, NPR 7,00,001 to 10,00,000 - 20%, NPR 10,00,001 to 20,00,000 - 30%, Above 20,00,000 - 36%. Married couples filing jointly get additional NPR 50,000 deduction. Tax is deducted at source (TDS) for salary, rent, and certain payments. Late filing attracts penalties and interest of 15% per annum.",
+    "keywords": ["income tax", "tax filing", "tax return", "tax slab", "TDS", "आयकर", "कर फिर्ता", "कर दर", "कर स्ल्याब"]
+  },
+  {
+    "id": "tax-2",
+    "caseType": "Tax",
+    "title": "VAT Registration and Compliance",
+    "content": "Value Added Tax (VAT) in Nepal is at 13% standard rate. Businesses with annual turnover exceeding NPR 50 lakh must register for VAT. Registration is done at the Inland Revenue Department (IRD). VAT returns are filed quarterly (turnover 50 lakh - 2 crore) or monthly (above 2 crore). Input tax credit is available for business purchases. VAT invoices must include business name, PAN, VAT number, and tax amount. Zero-rated supplies (exports) and exempt supplies (agricultural products, education, health services) have special rules. Penalties for non-compliance range from 25% to 200% of tax evaded.",
+    "keywords": ["VAT", "value added tax", "VAT registration", "VAT return", "IRD", "भ्याट", "मूल्य अभिवृद्धि कर", "भ्याट दर्ता"]
+  },
+  {
+    "id": "tax-3",
+    "caseType": "Tax",
+    "title": "Tax Audit and Disputes",
+    "content": "Tax audits in Nepal are conducted by the Inland Revenue Department (IRD). Companies with turnover exceeding NPR 2 crore must submit audited financial statements. The IRD can audit returns within 4 years of filing. During an audit, taxpayers must provide books of accounts, invoices, bank statements, and contracts. Tax disputes can be appealed to the Revenue Tribunal within 30 days of the assessment order. Further appeal goes to the Supreme Court. Tax amnesty schemes periodically offer reduced penalties for voluntary disclosure. Professional tax representation is recommended for complex audits.",
+    "keywords": ["tax audit", "IRD audit", "tax dispute", "revenue tribunal", "tax penalty", "कर जाँच", "कर विवाद", "राजस्व न्यायाधिकरण", "कर दण्ड"]
+  },
+  {
+    "id": "general-1",
+    "caseType": "Constitutional",
+    "title": "Free Legal Aid in Nepal",
+    "content": "Free legal aid is available in Nepal for indigent persons through the Nepal Legal Aid and Consultancy Center (NLACC) under the Supreme Court. Legal aid covers consultation, representation in court, and document preparation. Eligibility is based on income (below poverty line) and case merit. Legal aid clinics operate in all District Courts. The Nepal Bar Association also provides pro bono services through its legal aid committee. Organizations like Pro Public and Forum for Women, Law and Development (FWLD) provide specialized legal aid for women and marginalized groups. Free legal advice is also available at court premises.",
+    "keywords": ["legal aid", "free lawyer", "pro bono", "free legal help", "कानुनी सहायता", "निःशुल्क कानुनी सहायता", "निःशुल्क वकील"]
+  },
+  {
+    "id": "general-2",
+    "caseType": "Criminal",
+    "title": "Drug Offenses and NDPS Act",
+    "content": "Drug offenses in Nepal are governed by the Narcotic Drugs (Control) Act 2033. Possession, use, sale, or trafficking of controlled substances is illegal. Penalties vary by drug type and quantity: possession for personal use may result in rehabilitation, while trafficking carries 5-20 years imprisonment and fines up to NPR 1,000,000. Common drugs include cannabis, heroin, cocaine, and prescription drug abuse. The police have special narcotics control bureaus. First-time offenders may be offered rehabilitation instead of prosecution for small quantities. International drug trafficking carries the highest penalties.",
+    "keywords": ["drug", "narcotics", "cannabis", "ganja", "drug case", "लागूऔषध", "गाँजा", "मादक पदार्थ", "ड्रग्स मुद्दा"]
+  },
+  {
+    "id": "general-3",
+    "caseType": "Civil",
+    "title": "Defamation and Libel Law",
+    "content": "Defamation in Nepal is a both civil and criminal offense. Under the Muluki Criminal Code 2017, defamation occurs when false statements harm a person's reputation. Criminal defamation carries penalties of up to 1 year imprisonment or fine. Civil defamation requires proving that false statements were published to third parties and caused damage. Defenses include truth, fair comment on public figures, and privilege. Social media defamation is increasingly common and is addressed under the Electronic Transaction Act. Public figures must prove actual malice to win defamation cases. Written defamation (libel) is considered more serious than spoken (slander).",
+    "keywords": ["defamation", "libel", "slander", "reputation", "false statement", "मानहानि", "बदनामी", "अपमान", "चरित्र हत्या"]
+  },
+  {
+    "id": "labor-5",
+    "caseType": "Labor",
+    "title": "Trade Union and Collective Bargaining",
+    "content": "Workers in Nepal have the right to form and join trade unions under the Labor Act 2017. Trade unions can engage in collective bargaining with employers on wages, working conditions, and benefits. There must be at least 10 workers to form a union. Unions are registered with the Department of Labor. Strikes are legal after following prescribed procedures including notice to the employer and mandatory conciliation. Essential services have restrictions on strikes. Employers cannot discriminate against union members. The Labor Court handles disputes between unions and employers.",
+    "keywords": ["trade union", "union", "collective bargaining", "strike", "labor union", "ट्रेड युनियन", "श्रमिक संगठन", "हड्ताल", "सामूहिक सौदाबाजी"]
+  },
+  {
+    "id": "family-6",
+    "caseType": "Family",
+    "title": "Adoption Laws in Nepal",
+    "content": "Adoption in Nepal is governed by the Muluki Ain and the Child Adoption Guidelines 2065. Adoption can be domestic (within Nepal) or inter-country. Eligible adoptive parents must be 25+ years old and at least 18 years older than the child. Married couples must have spousal consent. Single women can adopt, single men cannot adopt female children. The process involves home study, counseling, and court approval. The Central Child Welfare Board oversees adoptions. Inter-country adoption follows the Hague Convention principles. Birth parents must give free and informed consent. Adopted children have the same inheritance rights as biological children.",
+    "keywords": ["adoption", "adopt child", "foster care", "child welfare", "धर्मपुत्र", "धर्मपुत्री", "बालबालिका धर्मपुत्र"]
+  },
+  {
+    "id": "criminal-6",
+    "caseType": "Criminal",
+    "title": "Sexual Assault and Rape Laws",
+    "content": "Sexual assault and rape are serious criminal offenses under the Muluki Criminal Code 2017. Rape carries 10-15 years imprisonment and up to life imprisonment for aggravated cases (child victim, multiple perpetrators, or causing death). The law recognizes marital rape (except when spouses are living separately). Victims must undergo medical examination at a government hospital within 24 hours. FIR should be filed at any police station. Victim identity is protected by law. Special provisions include in-camera proceedings and female-only investigation officers. Support services are available through the One-Stop Crisis Management Center at major government hospitals.",
+    "keywords": ["rape", "sexual assault", "sexual violence", "assault", "यौन हिंसा", "बलात्कार", "यौन दुर्व्यवहार", "यौन आक्रमण"]
+  },
+  {
+    "id": "business-5",
+    "caseType": "Business",
+    "title": "Intellectual Property Rights",
+    "content": "Intellectual Property (IP) in Nepal is protected under the Patent, Design and Trademark Act 2022. Trademarks protect brand names, logos, and slogans. Registration is with the Department of Industry, Industrial Property Office. Trademark protection lasts 7 years and is renewable. Patents protect inventions for 20 years. Copyright protection under the Copyright Act 2058 covers literary, artistic, and musical works automatically upon creation (registration not required but recommended). Nepal is a member of WTO and Paris Convention for IP protection. IP infringement can be addressed through court injunctions, damages, and criminal penalties.",
+    "keywords": ["intellectual property", "trademark", "patent", "copyright", "IPR", "बौद्धिक सम्पत्ति", "ट्रेडमार्क", "पेटेन्ट", "प्रतिलिपि अधिकार"]
+  },
+  {
+    "id": "consumer-4",
+    "caseType": "Consumer",
+    "title": "Banking and Financial Fraud",
+    "content": "Banking fraud in Nepal is addressed under the Banking Offenses Act 2064 and Nepal Rastra Bank directives. Common frauds include unauthorized transactions, loan fraud, kiting, and identity theft. Victims must immediately notify their bank and file a complaint with Nepal Rastra Bank. Bank fraud investigation is conducted by the Nepal Police Economic Crime Investigation Department. Electronic banking fraud should also be reported to the Cyber Bureau. Banks must reimburse unauthorized transactions if reported within 3 days. Loan fraud carries 3-10 years imprisonment. The Deposit Insurance and Credit Guarantee Corporation provides deposit insurance up to NPR 500,000 per depositor.",
+    "keywords": ["bank fraud", "banking fraud", "scam", "financial fraud", "loan fraud", "बैंक ठगी", "बैंकिङ ठगी", "आर्थिक ठगी"]
+  },
+  {
+    "id": "property-5",
+    "caseType": "Property",
+    "title": "Housing and Apartment Buyer Rights",
+    "content": "Apartment and housing buyers in Nepal have rights under the Land Use Act 2076 and Real Estate Development Guidelines. Developers must register with the Department of Urban Development and Building Construction. Buyers should verify that the developer has clear land title and building permit. The agreement must specify delivery date, specifications, payment schedule, and penalty for delays. If the developer fails to deliver, buyers can demand refund with interest (typically 10-12% per annum). Common issues include delayed possession, substandard construction, and unauthorized floor area. File complaints at the Department of Commerce or the District Court.",
+    "keywords": ["apartment", "housing", "flat", "real estate", "home buyer", "अपार्टमेन्ट", "घर", "फ्लैट", "रियल इस्टेट"]
+  },
+  {
+    "id": "civil-5",
+    "caseType": "Civil",
+    "title": "Insurance Claims and Disputes",
+    "content": "Insurance claims in Nepal are governed by the Insurance Act 2079. Policyholders must file claims with all supporting documents within the policy period. Life insurance claims are processed within 30 days of receiving all documents. Non-life claims (motor, health, property) are processed within 15 days for cashless and 30 days for reimbursement. If the insurer rejects or delays claims unreasonably, policyholders can complain to the Insurance Board of Nepal (Beema Samiti). The Beema Samiti can order the insurer to pay with 12% interest. For complex disputes, consumers can file suit at the District Court. Complaint hotline: 01-4412549.",
+    "keywords": ["insurance", "claim", "insurance claim", "life insurance", "health insurance", "बीमा", "बीमा दाबी", "जीवन बीमा", "बीमा समिति"]
+  },
+  {
+    "id": "environment-1",
+    "caseType": "Constitutional",
+    "title": "Environmental Law and Rights",
+    "content": "The Constitution of Nepal guarantees the right to a clean environment (Article 30). The Environment Protection Act 2076 governs environmental protection. Environmental Impact Assessment (EIA) is mandatory for development projects. Initial Environmental Examination (IEE) is required for smaller projects. Citizens can file cases in the Supreme Court against projects that harm the environment. Polluters face fines up to NPR 500,000 and imprisonment. The National Trust for Nature Conservation manages protected areas. Solid waste management is regulated by the Solid Waste Management Act 2068. Community forestry programs give local communities forest management rights.",
+    "keywords": ["environment", "pollution", "green", "ecosystem", "environmental law", "वातावरण", "प्रदूषण", "वातावरण संरक्षण", "हरित"]
+  },
+  {
+    "id": "criminal-7",
+    "caseType": "Criminal",
+    "title": "Juvenile Justice and Children's Rights",
+    "content": "The Children's Act 2075 and Juvenile Justice Procedure Rules protect children in conflict with the law. Children below 10 years cannot be held criminally responsible. Children 10-18 years have special procedures including separate detention facilities, closed hearings, and alternative sentencing. The Juvenile Bench in District Courts handles juvenile cases. Rehabilitation, not punishment, is the primary goal. Reform homes and child correction homes provide rehabilitation. Parents or guardians are responsible for damages caused by children. Child labor below 14 years is prohibited. Children have the right to education, health, and protection from exploitation under the Constitution.",
+    "keywords": ["juvenile", "child rights", "child labor", "minor", "बालबालिका", "बाल अधिकार", "बाल श्रम", "नाबालिग"]
+  },
+  {
+    "id": "general-4",
+    "caseType": "Constitutional",
+    "title": "Citizen Charter and Public Service Rights",
+    "content": "Public service offices in Nepal are required to publish Citizen Charters specifying services, response times, fees, and grievance mechanisms. The Citizen Charter must be displayed prominently at every public office. If a service is not provided within the specified time, the concerned officer must compensate the citizen. The Grievance Handling Act 2075 provides for filing complaints against public officials. Complaints can be filed at the office itself, the Ministry, or the Commission for Investigation of Abuse of Authority (CIAA). The CIAA investigates corruption and abuse of authority. Citizen awareness of these rights is essential for accountable governance.",
+    "keywords": ["citizen charter", "public service", "grievance", "CIAA", "corruption", "नागरिक बडापत्र", "सार्वजनिक सेवा", "उजुरी", "भ्रष्टाचार"]
+  },
+  {
+    "id": "constitution-1",
+    "caseType": "Constitutional",
+    "title": "Constitution of Nepal 2015 - Overview and Structure",
+    "content": "The Constitution of Nepal 2015 (Nepal Sashan Bidhan 2072) is the supreme law of Nepal, enacted on September 20, 2015. It replaced the Interim Constitution of 2007. The Constitution establishes Nepal as a federal democratic republic with seven provinces. It consists of 35 parts, 308 articles, and 9 schedules. The Constitution guarantees sovereignty vested in the Nepali people. Key features include constitutional supremacy, fundamental rights, three levels of government (federal, provincial, local), independent judiciary, and an inclusive electoral system. The Constitution can be amended by a two-thirds majority of both houses of the federal parliament.",
+    "keywords": ["constitution", "constitution of nepal", "nepal constitution 2015", "sashan bidhan", "supreme law", "संविधान", "नेपालको संविधान २०७२", "संविधान सर्वोपरि"]
+  },
+  {
+    "id": "constitution-2",
+    "caseType": "Constitutional",
+    "title": "Fundamental Rights under the Constitution of Nepal",
+    "content": "Part 3 (Articles 16-46) of the Constitution of Nepal 2015 guarantees comprehensive fundamental rights enforceable in the Supreme Court. These include: Right to life (Article 16), Right to dignity (Article 16), Right to freedom (Article 17), Right to equality (Article 18), Right to communication (Article 19), Right to justice (Article 20), Right of a victim of crime (Article 21), Right against torture (Article 22), Right against preventive detention (Article 23), Right against untouchability and discrimination (Article 24), Right to education (Article 31), Right to language and culture (Article 32), Right to employment and social security (Article 33-34), Right to health (Article 35), Right to food (Article 36), Right to housing (Article 37), Right to a clean environment (Article 30), Right to information (Article 27), and Right to constitutional remedies (Article 46). Any law inconsistent with fundamental rights is void.",
+    "keywords": ["fundamental rights", "constitutional rights", "human rights", "right to life", "right to equality", "मौलिक हक", "संवैधानिक हक", "मानव अधिकार", "समानताको हक"]
+  },
+  {
+    "id": "constitution-3",
+    "caseType": "Constitutional",
+    "title": "Federal Structure of Nepal - Three Levels of Government",
+    "content": "The Constitution establishes three levels of government: Federal (Sanghiya), Provincial (Pradesh), and Local (Sthaniya). The Federal level consists of the President, Vice-President, Prime Minister, Council of Ministers, and the Federal Parliament (House of Representatives and National Assembly). The 7 provinces each have a Provincial Assembly and Chief Minister. The 753 local levels include Metropolitan cities, Sub-Metropolitan cities, Municipalities, and Rural Municipalities (Gaunpalika). Schedule 5-9 of the Constitution define the powers and responsibilities of each level. The federal government handles defense, foreign affairs, central banking, and national infrastructure. Provincial governments handle provincial police, health, and education. Local governments handle local development, agriculture, and community services.",
+    "keywords": ["federal", "province", "local government", "three levels", "federal structure", "सङ्घीय", "प्रदेश", "स्थानीय", "सङ्घीय संरचना", "तीन तहको सरकार"]
+  },
+  {
+    "id": "constitution-4",
+    "caseType": "Constitutional",
+    "title": "Supreme Court and Judicial System of Nepal",
+    "content": "The judicial system of Nepal comprises the Supreme Court, seven High Courts (one per province), and 77 District Courts. The Supreme Court is the highest court with final appellate jurisdiction and extraordinary constitutional jurisdiction through writ petitions (habeas corpus, mandamus, certiorari, prohibition, and quo warranto). The Chief Justice heads the Supreme Court. The Judicial Council recommends appointments and oversees judicial conduct. The Judicial Service Commission handles promotions. The Constitutional Bench of the Supreme Court hears constitutional disputes. Specialized courts include Administrative Court, Revenue Tribunal, Debt Recovery Tribunal, Labor Court, and Special Court for corruption cases. Lower courts include the Juvenile Bench and the Court of Appeal at the District level.",
+    "keywords": ["supreme court", "high court", "district court", "judiciary", "chief justice", "writ", "सर्वोच्च अदालत", "उच्च अदालत", "जिल्ला अदालत", "न्यायपालिका", "रिट"]
+  },
+  {
+    "id": "criminal-8",
+    "caseType": "Criminal",
+    "title": "Muluki Criminal Code 2017 - Key Provisions",
+    "content": "The Muluki Criminal Code (Muluki Aparadh Sanhita) 2074 came into effect on August 17, 2018, replacing the old Muluki Ain. It contains 299 sections covering criminal offenses and punishments. Key offenses include murder (Section 173 - life imprisonment), attempted murder, culpable homicide, assault, kidnapping, rape (Section 219 - 10-15 years imprisonment), theft (Section 249 - up to 7 years), robbery (Section 253), dacoity, fraud (Section 259 - up to 7 years), defamation (Section 269), and perjury. The Code recognizes both acts and omissions as criminal. Attempt to commit an offense is punishable with half the maximum punishment. The principle of nulla poena sine lege (no punishment without law) is followed. Corporate criminal liability is recognized.",
+    "keywords": ["muluki criminal code", "criminal code", "penal code", "crime", "punishment", "मुलुकी अपराध संहिता", "फौजदारी", "अपराध", "सजाय"]
+  },
+  {
+    "id": "criminal-9",
+    "caseType": "Criminal",
+    "title": "Criminal Procedure Code 2074 - Court Process",
+    "content": "The Criminal Procedure Code (Muluki Aparadh Karobari Sanhita) 2074 governs criminal procedure in Nepal. It covers investigation, arrest, bail, trial, and appeal. The criminal process begins with FIR registration (Jahari), police investigation, filing of charge sheet (Abhiyog Patra), preliminary hearing, trial (full bench or jury), and judgment. Types of trials include summary trial for minor offenses, warrant trial for serious offenses, and sessions trial for capital offenses. Limitation periods: 6 months for summary offenses, 1 year for warrant offenses, and no limitation for serious crimes like murder. Appeal lies to the High Court within 70 days from the District Court judgment. Further appeal to the Supreme Court requires leave.",
+    "keywords": ["criminal procedure", "court process", "trial", "appeal", "charge sheet", "फौजदारी कार्यविधि", "अभियोग पत्र", "मुद्दा", "पुनरावेदन"]
+  },
+  {
+    "id": "civil-6",
+    "caseType": "Civil",
+    "title": "Civil Procedure Code 2074 - Civil Litigation",
+    "content": "The Civil Procedure Code (Muluki Dewani Karobari Sanhita) 2074 governs civil litigation including property disputes, contract enforcement, and tort claims. A civil suit begins with filing a plaint at the District Court with court fees based on the claim amount. The court issues summons to the defendant who must file a written statement within 15-35 days. The court holds a preliminary hearing to frame issues, followed by evidence (documentary and witness), argument, and judgment. Mediation and settlement are encouraged at any stage. Limitation periods: 6 months for movable property recovery, 1 year for breach of contract, 3 years for immovable property, and 12 years for adverse possession. Appeals must be filed within 90 days to the High Court.",
+    "keywords": ["civil procedure", "civil suit", "litigation", "court case", "plaint", "देवानी कार्यविधि", "देवानी मुद्दा", "मुद्दा", "अदालत"]
+  },
+  {
+    "id": "family-1",
+    "caseType": "Family",
+    "title": "Marriage Laws in Nepal",
+    "content": "Marriage in Nepal is governed by the Muluki Civil Code 2074. The legal marriage age is 20 years for both men and women. Marriage registration is mandatory and must be done within 35 days at the Ward Office or District Administration Office. Types of marriage include court marriage, religious marriage, and traditional marriage. Inter-caste marriage is legally recognized and incentivized with a NPR 100,000 cash incentive from the government. Polygamy is prohibited for all except under specific circumstances (first wife's consent for infertility or incurable disease). Dowry is illegal under the Social Practices Reform Act. Marriages must be voluntarily consented. Child marriage (below 20) is a criminal offense.",
+    "keywords": ["marriage", "wedding", "marriage registration", "court marriage", "inter-caste", "विवाह", "विवाह दर्ता", "अन्तरजातीय विवाह", "कोर्ट म्यारिज"]
+  },
+  {
+    "id": "family-2",
+    "caseType": "Family",
+    "title": "Divorce and Legal Separation in Nepal",
+    "content": "Divorce in Nepal is governed by the Muluki Civil Code 2074. A divorce petition can be filed in the District Court. Grounds for divorce include mutual consent, cruelty, adultery, desertion for 3+ years, irreconcilable differences, and incurable mental illness. Mutual consent divorce requires both parties to file jointly. After divorce, the wife is entitled to half of the property acquired during marriage (not ancestral property). Child custody is determined based on the child's best interest. Children under 5 years are usually with the mother. Maintenance (alimony) is determined based on the spouse's income and standard of living. The court attempts mediation first. A 6-month cooling-off period is required for mutual consent divorce.",
+    "keywords": ["divorce", "separation", "legal separation", "alimony", "child custody", "सम्बन्ध विच्छेद", "पारपाचुके", "गुजारा भत्ता", "बालबालिकाको हिरासत"]
+  },
+  {
+    "id": "family-3",
+    "caseType": "Family",
+    "title": "Succession and Inheritance Rights in Nepal",
+    "content": "Succession in Nepal is governed by the Muluki Civil Code 2074. The law provides equal inheritance rights to sons and daughters. Ancestral property (Kulani) is divided equally among children. Self-acquired property can be disposed by will to anyone. The surviving spouse inherits a share equal to the children. If there is no will, property is distributed according to the rules of intestate succession. Stepchildren adopted under Nepali law have inheritance rights equal to biological children. A will (Vasiyathnama) should be registered at the District Court or signed by two witnesses. Testamentary succession allows a person to distribute their property according to their wishes. Women's right to parental property is fully protected under Article 18 of the Constitution.",
+    "keywords": ["inheritance", "succession", "will", "property", "ancestral property", "उत्तराधिकार", "वंशज", "जग्गा", "वसीयत", "पैतृक सम्पत्ति"]
+  },
+  {
+    "id": "family-4",
+    "caseType": "Family",
+    "title": "Adoption Laws in Nepal",
+    "content": "Adoption in Nepal is governed by the Muluki Civil Code 2074 and the Children's Act 2075. Both domestic and inter-country adoption are regulated. Domestic adoption: a married couple can adopt if they have no children of their own. Single women can adopt a female child. Foreign adoption is handled through authorized organizations. The adoptive parents must be at least 30 years old and at most 55 years old, financially stable, and of good character. The adopted child has the same inheritance rights as a biological child. The adoption must be registered at the District Administration Office. The consent of biological parents (if living) and the child (if above 10 years) is required. Abandoned children can be adopted through the Child Welfare Board.",
+    "keywords": ["adoption", "child adoption", "foster care", "guardian", "धर्मपुत्र", "धर्मपुत्री", "बालबालिका धर्मपुत्र", "अभिभावक"]
+  },
+  {
+    "id": "labor-1",
+    "caseType": "Labor",
+    "title": "Labor Act 2017 - Employee Rights",
+    "content": "The Labor Act 2074 (2017) is the primary law governing employment in Nepal. Key provisions: Maximum 8 hours work per day (48 hours per week), overtime paid at 1.5 times regular pay, 20 days annual leave, 13 days public holiday leave, 12 days sick leave, 60 days maternity leave (fully paid), and 15 days paternity leave for male employees. Employees cannot be terminated without 30 days' notice or payment in lieu. Severance includes gratuity (8.33% of salary per year) and provident fund (10% employee + 10% employer). Minimum wage is set by the government and revised periodically. Employers must provide safe working conditions, accident insurance, and social security contributions. The Labor Office handles employee complaints.",
+    "keywords": ["labor law", "employment", "employee rights", "wages", "overtime", "श्रम ऐन", "रोजगार", "कर्मचारी अधिकार", "ज्याला", "ओभरटाइम"]
+  },
+  {
+    "id": "labor-2",
+    "caseType": "Labor",
+    "title": "Social Security Act - Employee Benefits",
+    "content": "The Social Security Act 2075 established the Social Security Fund (SSF) for formal sector employees. Both employer and employee contribute 10% each of basic salary to the SSF. The SSF provides five schemes: Medical, Health and Maternity Protection Scheme; Accidents and Disability Protection Scheme; Dependent Family Protection Scheme; Old Age Protection Scheme; and Unemployment Protection Scheme. Registration is mandatory for all employers with employees. Unregistered employers face fines. The SSF is managed by the Social Security Fund Board. Employees can withdraw a portion of their old age contributions after age 60 or in case of permanent disability. The scheme also provides accident insurance coverage during employment.",
+    "keywords": ["social security", "SSF", "provident fund", "pension", "employee benefits", "सामाजिक सुरक्षा", "कोष", "पेन्सन", "कर्मचारी लाभ"]
+  },
+  {
+    "id": "labor-3",
+    "caseType": "Labor",
+    "title": "Termination and Redundancy in Nepal",
+    "content": "Employment termination in Nepal is regulated by the Labor Act 2074. Permanent employees can only be terminated for cause (misconduct, negligence, criminal offense) or redundancy (retrenchment). For-cause termination requires three written warnings within a year followed by a domestic inquiry. Redundancy requires the employer to prove economic necessity and follow a last-in-first-out principle. Notice period: 30 days for monthly employees, 7 days for daily wages. Severance pay: 30 days' basic salary per year of service as gratuity plus provident fund. Retrenched employees get additional compensation of 1 month salary per year of service (minimum 3 months, maximum 12 months). Wrongful termination can be challenged at the Labor Court, which can order reinstatement or compensation up to 36 months salary.",
+    "keywords": ["termination", "redundancy", "retrenchment", "dismissal", "severance", "रोजगारी अन्त्य", "बर्खास्त", "कटौती", "क्षतिपूर्ति"]
+  },
+  {
+    "id": "tax-1",
+    "caseType": "Tax",
+    "title": "Personal Income Tax in Nepal",
+    "content": "Personal income tax in Nepal is governed by the Income Tax Act 2058. The tax year runs from mid-July to mid-July (Nepali fiscal year). Tax rates (2024/25): Income up to NPR 500,000 - 1% (with social security contribution), NPR 500,001 to NPR 700,000 - 10%, NPR 700,001 to NPR 1,000,000 - 20%, NPR 1,000,001 to NPR 2,000,000 - 30%, above NPR 2,000,000 - 36%. Taxpayers with professional income (business, investment capital) get a 50% deduction on first NPR 500,000. Married couples can file separately. Tax is deducted at source (TDS) from salaries. Individuals must file annual tax returns by Kartik end (November) with penalties for late filing. Capital gains tax: 5% for shares (short-term), 7.5% for immovable property held less than 5 years.",
+    "keywords": ["income tax", "personal tax", "tax return", "TDS", "salary tax", "आयकर", "व्यक्तिगत कर", "कर फिर्ता", "तलब कर"]
+  },
+  {
+    "id": "tax-2",
+    "caseType": "Tax",
+    "title": "Business and VAT Registration in Nepal",
+    "content": "Business registration in Nepal is required at the Department of Commerce (Company) or Department of Cottage and Small Industries. VAT registration is mandatory for businesses with annual turnover exceeding NPR 5 million. Voluntary registration is allowed for smaller businesses. VAT rate is 13% on most goods and services (standard rate). Zero-rated supplies include exports, certain agricultural products, and services. VAT returns must be filed monthly (by 25th of following month). Late filing penalty is 2% per month with minimum NPR 1,000. PAN (Permanent Account Number) registration is required for all businesses. Advance Tax Payment (estimated tax) is payable in four installments during the fiscal year. Corporate tax rate: 25% for most businesses, 20% for industrial sectors, 10% for export businesses.",
+    "keywords": ["business registration", "VAT", "PAN", "tax registration", "corporate tax", "व्यवसाय दर्ता", "मूल्य अभिवृद्धि कर", "प्यान", "कर्पोरेट कर"]
+  },
+  {
+    "id": "property-6",
+    "caseType": "Property",
+    "title": "Land Measurement Units and Survey in Nepal",
+    "content": "Land in Nepal is measured in traditional units: Ropani, Aana, Paisa, Daam (1 Ropani = 16 Aana = 508.72 sq meters) used in hilly regions, and Bigha, Kattha, Dhur (1 Bigha = 20 Kattha = 6772.41 sq meters) used in Terai. Land survey is conducted by the Survey Department. A cadastral survey creates the land map (Naksa) showing exact boundaries. The Land Revenue Office issues the Lalpurja (land ownership certificate). Land measurement disputes can be resolved through re-survey application. Land classification categories include: Aabbal, Doyam, Sim, Chahar (based on productivity). Land use classification under the Land Use Act: agricultural, residential, commercial, industrial, forest, and public use. Conversion of agricultural land to other uses requires approval from the Land Use Council.",
+    "keywords": ["land measurement", "ropani", "bigha", "kattha", "survey", "जग्गा नापी", "रोपनी", "बिघा", "कठ्ठा", "नक्सा", "लालपुर्जा"]
+  },
+  {
+    "id": "property-7",
+    "caseType": "Property",
+    "title": "Land Acquisition and Compensation",
+    "content": "Land acquisition by the government is governed by the Land Acquisition Act 2034. The government can acquire private land for public purposes (infrastructure, roads, schools, hospitals). The acquisition process: publication of notice, survey and valuation, compensation determination, objection hearing, and final award. Compensation is based on market value plus 50% solatium. Displaced persons get additional rehabilitation allowance. If the acquired land is not used for the stated purpose within 5 years, the original owner has the right to recover it at the same price. Objections to compensation can be filed at the District Court. Landowners cannot refuse acquisition but can contest the compensation amount. The Land Acquisition Act Amendment 2069 increased compensation rates.",
+    "keywords": ["land acquisition", "compensation", "expropriation", "government land", "जग्गा अधिग्रहण", "मुआब्जा", "जग्गा प्राप्ति", "सरकारी जग्गा"]
+  },
+  {
+    "id": "contract-1",
+    "caseType": "Civil",
+    "title": "Contract Law in Nepal",
+    "content": "Contracts in Nepal are governed by the Muluki Civil Code 2074 (Chapter on Contract). Essential elements of a valid contract: offer and acceptance, lawful consideration, capacity to contract (age 18+, sound mind), free consent, lawful object, and certainty of terms. Written contracts with registration are preferred for legal enforceability. Performance of contract must be as per agreed terms. Breach of contract remedies include specific performance, damages (actual loss + consequential loss), and rescission. Interest on delayed payment is 10% per annum unless otherwise agreed. Limitation for contract enforcement is 1 year from breach. Contracts involving immovable property must be registered at the Land Revenue Office. Unregistered contracts for immovable property are not enforceable in court.",
+    "keywords": ["contract", "agreement", "breach of contract", "legal contract", "enforcement", "सम्झौता", "करार", "सम्झौता उल्लंघन", "कानुनी करार"]
+  },
+  {
+    "id": "business-2",
+    "caseType": "Business",
+    "title": "Company Registration in Nepal",
+    "content": "Companies in Nepal are registered under the Companies Act 2063 at the Office of Company Registrar (OCR), Tripureshwar, Kathmandu. Types: Private Limited Company (minimum 1 director, up to 101 shareholders), Public Limited Company (minimum 3 directors, 7+ shareholders, public can buy shares), and One Person Company (OPC). Registration process: Name reservation (online), document submission (MOA, AOA, etc.), incorporation certificate, PAN registration, and VAT registration. Minimum paid-up capital: Private Limited NPR 100,000, Public Limited NPR 10 million, OPC NPR 50,000. Foreign investment companies need approval from the Department of Industry. Annual requirements: AGM within 6 months of fiscal year end, annual return filing, and tax return. Non-compliance leads to fines and potential strike-off.",
+    "keywords": ["company registration", "private limited", "OPC", "public limited", "company act", "कम्पनी दर्ता", "निजी लिमिटेड", "कम्पनी ऐन", "कम्पनी रजिस्ट्रार"]
+  },
+  {
+    "id": "immigration-1",
+    "caseType": "Immigration",
+    "title": "Passport and Citizenship in Nepal",
+    "content": "Nepali passports are issued by the Department of Passports under the Passport Act 2076. Machine Readable Passports (MRP) are valid for 10 years. Application is online through the Department of Passports website with appointment booking. Required documents: citizenship certificate, birth certificate, and photographs. Emergency passport is available for urgent medical treatment and foreign employment. Citizenship in Nepal is governed by the Citizenship Act 2063. Citizenship by descent: persons born to Nepali citizen parents. Citizenship by birth: persons born in Nepal before 1990. Naturalized citizenship: available to foreign women married to Nepali citizens (after 7 years residence) and others with special contribution. Dual citizenship is not recognized. Non-Resident Nepali (NRN) status allows visa-free entry and economic rights without political rights.",
+    "keywords": ["passport", "citizenship", "visa", "NRN", "nepali passport", "राहदानी", "नागरिकता", "भिसा", "गैरआवासीय नेपाली"]
+  },
+  {
+    "id": "consumer-5",
+    "caseType": "Consumer",
+    "title": "Consumer Rights and Protection in Nepal",
+    "content": "Consumer rights in Nepal are protected under the Consumer Protection Act 2075. The act provides for: right to safety, right to information, right to choose, right to be heard, and right to redress. The Department of Commerce, Supplies and Consumer Protection (DoCSCP) handles consumer complaints. Grievances can be filed through the toll-free number 1136 or online portal. Compensation for defective products: up to NPR 50,000 per complaint without court, and higher amounts through the Consumer Court. Black marketing, hoarding, and overcharging are punishable with imprisonment up to 10 years and fines up to NPR 300,000. Traders must display prices and expiry dates. Substandard products can be confiscated and destroyed. Right to return goods within 7 days is recognized for online purchases.",
+    "keywords": ["consumer rights", "consumer protection", "complaint", "black marketing", "overcharging", "उपभोक्ता अधिकार", "उपभोक्ता संरक्षण", "गुनासो", "कालोबजारी"]
+  },
+  {
+    "id": "traffic-1",
+    "caseType": "Traffic",
+    "title": "Driving License and Traffic Rules in Nepal",
+    "content": "Driving licenses in Nepal are issued by the Department of Transport Management (DoTM). Categories: A (Motorcycle), B (Car/Taxi), C (Light Truck), D (Heavy Truck), E (Bus/Heavy Vehicle). Minimum age: 16 for motorcycle, 18 for car. Written test followed by driving test. License is valid for 5 years (renewable). Traffic rules: Left-hand drive, speed limits (40 km/h in cities, 80 km/h on highways), seat belts mandatory for front seats, helmet mandatory for motorcycle riders and pillion, no mobile phone while driving, zero tolerance for drunk driving (blood alcohol > 80mg/100ml is offense). Traffic violation fines range from NPR 500 to NPR 5,000. Accident procedures: Stop, help injured, inform police (100), inform insurance company, do not move vehicles until police arrive.",
+    "keywords": ["driving license", "traffic rules", "traffic violation", "road accident", "driving", "सवारी चालक अनुमति", "ट्राफिक नियम", "सवारी दुर्घटना", "जरिवाना"]
+  },
+  {
+    "id": "human-rights-1",
+    "caseType": "Constitutional",
+    "title": "Human Rights and National Human Rights Commission",
+    "content": "The National Human Rights Commission (NHRC) Nepal was established under the Human Rights Commission Act 2053. It is an independent constitutional body under Article 248 of the Constitution. Functions: investigate human rights violations, recommend compensation, visit detention centers, and recommend legal reforms. Complaints can be filed at NHRC offices in Kathmandu (Harihar Bhawan) and all provincial offices. The NHRC can summon officials, order investigations, and recommend action. However, its recommendations are not automatically enforceable. Victims can file cases in court based on NHRC findings. The NHRC has special procedures for women's rights, children's rights, and the rights of marginalized groups. Key rights protected: right against torture, right against enforced disappearance, right to fair trial, and freedom from discrimination.",
+    "keywords": ["human rights", "NHRC", "human rights commission", "torture", "discrimination", "मानव अधिकार", "राष्ट्रिय मानव अधिकार आयोग", "यातना", "भेदभाव"]
+  },
+  {
+    "id": "human-rights-2",
+    "caseType": "Constitutional",
+    "title": "Right to Information in Nepal",
+    "content": "The Right to Information Act 2064 (2007) gives every citizen the right to access information held by public bodies. The National Information Commission (NIC) oversees implementation. Citizens can file information requests at any public office. The office must provide information within 15 days (3 days for matters involving life or liberty). Rejection requires written reasons (national security, privacy, ongoing investigation). If denied, appeal to the National Information Commission within 60 days. The Commission can impose fines up to NPR 25,000 and order the release of information. Annual reporting by all public bodies on proactive disclosure is mandatory. Public bodies must publish manuals, citizen charters, annual reports, and budgets proactively. The RTI Act has significantly increased government transparency in Nepal.",
+    "keywords": ["right to information", "RTI", "information commission", "transparency", "सूचनाको हक", "सूचना आयोग", "पारदर्शिता"]
+  },
+  {
+    "id": "education-1",
+    "caseType": "Constitutional",
+    "title": "Education Rights and Law in Nepal",
+    "content": "The right to education is a fundamental right under Article 31 of the Constitution. The Education Act 2028 governs the education system. Free and compulsory basic education (Grade 1-8) for all citizens is guaranteed. The government provides free textbooks and scholarships to marginalized students. The School Leaving Certificate (SEE) exam is conducted at Grade 10. Higher education is governed by the universities and their affiliated colleges. Key universities: Tribhuvan University, Kathmandu University, Pokhara University, Purbanchal University, and Nepal Sanskrit University. The University Grants Commission (UGC) funds and regulates higher education. Technical and vocational education is under the Council for Technical Education and Vocational Training (CTEVT). Private schools must be registered with the Ministry of Education and cannot charge fees arbitrarily.",
+    "keywords": ["education", "school", "college", "university", "right to education", "शिक्षा", "विद्यालय", "कलेज", "विश्वविद्यालय", "शिक्षाको हक"]
+  },
+  {
+    "id": "health-1",
+    "caseType": "Constitutional",
+    "title": "Health Rights and Public Health Law in Nepal",
+    "content": "The right to health is guaranteed under Article 35 of the Constitution. Every citizen has the right to free basic health services from government health facilities. The Public Health Service Act 2075 governs health service delivery. The Health Insurance Board operates the National Health Insurance Program providing health coverage for NPR 3,500 per family (5 members) per year with coverage up to NPR 100,000. Essential medicines are provided free at government hospitals. The Nepal Medical Council regulates doctors, Nepal Nursing Council regulates nurses, and the Nepal Health Professional Council regulates other health professionals. Medical malpractice liability is established under the Muluki Civil Code. Patients can file complaints with the Health Professional Councils. Government health facilities must provide emergency services free of charge.",
+    "keywords": ["health rights", "health insurance", "medical", "hospital", "public health", "स्वास्थ्यको हक", "स्वास्थ्य बीमा", "अस्पताल", "स्वास्थ्य सेवा"]
+  },
+  {
+    "id": "environment-2",
+    "caseType": "Constitutional",
+    "title": "Forest and Wildlife Protection Laws",
+    "content": "Forest management in Nepal is governed by the Forest Act 2049 and the Forest Regulation 2051. The Community Forestry program gives local user groups management rights over forest areas. Nepal has 6 national parks, 12 wildlife reserves, and 10 conservation areas covering 24% of land. The National Parks and Wildlife Conservation Act 2029 protects endangered species. Poaching penalties: 5-15 years imprisonment and fines up to NPR 1 million. Protected animals include the Bengal tiger, snow leopard, one-horned rhinoceros, red panda, and elephant. The Department of National Parks and Wildlife Conservation enforces wildlife laws. Buffer zone communities receive 50% of park revenue for development. Forest product harvesting requires permits from the Division Forest Office. Timber transportation requires a transportation permit.",
+    "keywords": ["forest", "wildlife", "national park", "community forestry", "poaching", "वन", "वन्यजन्तु", "राष्ट्रिय निकुञ्ज", "सामुदायिक वन", "सिकार"]
+  },
+  {
+    "id": "election-1",
+    "caseType": "Constitutional",
+    "title": "Election Laws and Voting Rights in Nepal",
+    "content": "Elections in Nepal are governed by the Constitution and the Election Commission Act 2073. The Election Commission conducts federal, provincial, and local elections. All citizens aged 18+ can vote. The House of Representatives has 275 members (165 first-past-the-post + 110 proportional representation). National Assembly has 59 members (56 elected by provincial assemblies + 3 nominated). Voting rights: Every citizen 18+ can register to vote at the local Election Office. Voting is done through Electronic Voting Machines (EVMs) or ballot papers. Voter registration requires citizenship certificate. Vote buying and selling is punishable by up to 2 years imprisonment and NPR 50,000 fine. Election campaigning has expenditure limits per candidate. The election code of conduct prohibits using public resources for campaigning.",
+    "keywords": ["election", "voting", "election commission", "voter registration", "vote", "निर्वाचन", "मतदान", "निर्वाचन आयोग", "मतदाता", "भोट"]
+  },
+  {
+    "id": "media-1",
+    "caseType": "Constitutional",
+    "title": "Media and Press Freedom in Nepal",
+    "content": "Press freedom is guaranteed under Article 17 of the Constitution (Right to Freedom: includes press freedom). The Press Council Act 2049 established the Press Council Nepal to maintain ethical standards. Media registration is done at the Department of Information. The Working Journalist Act 2073 protects journalist rights including minimum wage, social security, and professional safety. Broadcasting is regulated by the Nepal Telecommunications Authority. The Media Council Bill proposes a self-regulatory mechanism. The Communication and Information Technology Act 2075 covers digital media. Defamation laws still apply through the Muluki Civil Code. Sedition provisions in the Criminal Code can restrict speech in limited circumstances. Journalists cannot be compelled to disclose sources except under court order for national security.",
+    "keywords": ["media", "press", "journalist", "freedom of press", "broadcasting", "सञ्चार", "प्रेस", "पत्रकार", "प्रेस स्वतन्त्रता", "प्रसारण"]
+  },
+  {
+    "id": "women-1",
+    "caseType": "Constitutional",
+    "title": "Women's Rights and Gender Equality in Nepal",
+    "content": "The Constitution guarantees women's rights under Article 38 including the right to equal lineage (pass citizenship to children), equal property rights, access to education and health, and employment with equal pay for equal work. Women must constitute 33% of federal parliament, 50% of provincial assemblies, and 40% of local government. The Gender Equality Act 2063 prohibits gender discrimination. Sexual harassment is punishable under the Criminal Code (Section 224 - up to 3 years imprisonment). The Domestic Violence Act 2066 provides protection orders. The Trafficking and Transportation (Control) Act 2064 addresses human trafficking. Women's right to parental property is equal to sons. Maternity leave: 60 days paid. The Women Development Program provides skill training and micro-credit. She contributes to women's legal awareness.",
+    "keywords": ["women rights", "gender equality", "women", "sexual harassment", "maternity", "महिला अधिकार", "लैङ्गिक समानता", "महिला", "यौन दुर्व्यवहार", "प्रसूति"]
+  },
+  {
+    "id": "land-1",
+    "caseType": "Property",
+    "title": "Land Tenure and Tenancy Rights in Nepal",
+    "content": "The Land Tenancy Act 2052 and Land Act 2021 govern landlord-tenant relationships. A registered tenancy (Mohi) gives the tenant rights to cultivate the land. Types of tenants: Adhiya (crop-sharing tenant) and Kuti (fixed-rent tenant). The landlord cannot evict a tenant without court order. Grounds for eviction: non-payment of rent for 2+ years, subletting without permission, misuse of land, and landlord's bona fide need for personal cultivation. The crop share is generally 50-50 for Adhiya tenants. Tenants have preference rights (Purvadhikar) to purchase the land if the landlord sells. Land ceiling limits: 10 Bigha (6.77 ha) in Terai, 25 Ropani (1.27 ha) in Kathmandu Valley, 70 Ropani (3.56 ha) elsewhere hills. Excess land can be confiscated and distributed to landless. The Land Reform Commission handles redistribution.",
+    "keywords": ["tenancy", "landlord", "tenant", "mohi", "cropshare", "जग्गा बन्डा", "मोही", "भाडामा", "बाली", "जग्गा सुधार"]
+  },
+  {
+    "id": "local-1",
+    "caseType": "Constitutional",
+    "title": "Local Government Operations and Services",
+    "content": "Local government in Nepal operates under the Local Government Operation Act 2074. Each of the 753 local units (Metropolitan, Sub-Metropolitan, Municipality, Rural Municipality) has a Village/Municipal Assembly and a Ward Committee. Local governments handle: local infrastructure (roads, water, electricity), agriculture extension, basic health services, basic education (primary schools), local tax collection (property tax, house rent tax, entertainment tax), land use planning, local economic development, and social welfare programs. Local governments can make laws, collect revenue, and implement development projects. The Ward Office provides citizen services: birth registration, marriage registration, death registration, citizenship recommendation, and income certificate. Local tax includes property tax (up to 2.5% of assessed value) and house rent tax (10% of annual rent). Monthly ward meetings are open to citizens.",
+    "keywords": ["local government", "municipality", "ward", "rural municipality", "local tax", "स्थानीय सरकार", "नगरपालिका", "वडा", "गाउँपालिका", "स्थानीय कर"]
+  },
+  {
+    "id": "banking-1",
+    "caseType": "Business",
+    "title": "Banking Laws and Regulations in Nepal",
+    "content": "The banking sector in Nepal is regulated by Nepal Rastra Bank (NRB) under the Nepal Rastra Bank Act 2058 and the Bank and Financial Institution Act (BFIA) 2073. Types of institutions: Commercial Banks (Class A), Development Banks (Class B), Finance Companies (Class C), and Microfinance Institutions (Class D). NRB sets monetary policy, regulates interest rates, and supervises banks. Key regulations: minimum capital requirement, statutory liquidity ratio (SLR), cash reserve ratio (CRR), and loan loss provisioning. Interest rates are determined by each bank's lending rate (Base Rate + premium). Deposit insurance covers up to NPR 500,000 per depositor per bank. NRB's directives limit maximum loan-to-value ratios for housing (60%) and vehicle (50%) loans. Consumer protection: banks must disclose all fees and interest clearly. Complaints can be filed at NRB's Banking and Financial Institution Regulation Department.",
+    "keywords": ["banking", "NRB", "central bank", "bank", "finance", "बैंकिङ", "नेपाल राष्ट्र बैंक", "केन्द्रीय बैंक", "बैंक", "वित्त"]
+  },
+  {
+    "id": "media-2",
+    "caseType": "Cyber",
+    "title": "Cyber Law and Digital Rights in Nepal",
+    "content": "The Electronic Transaction Act 2063 (ETA) is the primary cyber law in Nepal. It recognizes digital signatures and electronic records as legally valid. Key provisions: Unauthorized access to computer systems (up to 5 years imprisonment + NPR 200,000 fine), Hacking (up to 5 years + NPR 200,000 fine), Damage to computer system (up to 5 years + NPR 300,000 fine), Publication of illegal content (up to 5 years + NPR 200,000 fine). The Information Technology Emergency Response Team (ITERT) handles cyber incident response. The Nepal Police Cyber Bureau investigates cyber crimes. The Department of Information Technology manages IT policy. The Right to Information extends to digital records. Social media regulations require platforms to remove illegal content within 72 hours. Data protection provisions are limited under current law. The proposed Data Protection Bill will introduce comprehensive privacy protections.",
+    "keywords": ["cyber law", "digital rights", "electronic transaction", "data protection", "privacy", "साइबर कानुन", "डिजिटल अधिकार", "इलेक्ट्रोनिक कारोबार", "डाटा संरक्षण", "गोपनीयता"]
+  },
+  {
+    "id": "criminal-10",
+    "caseType": "Criminal",
+    "title": "Sexual Offenses and Rape Laws in Nepal",
+    "content": "Sexual offenses in Nepal are governed by the Muluki Criminal Code 2017 (Chapter on Sexual Offenses). Rape (Section 219): A person who engages in sexual intercourse without consent commits rape. Punishment: 10-15 years imprisonment. Marital rape: recognized under Section 219 (exemption for husbands removed in 2074). Child sexual abuse: Section 220 provides for additional penalties when the victim is under 18. Attempted rape: half the maximum punishment. Statutory rape: sexual intercourse with a child under 16 is automatically considered rape. Evidence rules protect victim identity. Victim's previous sexual history is generally inadmissible. Government provides free legal aid to rape victims. The One Door Crisis Management Centers at government hospitals provide integrated services for sexual violence victims. Psychological counseling and rehabilitation services are available.",
+    "keywords": ["rape", "sexual assault", "sexual offense", "marital rape", "child abuse", "बलात्कार", "यौन दुर्व्यवहार", "यौन अपराध", "बाल यौन दुरुपयोग"]
+  },
+  {
+    "id": "cyber-1",
+    "caseType": "Cyber",
+    "title": "Electronic Transaction Act 2063 - Complete Guide",
+    "content": "The Electronic Transaction Act 2063 (ETA) is Nepal's primary cyber law enacted in 2006. It provides legal recognition to electronic records and digital signatures. Key offenses and penalties: (1) Unauthorized access to computer material - up to 3 years imprisonment or NPR 100,000 fine or both; (2) Unauthorized access with intent to commit offense - up to 5 years imprisonment or NPR 200,000 fine or both; (3) Damage to computer system - up to 5 years imprisonment and NPR 300,000 fine; (4) Hacking - up to 5 years imprisonment and NPR 200,000 fine; (5) Publication of illegal content - up to 5 years imprisonment and NPR 200,000 fine; (6) Breach of confidentiality and privacy - up to 3 years or NPR 100,000 or both; (7) Publishing false digital signature - up to 2 years or NPR 50,000 or both. The Act also establishes the Controller of Certifying Authorities for digital signature regulation. The Nepal Police Cyber Bureau at Narayanhiti, Kathmandu (phone 01-4779900) is the primary enforcement agency. The Information Technology Emergency Response Team (ITERT) handles cyber incident response. The Act applies to any offense committed within Nepal or affecting a computer system located in Nepal.",
+    "keywords": ["cyber law", "electronic transaction act", "eta 2063", "cyber offense", "digital signature", "साइबर कानुन", "इलेक्ट्रोनिक कारोबार ऐन", "डिजिटल हस्ताक्षर", "साइबर अपराध"]
+  },
+  {
+    "id": "cyber-2",
+    "caseType": "Cyber",
+    "title": "Online Scam and Digital Fraud - Victim Response Steps",
+    "content": "If you are a victim of an online scam or digital fraud in Nepal, take these immediate steps: (1) Contact your bank immediately to freeze accounts and reverse unauthorized transactions. Call Nepal Rastra Bank helpline at 01-4511155. (2) File a complaint at the Nepal Police Cyber Bureau within 24 hours. Visit their office at Narayanhiti, Kathmandu or call 01-4779900. You can also file online at cyberbureau.nepalpolice.gov.np. (3) Preserve ALL evidence: screenshots of conversations, transaction receipts, emails, WhatsApp/Facebook messages, bank statements, website URLs, and phone numbers. (4) For social media scams (fake Facebook profiles, Marketplace fraud), also report to the platform itself. (5) For investment scams (ponzi schemes, crypto fraud), file a complaint with the Securities Board of Nepal (SEBON) and Nepal Rastra Bank. (6) File a written complaint (FIR) at your nearest District Police Office. The police must register your complaint under Section 155 of the Criminal Procedure Code. If they refuse, approach the Superintendent of Police. (7) The Cyber Bureau investigates under the Electronic Transaction Act 2063. Offenders face up to 5 years imprisonment and fines up to NPR 200,000 for hacking and NPR 300,000 for computer damage. (8) Contact a cyber law lawyer for legal representation. Recovery of lost funds is possible through court order. Prevention tips: never share OTP or banking PIN, verify website URLs before payment, use secure payment gateways, and be cautious of too-good-to-be-true offers.",
+    "keywords": ["online scam", "digital fraud", "phishing", "social media scam", "investment scam", "money recovery", "अनलाइन ठगी", "डिजिटल धोखाधडी", "लगानी ठगी", "रकम फिर्ता", "साइबर ब्युरो"]
+  },
+  {
+    "id": "cyber-3",
+    "caseType": "Cyber",
+    "title": "Social Media Laws and Cyber Bullying",
+    "content": "Social media use in Nepal is regulated under the Electronic Transaction Act 2063 and the Criminal Code 2017. Cyber bullying includes posting offensive comments, sharing private photos without consent, creating fake profiles to harass, and online stalking. Penalties: (1) Publishing illegal content on social media (Section 47 of ETA) - up to 5 years imprisonment and/or NPR 200,000 fine. (2) Harassment through electronic means - treated as criminal harassment under the Criminal Code. Victims should: (1) Save all evidence (screenshots, URLs, dates). (2) Block the harasser and report to the social media platform. (3) File a complaint at the Nepal Police Cyber Bureau (01-4779900). (4) For urgent cases involving threats, file an FIR at your local police station. (5) Seek a court protection order if harassment continues. Impersonation (fake accounts using your identity) is a specific offense under the ETA. Defamation on social media can be pursued both as a criminal case (up to 1 year imprisonment) and civil case (damages). The Right to Privacy is protected under Article 28 of the Constitution of Nepal 2015.",
+    "keywords": ["social media", "cyber bullying", "harassment", "online harassment", "fake profile", "impersonation", "सामाजिक सञ्जाल", "साइबर बुलिङ", "अनलाइन उत्पीडन", "नक्कली प्रोफाइल", "साइबर उत्पीडन"]
+  },
+  {
+    "id": "criminal-11",
+    "caseType": "Criminal",
+    "title": "Human Trafficking and Transportation (Control) Act 2064",
+    "content": "The Human Trafficking and Transportation (Control) Act 2064 (2007) is Nepal's primary law against human trafficking and smuggling. Key provisions: Trafficking is defined as selling or buying a person for any purpose, forced prostitution, organ removal, or forced labor (Section 4). Transportation is defined as moving a person across borders for exploitation (Section 5). Penalties: Trafficking - 10-20 years imprisonment and fine up to NPR 500,000; Transportation - 5-15 years imprisonment and fine up to NPR 300,000; Attempt - half the maximum punishment. Aggravated offenses: trafficking of minors attracts life imprisonment. The National Human Rights Commission monitors anti-trafficking efforts. District committees coordinate prevention and rescue. Victims are entitled to rehabilitation, compensation, and protection. Identity of victims is protected. Foreign nationals involved in trafficking face the same penalties plus deportation. The Act also covers cyber trafficking and online exploitation.",
+    "keywords": ["human trafficking", "trafficking", "forced prostitution", "child trafficking", "smuggling", "मानव बेचबिखन", "मानव ओसारपसार", "जबरजस्ती वेश्यावृत्ति", "बाल बेचबिखन"]
+  },
+  {
+    "id": "criminal-12",
+    "caseType": "Criminal",
+    "title": "Money Laundering Prevention Act 2064",
+    "content": "The Money Laundering Prevention Act 2064 (2007) criminalizes money laundering in Nepal. It is enforced by the Nepal Financial Intelligence Unit (NFIU) under Nepal Rastra Bank. Money laundering is defined as concealing or disguising the proceeds of crime (Section 3). Predicate offenses include drug trafficking, human trafficking, corruption, fraud, terrorism, and tax evasion. Penalties: 1-6 months imprisonment or fine equal to twice the value of laundered property or both. Entities must report suspicious transactions above NPR 1 million. Banks, financial institutions, remittance companies, and casinos are obligated to implement Know Your Customer (KYC) and Customer Due Diligence (CDD). Failure to report suspicious transactions carries penalties. The Act allows freezing and confiscation of property derived from criminal activity. International cooperation in money laundering investigations is provided under mutual legal assistance provisions.",
+    "keywords": ["money laundering", "NFIU", "financial crime", "KYC", "suspicious transaction", "सम्पत्ति शुद्धीकरण", "वित्तीय अपराध", "शंकास्पद कारोबार"]
+  },
+  {
+    "id": "criminal-13",
+    "caseType": "Criminal",
+    "title": "Evidence Act 2031 - Rules of Evidence in Nepal",
+    "content": "The Evidence Act 2031 (1974) governs the admissibility of evidence in Nepali courts. Key principles: Burden of proof lies with the person who asserts a fact (Section 3). Relevant facts are admissible unless excluded by law (Section 4). Confessions made under duress, threat, or promise are not admissible (Section 9). Confession to a police officer is not admissible. Dying declarations (statements made by a person about to die) are admissible as evidence (Section 13). Documentary evidence includes primary evidence (original document) and secondary evidence (certified copies). Electronic evidence is admissible under the Electronic Transaction Act 2063. Witness testimony must be given under oath (Section 17). Character evidence is generally not admissible in civil cases but may be relevant in criminal cases (Section 22). Presumptions: a person is presumed innocent until proven guilty; possession of stolen goods after theft raises a presumption of guilt. Expert opinion is admissible on foreign law, science, handwriting, and fingerprint analysis.",
+    "keywords": ["evidence", "witness", "burden of proof", "confession", "dying declaration", "प्रमाण", "प्रमाण ऐन", "गवाही", "साक्षी", "स्वीकारोक्ति"]
+  },
+  {
+    "id": "criminal-14",
+    "caseType": "Criminal",
+    "title": "Arms and Ammunition Act 2019 - Weapons Law",
+    "content": "The Arms and Ammunition Act 2019 (1962) regulates the possession, use, and sale of weapons in Nepal. License required for all firearms. Categories: Category A (prohibited - automatic weapons, explosives, bombs) for military/security forces only; Category B (restricted - handguns, rifles, shotguns) requires license; Category C (less lethal - air guns, pellet guns) requires permit. License application at District Administration Office: minimum age 21, criminal background check, valid reason (self-defense, sports, profession). License valid for 5 years and renewable. Penalties for unlicensed possession: up to 7 years imprisonment for Category A, up to 5 years for Category B, fine and confiscation for Category C. Carrying firearms in public places without permit is prohibited. Import/export requires Home Ministry approval. Ammunition limit: up to 100 rounds per licensed weapon. Sharp weapons (khukuri, swords) over certain sizes require registration.",
+    "keywords": ["arms", "gun", "weapon", "firearm license", "khukuri", "हतियार", "बन्दुक", "हतियार लाइसेन्स", "खुकुरी"]
+  },
+  {
+    "id": "criminal-15",
+    "caseType": "Criminal",
+    "title": "Prison Act 2019 - Prisoners Rights and Prison Administration",
+    "content": "The Prison Act 2019 (1962) governs prison administration in Nepal. Types of prisoners: convicts (sentenced), undertrials (awaiting trial), and civil prisoners (debt). Prisoners must be classified by age, gender, and offense type. Male and female prisoners must be kept separate. Juvenile prisoners are kept in separate correctional facilities. Minimum standards: adequate food, clothing, bedding, medical care, and sanitation. Prisoners have the right to communicate with family through letters and visits (frequency determined by prison rules). Undertrials are entitled to bail under the Criminal Procedure Code. The Prison Rules prescribe work and vocational training for rehabilitation. Prisoners can submit complaints to the Prison Management Committee, the District Judge, and the National Human Rights Commission. Early release may be granted for good conduct after serving two-thirds of sentence. The death sentence is not imposed on minors, pregnant women, or persons with mental illness. Capital punishment can be commuted by the President.",
+    "keywords": ["prison", "jail", "prisoner rights", "undertrial", "rehabilitation", "कारागार", "जेल", "कैदी", "थुनुवा", "पुन: स्थापना"]
+  },
+  {
+    "id": "civil-7",
+    "caseType": "Civil",
+    "title": "Arbitration Act 2055 - Arbitration in Nepal",
+    "content": "The Arbitration Act 2055 (1999) governs domestic and international commercial arbitration in Nepal. Arbitration is a private dispute resolution method where parties agree to submit disputes to an arbitral tribunal instead of court. The Arbitration Act is based on the UNCITRAL Model Law. Key features: Arbitration agreement must be in writing (Section 4). Arbitral tribunal consists of 1 or 3 arbitrators. Parties can agree on the procedure. The tribunal can grant interim measures (Section 11). Arbitral award must be in writing, signed, and state reasons (Section 22). Domestic awards can be challenged in the High Court within 35 days on limited grounds (Section 27). International awards are subject to enforcement under the New York Convention. Nepal is a signatory to the New York Convention on the Recognition and Enforcement of Foreign Arbitral Awards. The Nepal Council of Arbitration (NeCA) promotes arbitration. Court intervention is limited to specific grounds including incapacity of parties, invalid arbitration agreement, or violation of natural justice. Arbitration is faster (3-6 months) than court litigation.",
+    "keywords": ["arbitration", "arbitrator", "arbitral award", "dispute resolution", "UNCITRAL", "मध्यस्थ", "मध्यस्थता", "मध्यस्थ निर्णय", "मुद्दा मिलाप"]
+  },
+  {
+    "id": "civil-8",
+    "caseType": "Civil",
+    "title": "Insolvency Act 2063 - Bankruptcy and Restructuring",
+    "content": "The Insolvency Act 2063 (2006) governs bankruptcy and insolvency proceedings for businesses and individuals in Nepal. Types of proceedings: (1) Corporate insolvency - for companies unable to pay debts; (2) Personal insolvency - for individuals; (3) Cross-border insolvency. A debtor or creditor can file a petition at the Debt Recovery Tribunal or the High Court. The court appoints a liquidator or administrator to manage assets. Insolvency triggers: inability to pay debts as they fall due, liabilities exceeding assets. The moratorium (automatic stay) stops all legal actions against the debtor. Voluntary restructuring is possible through a scheme of arrangement approved by 75% of creditors (by value). Preferential payments: secured creditors are paid first, followed by employees (up to 3 months wages), government taxes, and unsecured creditors. Fraudulent transfers before insolvency can be reversed. Individual insolvency: debtor can apply for discharge after 5 years. Bankruptcy carries reputational consequences and restrictions on holding directorships. The Insolvency Act aims to balance debtor rehabilitation with creditor protection.",
+    "keywords": ["insolvency", "bankruptcy", "liquidation", "debt restructuring", "creditor", "दिवालियापन", "सम्पत्ति परिसमापन", "ऋण पुनर्संरचना", "लेनदार"]
+  },
+  {
+    "id": "civil-9",
+    "caseType": "Civil",
+    "title": "Limitation Act 2049 - Time Limits for Filing Cases",
+    "content": "The Limitation Act 2049 (1992) prescribes time limits (statutes of limitation) for filing different types of cases in Nepal. Basic rules: Limitation runs from the date the cause of action arises. Key limitation periods: Civil suits (general) - 3 years; Breach of contract - 1 year; Recovery of movable property - 6 months; Recovery of immovable property - 12 years; Adverse possession of immovable property - 12 years; Partition of property - 3 years from demand; Debt recovery - 2 years from due date; Gift of immovable property - 1 year; Succession/inheritance - 3 years from death; Defamation - 6 months; Writ petitions - 35 days from cause of action; Criminal appeals to High Court - 70 days from judgment; Civil appeals to High Court - 90 days from judgment; Supreme Court appeals - 21 days. Limitation is extended if the plaintiff is a minor, insane, or prevented by force majeure. The court can condone delay in certain circumstances. Filing after limitation renders the case time-barred and the claim unenforceable.",
+    "keywords": ["limitation", "time limit", "statute of limitation", "filing deadline", "time barred", "समय सीमा", "हदम्याद", "मुद्दा दर्ता समय"]
+  },
+  {
+    "id": "family-7",
+    "caseType": "Family",
+    "title": "Senior Citizens Act 2063 - Rights of Elderly",
+    "content": "The Senior Citizens Act 2063 (2006) protects the rights of persons aged 60 and above in Nepal. Key provisions: Senior citizens have the right to respect, maintenance, and protection from family members (Section 3). Children must provide food, clothing, shelter, and medical care for elderly parents. Abandonment or neglect of senior citizens is punishable with up to 3 months imprisonment or NPR 10,000 fine or both (Section 18). The government provides a monthly social security allowance of NPR 4,000 to all senior citizens (age 70+ general, 60+ for Dalits and Karnali residents). Free medical treatment at government hospitals. Senior citizens get 50% discount on public transport (Section 5). Priority queues at all public offices. Legal aid is available free of charge for senior citizens. The old-age home (Vriddhashram) is provided by the government for destitute elderly. Senior Citizens' Funds support welfare programs. Abuse or exploitation of senior citizens is a criminal offense under the Criminal Code. Property rights of senior citizens are protected - children cannot take property by force. The Senior Citizens Rehabilitation Center provides residential care for abandoned elderly.",
+    "keywords": ["senior citizen", "elderly", "old age", "social security", "pension", "ज्येष्ठ नागरिक", "वृद्ध", "बुढ्यौली", "सामाजिक सुरक्षा", "भत्ता"]
+  },
+  {
+    "id": "family-8",
+    "caseType": "Family",
+    "title": "Caste Discrimination and Untouchability Laws - Dalit Rights",
+    "content": "Caste-based discrimination and untouchability are prohibited under the Constitution of Nepal 2015 (Articles 18 and 24). The Caste-based Discrimination and Untouchability (Offense and Punishment) Act 2068 (2011) provides the legal framework. The Act prohibits: practicing untouchability in any form (Section 3), restricting access to public places, temples, hotels, schools, hospitals, or water sources based on caste (Section 4), and preventing inter-caste marriage (Section 5). Penalties: up to 3 years imprisonment and/or fine up to NPR 50,000 for individuals (Section 8). Higher penalties for public officials who commit or condone discrimination. Collective punishment for groups committing caste violence. The National Dalit Commission monitors implementation. Victims can file complaints at the District Police Office or the National Human Rights Commission. The State must provide free legal aid to victims. Hate speech based on caste is punishable. Inter-caste marriage is incentivized with NPR 100,000 government allowance. Education scholarships are reserved for Dalit students. The government has reservation quotas for Dalits in public employment, education, and political representation.",
+    "keywords": ["dalit", "caste discrimination", "untouchability", "caste violence", "inter-caste marriage", "दलित", "जातीय भेदभाव", "अस्पृश्यता", "जातीय हिंसा", "अन्तरजातीय विवाह"]
+  },
+  {
+    "id": "family-9",
+    "caseType": "Family",
+    "title": "Persons with Disabilities Rights Act 2074",
+    "content": "The Persons with Disabilities Rights Act 2074 (2017) protects and promotes the rights of persons with disabilities in Nepal. PWD includes physical, sensory (deaf, blind), intellectual, mental, and multiple disabilities. Key rights: Right to accessibility in public buildings, transportation, and information; Right to education in inclusive settings; Right to health services; Right to employment without discrimination; Right to social security allowance (NPR 3,000 per month). The Act prohibits discrimination against PWDs in employment, education, and access to services (Section 13). Employers must make reasonable accommodations. The government must ensure accessible public infrastructure. Sign language interpretation must be provided in public offices for the deaf. Disability ID card (Apangata Parichaya Patra) issued by local government provides access to benefits. The National Federation of the Disabled Nepal (NFDN) advocates for disability rights. Penalties for discrimination against PWD: up to 1 year imprisonment or NPR 30,000 fine or both. Quota: 5% reservation in public service employment for PWDs. Building codes require accessibility features in new construction.",
+    "keywords": ["disability", "disabled", "PWD", "accessibility", "apangata", "अपाङ्गता", "अशक्त", "अपाङ्गता भएका व्यक्ति", "सुगम्यता"]
+  },
+  {
+    "id": "business-6",
+    "caseType": "Business",
+    "title": "Foreign Investment and Technology Transfer Act 2075 (FITTA)",
+    "content": "The Foreign Investment and Technology Transfer Act 2075 (2018) (FITTA) governs foreign investment in Nepal. The Department of Industry (DoI) approves foreign investments. Minimum foreign investment threshold: NPR 50 million (approx USD 400,000). Permitted sectors: most manufacturing, services, energy, infrastructure, tourism, and IT. Prohibited sectors: cottage industries, arms and ammunition, explosives, tobacco/alcohol, real estate (except construction), and personal services (hairdressing, tailoring). Foreign investors can own 100% equity in most sectors. Some sectors have minimum Nepali ownership requirements (e.g., travel agencies, consultancy services). Repatriation: foreign investors can repatriate profits, dividends, and capital after tax payment. Technology transfer agreements require DoI approval. Dispute resolution: disputes can be settled through arbitration as per the Arbitration Act 2055 or international arbitration. Tax incentives: income tax holiday for certain industries (5-10 years), customs duty exemptions on capital goods. Intellectual property protection under the Patent, Design and Trademark Act 2022. Investment protection: foreign investments cannot be expropriated without compensation.",
+    "keywords": ["foreign investment", "FITTA", "foreign direct investment", "FDI", "technology transfer", "वैदेशिक लगानी", "प्रविधि हस्तान्तरण", "एफडीआई", "उद्योग विभाग"]
+  },
+  {
+    "id": "business-7",
+    "caseType": "Business",
+    "title": "Industrial Enterprises Act 2020 - Industry Registration and Incentives",
+    "content": "The Industrial Enterprises Act 2020 governs industries in Nepal. Industry classifications: Micro Industry (investment up to NPR 20 million), Small Industry (NPR 20 million - 100 million), Medium Industry (NPR 100 million - 500 million), and Large Industry (above NPR 500 million). Registration: Cottage and Small Industries at the Department of Cottage and Small Industries; Medium and Large industries at the Department of Industry. Special categories: export-oriented, import-substituting, tourism, agriculture, energy, IT, and mineral industries receive additional incentives. Incentives include: income tax exemption for 5-20 years depending on industry type and location (remote/undeveloped areas get longer exemptions); customs duty exemptions on machinery and equipment; concessionary loan facilities. Industries in Special Economic Zones (SEZ) get additional benefits. One Window Service at the Investment Board Nepal for large investments. Environmental Impact Assessment is required for large industries. Factories must comply with labor, safety, and environmental standards. Annual industry census data must be submitted to the Department of Industry.",
+    "keywords": ["industry", "industrial enterprise", "manufacturing", "factory", "industry registration", "उद्योग", "औद्योगिक प्रतिष्ठान", "कारखाना", "उद्योग दर्ता", "उद्योग ऐन"]
+  },
+  {
+    "id": "business-8",
+    "caseType": "Business",
+    "title": "Cooperative Act 2048 - Cooperative Societies",
+    "content": "The Cooperative Act 2048 (1992) governs cooperative societies in Nepal. A cooperative is a voluntary organization of persons with common economic interests. Types: Savings and Credit Cooperatives, Agricultural Cooperatives, Multipurpose Cooperatives, Consumer Cooperatives, and Producer Cooperatives. Registration at the Department of Cooperatives (central) or District Cooperative Office. Minimum 7 members required for registration. Governance: General Assembly (supreme body), Board of Directors (elected), and Audit Committee. Cooperative Principles: voluntary membership, democratic control (one member one vote), member economic participation, autonomy, education, cooperation among cooperatives, and concern for community. Savings and Credit Cooperatives must register with Nepal Rastra Bank for deposit-taking activities. Audit is mandatory every year. Members must be refunded their share capital on exit. Net profits are distributed among members as dividends (maximum 15%) and allocated to reserves (minimum 25%). The Cooperative Supervision Division regulates compliance. Penalties for misuse of cooperative funds include 1-5 years imprisonment. The Nepal Cooperative Federation promotes cooperative development.",
+    "keywords": ["cooperative", "saving and credit", "cooperative society", "bakas", "सहकारी", "बचत तथा ऋण सहकारी", "सहकारी ऐन", "बचत"]
+  },
+  {
+    "id": "business-9",
+    "caseType": "Business",
+    "title": "Securities Act 2063 - Stock Market and Capital Markets",
+    "content": "The Securities Act 2063 (2006) regulates securities markets in Nepal. The Securities Board of Nepal (SEBON) is the capital market regulator. Key provisions: Securities include shares, debentures, bonds, mutual funds, and derivatives. Any company issuing securities to the public must register a prospectus with SEBON (Section 10). Insider trading is prohibited (Section 47). Market manipulation and false trading are criminal offenses (Section 48). Nepal Stock Exchange (NEPSE) is the only stock exchange. Listed companies must: disclose financial results quarterly, maintain proper books, provide annual reports. Rights of shareholders: attend AGM, vote, receive dividends, inspect financial records. Broker regulation: stock brokers must be licensed. Central Depository System (CDS) handles dematerialized (demat) shares. Minimum public offering: 10% of issued capital for public companies. Penalties: insider trading - up to 5 years imprisonment and NPR 500,000 fine; market manipulation - up to 5 years and NPR 300,000 fine; unlicensed trading - up to 3 years and fine. Capital gains tax: 5% for shares held less than 1 year, 7.5% for longer. IPOs are regulated by SEBON guidelines.",
+    "keywords": ["securities", "stock market", "NEPSE", "SEBON", "shares", "IPO", "सेयर बजार", "नेप्से", "सेबोन", "सेयर", "पूँजी बजार"]
+  },
+  {
+    "id": "business-10",
+    "caseType": "Business",
+    "title": "Public Procurement Act 2063 - Government Contracts and Tendering",
+    "content": "The Public Procurement Act 2063 (2006) governs procurement by public entities in Nepal. The Public Procurement Monitoring Office (PPMO) sets policies. Procurement methods: (1) Sealed Quotation - up to NPR 200,000; (2) Quality and Cost Based Selection (QCBS) for services; (3) International Competitive Bidding (ICB) for large foreign-funded projects; (4) Direct Procurement in exceptional circumstances (Section 23). Procurement thresholds: Public entities must form a Procurement Review Committee for contracts above NPR 5 million. Bidding documents must be publicly available. Evaluation criteria: lowest evaluated responsive bid. Bid security (typically 2-3% of estimated cost) is required. Performance guarantee (5% of contract value) must be submitted. Preference: Nepali suppliers get 10% price preference in evaluation. Timeframes: minimum 30 days for international bidding. Dispute resolution: Review Committee, then Public Procurement Appellate Court within 35 days. Blacklisting: contractors who breach contracts can be blacklisted for up to 3 years. Transparency: all procurement decisions must be published in the PPMO portal.",
+    "keywords": ["procurement", "tender", "government contract", "bidding", "PPMO", "सार्वजनिक खरिद", "बोलपत्र", "सरकारी ठेक्का", "टेन्डर", "खरिद ऐन"]
+  },
+  {
+    "id": "business-11",
+    "caseType": "Business",
+    "title": "Advocates Act 2055 - Legal Profession and Lawyers Regulation",
+    "content": "The Advocates Act 2055 (1999) regulates the legal profession in Nepal. Nepal Bar Council issues licenses to practice law. Requirements: Bachelor of Laws (LLB) degree from a recognized university, 6 months internship at a senior advocate's office, and pass the Bar Council exam. Types of advocates: Senior Advocate (20+ years experience, designated by Nepal Bar Council), Advocate (licensed practitioner), and Government Attorney (public prosecutor). Advocates must register with the Bar Council and obtain a practicing certificate renewed annually. Code of conduct: advocates must maintain client confidentiality, avoid conflict of interest, not appear against a former client on the same matter, and not advertise undignifiedly. Fee disputes are settled by the Nepal Bar Association Fee Committee. Disciplinary action: Bar Council can suspend or cancel licenses for professional misconduct (up to 3 years suspension). Advocates cannot guarantee success in a case. Foreign lawyers cannot appear in Nepali courts without permission. The Bar Association provides pro bono legal aid. Advocates have immunity for statements made in court.",
+    "keywords": ["advocate", "lawyer", "bar council", "legal profession", "attorney", "अधिवक्ता", "वकील", "बार काउन्सिल", "कानुन व्यवसायी", "अधिवक्ता ऐन"]
+  },
+  {
+    "id": "business-12",
+    "caseType": "Business",
+    "title": "Notary Public Act 2063 - Notary Services",
+    "content": "The Notary Public Act 2063 (2006) governs notary public services in Nepal. A notary public is a legal professional authorized to certify documents, administer oaths, and authenticate signatures. Appointment: the Minister of Law appoints notaries on recommendation of the Ministry of Law and Justice. Qualifications: Nepali citizen, advocate with at least 5 years practice, no criminal record, and completion of notary training. Powers: (1) Certify copies of documents as true copies; (2) Certify signatures; (3) Administer oaths and affirmations; (4) Attest affidavits; (5) Verify translations; (6) Record protests of negotiable instruments. Documents notarized: property transfer deeds, power of attorney, affidavits, agreements, and declarations. Notarized documents are considered public documents and have evidentiary value. A notary cannot notarize their own document or documents where they are personally interested. Notary fee is regulated (typically NPR 100-500 per document). Notaries must maintain a register of their official acts. Misconduct: can be penalized by suspension or removal. Foreign documents require notarization and then apostille or consular legalization for use abroad.",
+    "keywords": ["notary", "notarize", "notarization", "attestation", "certified copy", "नोटरी", "नोटरी पब्लिक", "प्रमाणित प्रतिलिपि", "हस्ताक्षर प्रमाणीकरण"]
+  },
+  {
+    "id": "constitutional-5",
+    "caseType": "Constitutional",
+    "title": "Water Resources Act 2049 - Water Rights and Hydropower",
+    "content": "The Water Resources Act 2049 (1992) governs the use of water resources in Nepal. Water is a state-owned resource. The Act covers: drinking water, irrigation, hydropower, industrial use, and navigation. Water use requires a license from the Department of Water Resources (Section 6). Categories of licenses: Survey License (to study feasibility), Generation License (for hydropower), and Distribution License. Domestic use and small-scale irrigation do not require licenses. Water rights hierarchy: drinking water has highest priority, then irrigation, then hydropower, then industrial use. The Water Resources Strategy provides long-term planning. Hydropower Development Policy 2058 promotes private sector investment in hydropower. Royalty rates: hydropower projects pay royalty based on generation capacity. Environmental Impact Assessment is required for large water projects. Water disputes are resolved by the Water Resources Tribunal. Pollution of water sources is punishable. The Act protects riparian rights of downstream users. Water Users' Associations manage local irrigation systems. The Water Resources Regulation 2050 provides detailed procedures for licensing and supervision.",
+    "keywords": ["water", "hydropower", "water rights", "irrigation", "water license", "पानी", "जलस्रोत", "जलविद्युत", "सिँचाइ", "पानीको अधिकार"]
+  },
+  {
+    "id": "constitutional-6",
+    "caseType": "Constitutional",
+    "title": "Telecommunications Act 2053 - Telecom and Internet Regulation",
+    "content": "The Telecommunications Act 2053 (1996) regulates telecommunications and internet services in Nepal. The Nepal Telecommunications Authority (NTA) is the regulatory body. Nepal Doorsanchar Company Limited (NDCL/Telecom) is the state-owned telecom provider. Key provisions: Telecom service requires a license from NTA (Section 5). License types: Basic Telecom Service, Cellular Mobile Service, Internet Service Provider (ISP), VSAT, and Infrastructure Provider. Telecom companies must provide interconnection to other licensed operators. Spectrum allocation is managed by NTA. Universal Service Fund supports telecom access in remote areas. Quality of Service standards are prescribed by NTA. Consumer protection: service providers must disclose tariffs, provide itemized bills, and handle complaints. Penalties for illegal telecom equipment: confiscation and fine. Cyber cafes must maintain user logs. Interception of communications requires court order for national security (Section 41). Radio and television broadcasting licenses are also regulated by NTA. The Telecommunications (Amendment) Act 2073 introduced provisions for internet governance and OTT services. Penalty for unauthorized spectrum use: up to 5 years imprisonment and NPR 500,000 fine.",
+    "keywords": ["telecom", "telecommunication", "NTA", "ISP", "mobile", "दूरसञ्चार", "इन्टरनेट", "मोबाइल", "दूरसञ्चार प्राधिकरण"]
+  },
+  {
+    "id": "constitutional-7",
+    "caseType": "Constitutional",
+    "title": "Social Welfare Act 2049 - Social Protection Programs",
+    "content": "The Social Welfare Act 2049 (1992) governs social welfare programs in Nepal. The Social Welfare Council coordinates and monitors social welfare activities. Types of social security: (1) Old Age Allowance - NPR 4,000/month for 70+ (60+ for Dalits and Karnali residents); (2) Single Woman Allowance - NPR 3,000/month (widows, divorced, unmarried 40+); (3) Disability Allowance - NPR 3,000/month for fully disabled, NPR 1,500/month for partially disabled; (4) Child Grant - NPR 500/month per child (up to 2 children) for families in Karnali and remote areas; (5) Endangered Ethnic Group Allowance. The Senior Citizens Act 2063, Child Grant, and other social security programs operate under this framework. NGOs and INGOs working in social welfare must register with the Social Welfare Council. Foreign funding for social projects requires SWC approval. The Act governs orphanages, elderly homes, and rehabilitation centers. The Women Development Program provides skill training and micro-credit to women. The Prime Minister's Education Scholarship supports poor students. The Act requires annual reporting by registered organizations. The SWC can investigate and suspend organizations violating regulations.",
+    "keywords": ["social welfare", "social security", "allowance", "social protection", "NGO", "सामाजिक सुरक्षा", "भत्ता", "सामाजिक कल्याण", "गैरसरकारी संस्था"]
+  },
+  {
+    "id": "consumer-6",
+    "caseType": "Consumer",
+    "title": "Food Act 2033 and Food Safety Regulations",
+    "content": "The Food Act 2033 (1976) ensures food safety and quality in Nepal. The Department of Food Technology and Quality Control (DFTQC) regulates food standards. Key provisions: Adulteration of food is prohibited (Section 4). Selling substandard, misbranded, or expired food is punishable. Imported food must meet Nepali food standards. Food businesses must register with DFTQC. Food inspectors can take samples for testing. Laboratories are authorized to test food quality. Penalties for food adulteration: up to 5 years imprisonment and/or fine up to NPR 200,000 (Section 14). Manufacturing unhygienic food: fine up to NPR 50,000. Selling expired products: fine up to NPR 25,000. Repeat offenses attract double penalties. The Food Regulation 2027 specifies labeling requirements: product name, ingredients, net weight, manufacturing date, expiry date, manufacturer details, and price. The DFTQC has the power to confiscate and destroy unsafe food. Hotels and restaurants must maintain hygiene standards. Consumers can file complaints at the DFTQC or the Department of Commerce. The Food Act also covers food additives, preservatives, and pesticide residue limits. The Act applies to all food businesses including street vendors and restaurants.",
+    "keywords": ["food", "food safety", "adulteration", "expired food", "hygiene", "खाद्य", "खाद्य सुरक्षा", "मिसावट", "म्याद गुज्रिएको", "खाद्य ऐन"]
+  },
+  {
+    "id": "immigration-5",
+    "caseType": "Immigration",
+    "title": "Extradition Act 2071 - International Criminal Cooperation",
+    "content": "The Extradition Act 2071 (2014) governs the extradition of fugitives to and from Nepal. Extradition is the process by which a person accused or convicted of a crime is surrendered by one country to another. Nepal can extradite persons only where a bilateral extradition treaty exists (Section 3). Extradition is not granted for political offenses, military offenses, or where the person may face torture or death penalty (Section 9). Requirements: the offense must be punishable by at least 1 year imprisonment in both countries (dual criminality). The process: request through diplomatic channels; government reviews; District Court hearing; government decision (Section 11-16). Nepal has extradition treaties with India, China, Bangladesh, Myanmar, and several other countries. Provisional arrest pending extradition request is possible in urgent cases. Nepal also provides mutual legal assistance in criminal matters under the Mutual Legal Assistance Act 2070. The government can refuse extradition if it is for prosecution based on race, religion, nationality, or political opinion. Transit of extradited persons through Nepal requires permission. The Act is administered by the Ministry of Law in coordination with the Ministry of Home Affairs and Ministry of Foreign Affairs.",
+    "keywords": ["extradition", "fugitive", "international crime", "deportation", "mutual legal assistance", "प्रत्यर्पण", "फरार अभियुक्त", "अन्तर्राष्ट्रिय अपराध", "निर्वासन"]
+  },
+  {
+    "id": "tax-3",
+    "caseType": "Tax",
+    "title": "Nepal Rastra Bank Act 2058 - Central Banking and Monetary Policy",
+    "content": "The Nepal Rastra Bank Act 2058 (2001) establishes and governs Nepal's central bank. Nepal Rastra Bank (NRB) is the sole monetary authority with powers to: issue currency (Nepali rupee), formulate and implement monetary policy, regulate the banking and financial sector, manage foreign exchange reserves, act as banker to the government, and supervise payment systems. The Governor heads NRB, appointed by the President on government recommendation (Section 18). Monetary policy tools: Bank Rate (currently 7.5%), Cash Reserve Ratio (CRR), Statutory Liquidity Ratio (SLR), Open Market Operations, and Repo/Reverse Repo. NRB sets the Base Rate for commercial banks. NRB regulates interest rates through policy rates and directives. Foreign exchange policy: pegged to Indian rupee at NPR 160 = INR 100. NRB issues licenses for banks, financial institutions, microfinance, and remittance companies. NRB conducts on-site and off-site supervision of financial institutions. It can impose penalties, restrict activities, or liquidate non-compliant institutions. NRB manages the Deposit and Credit Guarantee Corporation (deposit insurance up to NPR 500,000). Annual inflation target and money supply targets are announced in the monetary policy.",
+    "keywords": ["NRB", "nepal rastra bank", "central bank", "monetary policy", "bank rate", "नेपाल राष्ट्र बैंक", "केन्द्रीय बैंक", "मौद्रिक नीति", "बैंक दर"]
+  },
+  {
+    "id": "cyber-4",
+    "caseType": "Cyber",
+    "title": "Cryptocurrency and Digital Currency Ban in Nepal",
+    "content": "Cryptocurrency is completely illegal in Nepal. The Nepal Rastra Bank (NRB) first declared Bitcoin trading illegal in August 2017 and has reaffirmed the ban through multiple notices (2021, 2023, 2024). The statutory basis spans three Acts: Foreign Exchange (Regulation) Act 2019 (Section 9(c) and 17), Nepal Rastra Bank Act 2058 (Sections 52, 61, 95), and the Act Restricting Investment Abroad 2021 (Section 3). Prohibited activities include: trading, mining, investing, holding, brokering, accepting as payment, promoting/advertising, and using VPN to access foreign crypto exchanges. All cryptocurrencies (Bitcoin, Ethereum, USDT, BNB, Solana, XRP, all altcoins, NFTs, and stablecoins) are banned. Penalties: fine of 1x to 3x the transaction value plus imprisonment up to 3 years under the Foreign Exchange Act (up to 7 years under NRB Act Section 95 for high-value cases), plus full asset confiscation. Enforcement by the Central Investigation Bureau (CIB) Cyber Bureau and Nepal Police. Cases are tried in District Court. Nepal is developing a Central Bank Digital Currency (CBDC) but private crypto remains banned. Digital wallets (eSewa, Khalti, IME Pay) are legal and regulated by NRB with daily limits of NPR 50,000-100,000.",
+    "keywords": ["cryptocurrency", "bitcoin", "crypto ban", "digital currency", "blockchain", "क्रिप्टोकरेन्सी", "बिटकोइन", "डिजिटल मुद्रा", "क्रिप्टो प्रतिबन्ध"]
+  },
+  {
+    "id": "cyber-5",
+    "caseType": "Cyber",
+    "title": "Online Gambling, Betting and Gaming Laws",
+    "content": "Online gambling and betting are illegal in Nepal under the Gambling Act 2020 (1963) and the Electronic Transaction Act 2063. The Gambling Act prohibits operating or participating in any gambling house, online betting platform, or lottery scheme. Online cricket betting, casino games, poker, and sports betting are prohibited. Nepal also strictly prohibits accessing foreign gambling websites. Using VPN to bypass the ban is also illegal. Penalties: operating gambling - up to 3 years imprisonment and fine up to NPR 50,000; participating - up to 1 year imprisonment or fine up to NPR 5,000 or both. The Cyber Bureau investigates online gambling operations. Social media-based gambling and betting groups are also targeted. Fantasy sports platforms may be considered gambling if involving money. Lotteries are only legal when operated by the government (Nepal Lottery). Casinos are only legal in licensed 5-star hotels for foreign tourists - Nepali citizens are prohibited from entering or gambling in Nepali casinos. Online rummy, card games for money, and esports betting fall under gambling prohibitions. Internet Service Providers must block gambling websites on NRB and NTA directives.",
+    "keywords": ["gambling", "online betting", "casino", "cricket betting", "lottery", "जुवा", "अनलाइन सट्टेबाजी", "क्यासिनो", "क्रिकेट बेटिङ", "लटरी"]
+  },
+  {
+    "id": "cyber-6",
+    "caseType": "Cyber",
+    "title": "Digital Piracy and Copyright Infringement Online",
+    "content": "Digital piracy in Nepal is addressed under the Copyright Act 2058 (2002) and the Electronic Transaction Act 2063. Copyright infringement includes unauthorized downloading, sharing, or distribution of copyrighted content (movies, music, software, books, games) through torrents, streaming sites, or social media. Penalties: Copyright infringement - up to 3 years imprisonment or fine up to NPR 100,000 or both. Repeat infringement doubles the penalty. The Copyright Registrar Office handles complaints. ISPs can be ordered to block infringing websites. Software piracy: using unlicensed software is a civil and criminal offense. The Business Software Alliance (BSA) monitors software piracy in Nepal. Movie piracy: unauthorized recording or distribution of films in theaters is punishable. Book piracy: unauthorized printing or digital distribution of books is illegal. Fair use exceptions exist for education, research, and personal use. Open-source software and Creative Commons licensing are recognized. For trademark infringement online (counterfeit goods, fake websites), complaints can be filed at the Department of Industry and Nepal Police. Patent infringement online also falls under the Patent, Design and Trademark Act 2022. The Nepal Copyright Act also protects neighboring rights (performers, broadcasters, producers).",
+    "keywords": ["piracy", "copyright", "torrent", "movie piracy", "software piracy", "चोरी", "प्रतिलिपि अधिकार", "टोरेन्ट", "चलचित्र चोरी", "सफ्टवेर चोरी"]
+  },
+  {
+    "id": "cyber-7",
+    "caseType": "Cyber",
+    "title": "Cyber Crime Against Children and Child Online Protection",
+    "content": "Cyber crimes against children in Nepal are governed by the Children's Act 2075 (2018), Electronic Transaction Act 2063, and the Muluki Criminal Code 2017. Key offenses: (1) Child pornography - production, distribution, or possession of sexual images of minors is punishable under Section 220 of the Criminal Code with 10-15 years imprisonment (higher than adult pornography penalties). (2) Online grooming - adults contacting children online for sexual purposes is a criminal offense. (3) Cyber bullying of minors - targeting children through social media harassment, threats, or humiliation. (4) Identity theft of minors - using a child's identity for fraud. (5) Sextortion - threatening to share intimate images of minors. (6) Live streaming of child sexual abuse - treated as aggravated human trafficking. (7) Luring children through online gaming platforms or social media. Reporting: complaints to the Nepal Police Cyber Bureau (01-4779900) or the National Child Helpline 104. The Central Child Welfare Board coordinates child protection. Schools must implement internet safety programs. Parents are advised to monitor children's online activities. Internet cafes must not allow minors to access adult content. The ITERT (Information Technology Emergency Response Team) handles takedown of child sexual abuse material hosted in Nepal.",
+    "keywords": ["child online", "child pornography", "online grooming", "sextortion", "child safety internet", "बाल अनलाइन सुरक्षा", "बाल अश्लीलता", "अनलाइन ग्रूमिङ", "सेक्सटोर्सन"]
+  },
+  {
+    "id": "cyber-8",
+    "caseType": "Cyber",
+    "title": "Data Protection, Privacy Laws and Upcoming Legislation",
+    "content": "Data protection in Nepal is currently governed by multiple laws rather than a single comprehensive data protection act. Key legal provisions: (1) Right to Privacy - Article 28 of the Constitution of Nepal 2015 guarantees the right to privacy. (2) Electronic Transaction Act 2063 - Section 54 on breach of confidentiality and privacy with penalties up to 3 years imprisonment and NPR 100,000 fine. (3) Telecommunications Act 2053 - prohibits unauthorized interception of communications. (4) Labor Act 2074 - employee data protection. The proposed Data Protection Bill (currently under drafting by the Ministry of Communications and IT) will introduce: mandatory data breach notification, consent requirements for data collection, data localization requirements, appointment of Data Protection Officer for large entities, rights of data subjects (access, correction, deletion, portability), cross-border data transfer restrictions, penalties up to 2% of annual turnover for violations, and establishment of a Data Protection Authority. Currently, organizations handling personal data must implement reasonable security practices under Section 54 of ETA. The right to information (RTI) under the Right to Information Act 2064 balances privacy with transparency. Biometric data collection by government requires consent. The Privacy (Protection) Bill is also under consideration. Enforcement agencies include Cyber Bureau and NTA for data breach incidents.",
+    "keywords": ["data protection", "privacy", "personal data", "data breach", "GDPR nepal", "डाटा संरक्षण", "गोपनीयता", "व्यक्तिगत डाटा", "डाटा चुहावट"]
+  },
+  {
+    "id": "cyber-9",
+    "caseType": "Cyber",
+    "title": "Ransomware, Malware, Phishing and Hacking Laws",
+    "content": "Cyber attacks including ransomware, malware, phishing, and unauthorized access are criminal offenses under the Electronic Transaction Act 2063 and the Muluki Criminal Code 2017. Key offenses and penalties: (1) Ransomware - deploying malicious software that encrypts data and demands payment. Treated as computer damage under ETA Section 45: up to 5 years imprisonment and NPR 300,000 fine. (2) Malware distribution - creating or spreading viruses, trojans, worms, spyware. Penalty: up to 5 years imprisonment and/or NPR 200,000 fine. (3) Phishing - creating fake websites or emails to steal credentials. Treated as unauthorized access and fraud: up to 5 years imprisonment and NPR 200,000 fine. (4) DDoS attacks - disrupting online services - up to 5 years imprisonment and NPR 300,000 fine. (5) Hacking into systems (Section 44 ETA) - unauthorized access to computer material: up to 3 years or NPR 100,000 or both; unauthorized access with criminal intent: up to 5 years or NPR 200,000 or both. (6) Identity theft for cyber crimes - additional penalties. Victims should: disconnect infected devices, preserve evidence, file complaint at Cyber Bureau (01-4779900), contact ITERT for incident response, and notify affected parties. Organizations must implement cybersecurity measures. Banks and financial institutions must follow NRB's Cybersecurity Framework. The National Cyber Security Policy 2073 guides national cybersecurity. Reporting cyber attacks promptly increases chances of investigation and recovery.",
+    "keywords": ["ransomware", "malware", "phishing", "hacking", "cyber attack", "DDoS", "र्यान्समवेर", "मालवेर", "फिसिङ", "ह्याकिङ", "साइबर आक्रमण"]
+  },
+  {
+    "id": "cyber-10",
+    "caseType": "Cyber",
+    "title": "Cyber Stalking, Online Harassment and Revenge Porn",
+    "content": "Cyber stalking and online harassment in Nepal are addressed under the Electronic Transaction Act 2063 and the Muluki Criminal Code 2017. Key offenses: (1) Cyber stalking - repeatedly following, monitoring, or contacting someone online causing fear or distress. Punishable under Criminal Code Section 224 (harassment) up to 3 years imprisonment. (2) Revenge porn - sharing intimate images without consent. Under ETA Section 47 (publishing illegal content): up to 5 years imprisonment and/or NPR 200,000 fine. (3) Online threats - sending threatening messages via social media, email, or messaging apps. (4) Doxing - publishing someone's private contact information online with malicious intent. (5) Impersonation / fake profiles - creating fake accounts to harass. (6) Trolling and hate speech - targeted abuse based on gender, caste, religion, or sexual orientation. (7) Sextortion - threatening to share intimate content unless demands are met. Victims should: (1) Do not engage with the harasser. (2) Save all evidence (screenshots, messages, emails, URLs, metadata). (3) Block the harasser on all platforms. (4) Report to the social media platform. (5) File a complaint at the Cyber Bureau (01-4779900). (6) Seek a protection order from the court. (7) For revenge porn, victims can request immediate takedown under ITERT emergency procedures. The law protects victim identity during proceedings. Cyber stalking is increasingly prosecuted under both criminal and cyber laws.",
+    "keywords": ["cyber stalking", "online harassment", "revenge porn", "doxing", "sextortion", "साइबर स्टकिङ", "अनलाइन उत्पीडन", "बदला पोर्न", "डक्सिङ"]
+  },
+  {
+    "id": "cyber-11",
+    "caseType": "Cyber",
+    "title": "Deepfakes, AI-Generated Content and Synthetic Media Law",
+    "content": "Deepfakes and AI-generated content in Nepal are regulated under the Electronic Transaction Act 2063, the Muluki Criminal Code 2017, the Copyright Act 2058, and the Right to Privacy (Article 28 of Constitution). Key legal issues: (1) Deepfake pornography - creating sexually explicit synthetic content using someone's likeness without consent. This constitutes revenge porn under ETA Section 47, defamation under Criminal Code Section 269, and violation of privacy. Penalties: up to 5 years imprisonment and/or NPR 200,000 fine. (2) Deepfake fraud - using AI-generated audio/video to impersonate individuals for financial scams (e.g., fake CEO voice calls). Treated as fraud and identity theft. (3) AI-generated disinformation - creating fake news videos or audio of public figures. Falls under defamation and electronic fraud. (4) Synthetic media for political manipulation - using AI to create false campaign materials. (5) AI impersonation of deceased persons for exploitation. (6) Authorized uses: AI-generated content for entertainment, satire (with clear labeling), education, and art may be protected under free speech (Article 17) if it does not harm reputation or privacy. The Cyber Bureau has a dedicated unit for deepfake investigations. Proposed AI governance framework is being drafted by the Ministry of Communications. Victims of harmful deepfakes should: (1) Document the content (URLs, timestamps). (2) Request platform takedown. (3) File complaint at Cyber Bureau. (4) Contact ITERT for emergency removal. (5) Pursue defamation or privacy case in court. Social media platforms are required to remove harmful synthetic content within 72 hours of notice under ETA.",
+    "keywords": ["deepfake", "AI content", "synthetic media", "fake video", "AI fraud", "डिपफेक", "एआई सामग्री", "नक्कली भिडियो", "एआई धोखाधडी"]
+  },
+  {
+    "id": "cyber-12",
+    "caseType": "Cyber",
+    "title": "Digital Wallets, Payment Systems and E-Banking Regulation",
+    "content": "Digital payment systems in Nepal are regulated by Nepal Rastra Bank under the Payment and Settlement System Directive. Licensed Payment Service Providers (PSPs) include eSewa, Khalti, IME Pay, PrabhuPay, and others. Payment System Operators (PSOs) include connectivity providers. Key regulations: (1) PSPs must obtain NRB license with minimum paid-up capital requirements, secure IT infrastructure, cybersecurity compliance, and KYC/AML systems. (2) Transaction limits: KYC-verified users - daily limit NPR 50,000-100,000, monthly limit NPR 5-10 lakhs, wallet balance limit NPR 50,000. (3) QR payments limit: daily NPR 100,000, monthly NPR 1,000,000. (4) Fund transfers between wallets: daily NPR 25,000-50,000. (5) Bank transfers via wallet: daily NPR 100,000 limit. (6) Digital wallets must maintain separate escrow accounts for user funds. (7) Mobile banking is regulated under NRB's Electronic Banking Guidelines. (8) Internet banking requires two-factor authentication. (9) Liability for unauthorized transactions: banks must reimburse if reported within 3 days (up to 7 days for negligence). (10) Card fraud (ATM, credit, debit): governed by Banking Offenses Act 2064 with penalties up to 10 years imprisonment. (11) QR code fraud and payment gateway fraud are addressed under ETA. Digital payment fraud victims should immediately report to their bank, NRB helpline (01-4511155), and the Cyber Bureau. NRB's Payment Systems Department supervises compliance.",
+    "keywords": ["digital wallet", "eSewa", "Khalti", "mobile banking", "payment system", "डिजिटल वालेट", "एसेवा", "खल्ती", "मोबाइल बैंकिङ", "भुक्तानी प्रणाली"]
+  },
+  {
+    "id": "cyber-13",
+    "caseType": "Cyber",
+    "title": "E-Commerce Law, Online Marketplace and Digital Consumer Protection",
+    "content": "E-commerce in Nepal is governed by the Electronic Transaction Act 2063, Consumer Protection Act 2075, and the Directives on Electronic Commerce issued by the Department of Commerce. Key provisions: (1) E-commerce platforms must register as a business and obtain PAN/VAT. (2) Online sellers must provide accurate product descriptions, clear pricing including all charges, delivery timelines, and return/refund policies. (3) Consumers have the right to cancel online orders within 48 hours for any reason (cooling-off period). (4) Refunds must be processed within 15 days of cancellation or return. (5) E-commerce platforms are liable for counterfeit or defective products sold through their marketplace if they do not verify sellers. (6) Cross-border e-commerce is subject to customs duties and Nepal Rastra Bank foreign exchange regulations (limit NPR 50,000 per transaction for online imports). (7) Social media commerce (Facebook Marketplace, Instagram shops, TikTok shops) is regulated like any e-commerce activity. (8) Misleading or false advertising online is prohibited. (9) Data privacy: e-commerce platforms must protect customer data and not share without consent. (10) Penalties: selling counterfeit goods online - up to 5 years imprisonment and/or NPR 200,000 fine under ETA Section 47; consumer rights violations - fines under Consumer Protection Act up to NPR 500,000. (11) Jurisdiction: disputes involving e-commerce can be filed at the consumer's local District Court. (12) The Department of Commerce accepts online consumer complaints through its portal and toll-free number 1136.",
+    "keywords": ["ecommerce", "online shopping", "online marketplace", "digital consumer", "online refund", "इ-कमर्स", "अनलाइन किनमेल", "अनलाइन बजार", "अनलाइन उपभोक्ता", "अनलाइन फिर्ता"]
+  },
+  {
+    "id": "cyber-14",
+    "caseType": "Cyber",
+    "title": "OTT Platforms, Digital Streaming and Social Media Regulation",
+    "content": "Over-the-Top (OTT) media services and digital streaming platforms in Nepal are regulated under the Telecommunications Act 2053, Electronic Transaction Act 2063, and the Directives on Social Media and OTT Services. Key regulations: (1) OTT platforms (Netflix, YouTube, TikTok, Facebook, Instagram, WhatsApp, Viber, Discord) providing communication services must register with Nepal Telecommunications Authority (NTA). (2) Content regulation: OTT platforms must remove illegal content (hate speech, defamation, obscenity, copyright infringement) within 72 hours of receiving a valid complaint (ETA Section 47). (3) Social media platforms must have a grievance officer for Nepali users. (4) Streaming of pirated content is illegal under Copyright Act 2058. (5) Live streaming of illegal activities (gambling, violence, adult content) is prohibited. (6) Data localization: OTT platforms processing Nepali user data may be required to store data within Nepal (proposed Data Protection Bill). (7) Interception: Law enforcement can request user data from OTT platforms with court order under the Telecommunications Act Section 41. (8) Social media accounts of public figures and government bodies are considered public records. (9) Political advertising on social media must comply with Election Commission guidelines. (10) Misinformation and disinformation on OTT platforms: platforms must implement fact-checking mechanisms. (11) ISP-level blocking: NTA can direct ISPs to block content or platforms that violate Nepali law. (12) VPN usage: not illegal per se but using VPN to access blocked content or commit crimes is illegal. (13) Telecom Service Providers cannot throttle or block legitimate OTT services without NTA approval.",
+    "keywords": ["OTT", "streaming", "social media regulation", "Netflix", "TikTok", "OTT प्लेटफर्म", "स्ट्रिमिङ", "सामाजिक सञ्जाल नियमन", "युट्युब", "टिकटक"]
+  }
+]
